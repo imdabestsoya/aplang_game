@@ -8,7 +8,7 @@ Read [AGENTS.md](../AGENTS.md), [PRD](../docs/PRD.md), [status](../docs/STATUS.m
 
 ## Architecture
 
-The stack is TypeScript, React, Vite, plain CSS tokens, Vitest, and Playwright (PRD §12). Session 01 implements a runnable one-card foundation. Use Node 22.23.3/npm 10.9.9 and the npm lockfile; see `docs/COMMANDS.md` for verified versions, local PATH/browser setup, and remaining coverage.
+The stack is TypeScript, React, Vite, plain CSS tokens, Vitest, and Playwright (PRD §12). Session 02 adds deterministic transitions, endings, saves/recovery, replay, and preferences to the one-card sample. Full-story content and balance remain pending. Use Node 22.23.3/npm 10.9.9 and the npm lockfile; see `docs/COMMANDS.md` for setup, results, and save-version contracts.
 
 - `src/engine/`: pure, deterministic transitions and ending resolution.
 - `src/content/`: declarative cards, evidence, quotations, symbolism, and source metadata.

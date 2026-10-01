@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
-import { firstCard, evidence } from '../../src/content/foundation';
-import { choose, initialState, inspectEvidence } from '../../src/engine/foundation';
+import { firstCard, evidence, content } from '../../src/content/foundation';
+import { initialState } from '../../src/engine/transition';
+import { act, pick } from '../fixtures/engine';
 
 // Foundation paths only: these are not full-game ending witnesses.
 describe('one-card routes', () => {
@@ -15,10 +16,12 @@ describe('one-card routes', () => {
       ['question-source', 61, 19],
       ['defer-authority', 71, 33],
     ] as const)(`reaches sample end via %s with inspection=${inspected}`, (id, reputation, hysteria) => {
-      let state = initialState(firstCard.id);
-      if (inspected) state = inspectEvidence(state, firstCard, evidence.id);
-      state = choose(state, firstCard, id);
-      expect(state).toMatchObject({ currentCardId: null, reputation, hysteria });
+      let state = initialState(content);
+      if (inspected) state = act(state, { type: 'inspect', cardId: firstCard.id, evidenceId: evidence.id }, content);
+      state = pick(state, id, content);
+      expect(state.phase).toBe('consequence');
+      state = act(state, { type: 'continue' }, content);
+      expect(state).toMatchObject({ currentCardId: firstCard.id, phase: 'sample-complete', reputation, hysteria });
       expect(state.history).toHaveLength(1);
       expect(state.history[0].consequence.length).toBeGreaterThan(0);
       expect(state.flags.falseAccusation).toBe(false);

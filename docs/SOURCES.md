@@ -35,3 +35,7 @@ Bootstrap inspected official [Codex command documentation](https://learn.chatgpt
 `src/content/foundation.ts` contains an invented Parris/Proctor encounter and an invented household report, each labeled with `basis`, `actReference`, and source notes. The text uses no direct Miller quotations and makes no witchcraft allegation into a fact. Act I is a thematic reference, not a claim that the encounter occurs verbatim in the play. The first choice asks for a witness; the second endorses an unconfirmed report without naming an accused person, so neither sets `falseAccusation`.
 
 All visuals are original CSS typography, borders, and layout using system fonts; no downloaded art, fonts, audio, or third-party visual assets. Quotation slots Q1–Q5 remain tracked above, unverified and not rendered. Persistent settings, source-complete narrative, and final attribution review remain later-session work.
+
+## Session 02 source status
+
+No additional Miller quotations or historical claims were added. Generic ending explanations implement the PRD’s interpretive distinctions; they are original game prose, not direct quotations. Synthetic fixture cards/puzzle tokens are test-only content. Q1–Q5 and the other literary checks above remain unverified; mechanics completion does not imply classroom readiness.

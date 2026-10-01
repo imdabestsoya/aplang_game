@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-**The Weight** is a browser narrative puzzle game inspired by *The Crucible*. Read `.codex/claude.md`, `docs/PRD.md`, and `docs/STATUS.md`. A runnable one-card foundation exists; later sessions complete the game. `The_Weight_PRD.md` remains the supplied snapshot.
+**The Weight** is a browser narrative puzzle game inspired by *The Crucible*. Read `.codex/claude.md`, `docs/PRD.md`, and `docs/STATUS.md`. The one-card sample has engine rules, saves, and replay; later sessions complete the story. `The_Weight_PRD.md` remains the supplied snapshot.
 
 Follow the PRD’s planned TypeScript, React, and Vite structure:
 

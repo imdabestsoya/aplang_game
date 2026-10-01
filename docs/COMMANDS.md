@@ -23,7 +23,7 @@ Use the same `PLAYWRIGHT_BROWSERS_PATH` for installation and tests. If omitted, 
 
 ## Application commands and observed results
 
-Results below are from Session 01 on 2026-09-30. See [handoff](handoffs/session-01.md) for scope and failures recovered along the way.
+Application verification below was refreshed in Session 02 on 2026-09-30. Dependency installation evidence remains from Session 01 because no dependencies changed. See the [Session 02 handoff](handoffs/session-02.md) and [Foundation handoff](handoffs/session-01.md).
 
 | Command | Purpose / prerequisites | Observed result |
 |---|---|---|
@@ -34,13 +34,13 @@ Results below are from Session 01 on 2026-09-30. See [handoff](handoffs/session-
 | `npm run preview` | Serve existing dist/ | Passed via production browser flows; screenshots captured on port 4174 |
 | `npm run lint` | ESLint, TypeScript and React rules; zero warnings | Passed |
 | `npm run typecheck` | Strict TypeScript checks | Passed |
-| `npm run test -- --run` | Vitest unit suite once | 20 tests passed |
-| `npm run test:routes` | Foundation route/content suite | 5 tests passed; not full-game ending proofs |
-| `npm run test:e2e` | Start dev server; run desktop and 360px touch Chromium projects | 4 tests passed |
-| `E2E_PREVIEW=1 npm run test:e2e` | Same browser flows against production build | 4 tests passed; build first |
-| `npm run check` | Lint → types → unit → routes → build | Passed after final clean install; E2E remains separate |
+| `npm run test -- --run` | Vitest unit suite once | 50 tests passed |
+| `npm run test:routes` | Foundation paths and synthetic multi-chapter engine witnesses | 11 tests passed; not full-narrative balance proofs |
+| `npm run test:e2e` | Start dev server; run desktop and 360px touch Chromium projects | 18 tests passed |
+| `E2E_PREVIEW=1 npm run test:e2e` | Same browser flows against production build | 18 tests passed against final build; build first |
+| `npm run check` | Lint → types → unit → routes → build | Passed for Session 02; E2E remains separate |
 
-The browser suite traverses real keyboard tab order, chooses both actions across tests, inspects evidence, checks consequences/journal/restart, verifies hidden numeric meters, and checks horizontal overflow. Full save/load, terminal logic, puzzles, and ending witnesses remain future work.
+The browser suite covers real keyboard tab order, both choices, inspection, consequence/journal, rapid duplicate clicks, refresh, explicit continuation, replay, restart, preferences, corrupt/incompatible saves, denied storage, write-quota errors, and narrow layout. Engine fixtures cover threshold precedence, sign/refuse outcomes, evidence variants, free hints/solutions, chapter snapshots, and save hydration. Full narrative and final ending witnesses remain Sessions 03–04 work.
 
 ## Recovery
 
@@ -55,10 +55,16 @@ The browser suite traverses real keyboard tab order, chooses both actions across
 
 | Command | Purpose | Observed result |
 |---|---|---|
-| `python3 scripts/session.py 2 --print` | Print next session prompt without launching | Launcher verified during bootstrap |
-| `python3 scripts/session.py 2` | Launch authenticated Codex; requires CLI on PATH | Dispatch stub tested; no nested agent launched |
+| `python3 scripts/session.py 3 --print` | Print next session prompt without launching | Launcher verified during bootstrap |
+| `python3 scripts/session.py 3` | Launch authenticated Codex; requires CLI on PATH | Dispatch stub tested; no nested agent launched |
 | `python3 scripts/verify_scaffold.py` | Validate workflow plans/links/launcher | Passed at bootstrap and Session 01 baseline |
-| `git status --short --branch` | Inspect branch and dirty files | main; no commits; intended files untracked |
-| `git diff --check` | Tracked patch whitespace check | No tracked diff; new-file checks recorded separately |
+| `git status --short --branch` | Inspect branch and dirty files | main tracking origin/main; validation base 1480466; Session 02 changes listed in handoff |
+| `git diff --check` | Tracked patch whitespace check | Passed for Session 02 |
 
-See [custom commands](../.codex/commands/README.md) for `/session N`, `/handoff`, `/verify`, and [GitHub connection](GITHUB.md). No remote, commit, push, or deployment was created during Session 01.
+See [custom commands](../.codex/commands/README.md) for `/session N`, `/handoff`, `/verify`, and [GitHub connection](GITHUB.md). Session 02 does not push or deploy. Local origin is now configured; see `docs/GITHUB.md`.
+
+## Save debugging
+
+The browser stores `the-weight.run` (format 1, content version `foundation-2`) and `the-weight.settings` separately. Refresh hydrates validated state without redispatching choices. Replay restores the selected checkpoint and discards later history; restart writes a fresh run without clearing preferences or unrelated keys. Different host/port combinations have separate storage.
+
+An unreadable/incompatible save remains intact until the player chooses replacement. “Keep save and play without saving” leaves it untouched. A quota error retains live state but may leave an older disk save; the warning explains that refresh risk. Do not use localStorage.clear() as a recovery shortcut. When modifying state/content contracts, update the appropriate version and test the recovery flow.

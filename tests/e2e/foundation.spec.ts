@@ -16,7 +16,7 @@ test('inspect, decide, read consequence and journal, then explicitly restart', a
   await page.getByRole('button', { name: 'Journal' }).click();
   await expect(page.getByRole('region', { name: 'Your journal' }).getByRole('listitem')).toHaveCount(1);
   await expect(page.getByRole('region', { name: 'Your journal' })).toContainText('source unconfirmed');
-  await page.getByRole('button', { name: 'Restart sample' }).click();
+  await page.getByRole('button', { name: 'Restart game' }).click();
   await expect(page.getByRole('heading', { level: 1 })).toBeFocused();
   await expect(page.getByRole('button', { name: 'Journal' })).toContainText('0 decisions');
   await expect(page.getByText('Rumors spreading', { exact: true })).toBeVisible();

@@ -1,6 +1,6 @@
 # Connect GitHub After Bootstrap
 
-The initial local commit on `main` contains bootstrap and Foundation. The user requested publication to a new GitHub repository; the planned default is private `aplang_game`. GitHub authentication is still unavailable and no remote has been created. Commit author is configured locally as iamdabestsoya <krish@krishbehl.com>. The checklist below describes the remaining connection workflow; completed local preparation does not establish a successful push.
+`origin` is configured as `https://github.com/imdabestsoya/aplang_game.git`. At Session 02 start, local `main` and the recorded `origin/main` both referenced `1480466`. Session 02 makes no remote writes and does not infer current authentication or visibility from the tracking reference. Commit author is configured locally as iamdabestsoya <krish@krishbehl.com>. The checklist below remains a reference for future publication work.
 
 ## Required destination information
 

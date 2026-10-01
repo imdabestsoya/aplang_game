@@ -10,14 +10,14 @@ Session 01’s clean install, working card, typecheck, and build gates pass. Ins
 
 ## Work checklist
 
-- [ ] Define typed state with R=65, H=25, stable evidence IDs, explicit flags, decision history, and no morality score. Match qualitative bands in §6.
-- [ ] Implement pure transitions: validate → atomic effects → clamp → record → consequence → ending → save. Coordinate the UI so consequences remain visible before advancing.
-- [ ] Enforce H=100 precedence over R=0, simultaneous condemnation detail, final-choice prerequisites, and all four ending classifications including unresolved resistance.
-- [ ] Model declarative evidence variants without executing content expressions. Keep both story choices available; inspect/hints neither consume evidence nor alter meters.
-- [ ] Prevent duplicate or stale submissions in engine/UI and across refresh.
-- [ ] Add versioned saves, restore without replaying effects, corrupt/incompatible-save messaging, and an in-memory fallback when storage fails.
-- [ ] Implement chapter snapshots/replay that discard later history, explicit restart, and persistent settings separate from run data.
-- [ ] Add focused unit, route-fixture, and browser regression tests for these behaviors.
+- [x] Define typed state with R=65, H=25, stable evidence IDs, explicit flags, decision history, and no morality score. Match qualitative bands in §6.
+- [x] Implement pure transitions: validate → atomic effects → clamp → record → consequence → ending → save. Coordinate the UI so consequences remain visible before advancing.
+- [x] Enforce H=100 precedence over R=0, simultaneous condemnation detail, final-choice prerequisites, and all four ending classifications including unresolved resistance.
+- [x] Model declarative evidence variants without executing content expressions. Keep both story choices available; inspect/hints neither consume evidence nor alter meters.
+- [x] Prevent duplicate or stale submissions in engine/UI and across refresh.
+- [x] Add versioned saves, restore without replaying effects, corrupt/incompatible-save messaging, and an in-memory fallback when storage fails.
+- [x] Implement chapter snapshots/replay that discard later history, explicit restart, and persistent settings separate from run data.
+- [x] Add focused unit, route-fixture, and browser regression tests for these behaviors.
 
 ## Expected files touched
 
@@ -29,9 +29,13 @@ Run `npm run test -- --run`, `npm run test:routes`, `npm run check`, and targete
 
 ## Acceptance criteria
 
-- [ ] Boundary/precedence tests pass, including simultaneous thresholds and final-choice ordering.
-- [ ] A valid action changes state exactly once; invalid/stale actions do not partially mutate it.
-- [ ] Refresh restores equivalent state; corrupt or blocked storage has usable recovery.
-- [ ] Hints/inspection remain free; both actions remain available.
-- [ ] Chapter replay restores its starting state and discards later history; restart requires explicit action.
-- [ ] Relevant automated checks pass and remaining narrative/route gaps are recorded in `docs/handoffs/session-02.md`.
+- [x] Boundary/precedence tests pass, including simultaneous thresholds and final-choice ordering.
+- [x] A valid action changes state exactly once; invalid/stale actions do not partially mutate it.
+- [x] Refresh restores equivalent state; corrupt or blocked storage has usable recovery.
+- [x] Hints/inspection remain free; both actions remain available.
+- [x] Chapter replay restores its starting state and discards later history; restart requires explicit action.
+- [x] Relevant automated checks pass and remaining narrative/route gaps are recorded in `docs/handoffs/session-02.md`.
+
+## Completion evidence — 2026-09-30
+
+Completed; see [Session 02 handoff](../../docs/handoffs/session-02.md). Lint, types, production build, 50 unit tests, 11 route tests, and 18 browser tests on each of dev/preview passed. Multi-chapter ending/replay witnesses are synthetic engine fixtures; final story balance and puzzle UI remain later-session work. The one-card app now persists progress, offers recovery, and preserves settings across replay/restart.

@@ -76,3 +76,11 @@ footer details p { max-width: 720px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; }
 }
+.storage-note { border-left: 3px solid var(--amber); padding: 12px 16px; font-size: 14px; }
+.recovery { border: 1px solid var(--rule); padding: 20px; margin-bottom: 24px; }
+.recovery button { min-height: 44px; padding: 10px 16px; margin: 8px 12px 8px 0; background: var(--parchment); color: var(--charcoal); border: 0; }
+.settings { margin-top: 20px; font-size: 13px; }
+.settings label { display: flex; align-items: center; gap: 8px; min-height: 44px; }
+.settings input { width: 18px; height: 18px; accent-color: var(--blue); }
+.settings p { color: var(--muted); }
+[data-reduced-motion="true"] *, [data-reduced-motion="true"] *::before, [data-reduced-motion="true"] *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }

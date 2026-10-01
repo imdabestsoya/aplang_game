@@ -1,4 +1,5 @@
-import type { Card, Evidence } from '../engine/types';
+import type { Card, Content, Evidence } from '../engine/types';
+import { validateContent } from '../engine/content';
 
 export const evidence: Evidence = {
   id: 'household-report',
@@ -25,7 +26,6 @@ export const firstCard: Card = {
     {
       id: 'question-source',
       label: 'Ask who witnessed the alleged witchcraft',
-      requirements: [],
       deltas: { reputation: -4, hysteria: -6 },
       flags: {},
       consequence: 'You ask for a witness before accepting the claim. Parris reads your hesitation as a challenge to his standing. The room grows quieter: for a moment, repetition is no longer enough.',
@@ -34,7 +34,6 @@ export const firstCard: Card = {
     {
       id: 'defer-authority',
       label: 'Support Parris’s call to trust the report',
-      requirements: [],
       deltas: { reputation: 6, hysteria: 8 },
       flags: {},
       consequence: 'Your support reassures Parris and protects your standing in the room. The unconfirmed report gains another voice behind it. Confidence spreads faster than evidence.',
@@ -42,3 +41,14 @@ export const firstCard: Card = {
     },
   ],
 };
+
+export const content: Content = {
+  version: 'foundation-2',
+  firstCardId: firstCard.id,
+  cards: [firstCard],
+  evidence: [evidence],
+  puzzles: [],
+};
+
+const contentErrors = validateContent(content);
+if (contentErrors.length) throw new Error(contentErrors.join('\n'));
