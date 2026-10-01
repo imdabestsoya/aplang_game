@@ -79,3 +79,11 @@ Do not overwrite unreadable or incompatible saves on mount. Ask the player to re
 - Test a whole resistance route using real sequential keyboard navigation and a separate narrow touch route with networking disabled after load. The tests do not inject game state. Preserve all engine effects, fixtures and save contracts.
 - Verify a disposable clean copy of the uncommitted working tree rather than claiming the old HEAD contains the deliverable. Use an empty dependency directory with cached lockfile packages for reproducibility.
 - Distinguish automated checks and editorial/screenshot inspection from independent human, screen-reader, physical-device, audio-listening and reader-timing evidence. Those unperformed reviews remain explicit in the release checklist.
+
+## Local-play follow-up — 2026-10-01
+
+The user authorized best-knowledge quote locations and will correct them if needed. Ship brief source-linked excerpts: Q1 verified against a licensed textbook selection, Q2–Q5 explicitly draft with null edition/page/date metadata. This authorization permits provisional local play and does not certify literary or human accessibility review.
+
+Correct P1 by removing the unsupported exact needle-placement time. Retain making/gift/evidentiary-use ordering and represent Mary’s account as uncertain testimony. Puzzle IDs, solutions, effects and save format remain unchanged. Existing saved consequence text may retain its earlier source-warning sentence; new decisions use the revised prose.
+
+Use relative font units for user text enlargement, and provide postgame reflection prompts to support the PRD learning outcome. `npm run play` builds and serves the local game. Human review and timing remain evidence to collect, with a concrete review form rather than fabricated passes.

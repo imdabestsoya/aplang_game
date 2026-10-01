@@ -110,3 +110,7 @@ Using Node 22.23.3/npm 10.9.9, `npm ci --offline --cache /Users/krishbehl/aplang
 Browser environment: Playwright 1.56.1, Chromium/headless-shell 141.0.7390.37 revision 1194, macOS 12.7.6 x86_64. Local browser path was `/Users/krishbehl/aplang_game/.tools/browsers`. Normal contributors can use `npm ci` online and the documented browser installation; cached install was a reproducibility check, not a required distribution of `.tools` or `.npm-cache`.
 
 `tests/e2e/release.spec.ts` completes resistance through keyboard or narrow-touch controls after disabling networking. No external runtime request is made. Human reader timing and independent accessibility review remain unmeasured; see `docs/RELEASE_CHECKLIST.md`. Literary source gates remain open despite passing technical checks.
+
+## Start the playable game
+
+After `npm ci`, run `npm run play` to build and start the production preview on localhost (normally port 4173). On this machine first set `export PATH="$PWD/.tools/node-v22.23.3-darwin-x64/bin:$PATH"`. Leave the server terminal running; Ctrl+C stops it. For a different port, use `npm run play -- --port 4174`. No remote deployment or credentials are required.

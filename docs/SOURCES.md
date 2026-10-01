@@ -2,33 +2,23 @@
 
 PRD §§2, 5, 7, and 10 define source obligations. The supplied PRD is a product specification, not independent verification of Miller’s words or historical claims.
 
-## Available material
+## Current source status — 2026-10-01 follow-up
 
-- `The_Weight_PRD.md`: supplied specification, preserved unchanged in `docs/PRD.md` at bootstrap.
-- `Crucible Project Brainstorming(1).pdf`: referenced by the PRD but not present in this workspace; not inspected.
-- Assigned edition/licensed text of *The Crucible*: not present; no quotations have been verified.
+The user authorized best-knowledge quotation locations and will review any corrections. This permits local play with labeled drafts; it is not evidence of exact assigned-edition verification. The original PRD is unchanged. Historical entries below describe earlier attempts and are superseded by this section where noted.
 
-## Quotation release gates
-
-| Slot | Passage identification / placement | Status |
+| Slot | Speaker / act | Current evidence |
 |---|---|---|
-| Q1 | Proctor’s soul/name; confession and debrief | Unverified; no exact text or page recorded |
-| Q2 | Abigail’s parents; optional Chapter I panel with skip/content note | Unverified; no exact text or page recorded |
-| Q3 | Children/keys/vengeance; first H=80 crossing or court debrief | Unverified; no exact text or page recorded |
-| Q4 | Danforth’s binary loyalty; court puzzle | Unverified; no exact text or page recorded |
-| Q5 | Accuser’s presumed holiness; first false accusation or debrief | Unverified; no exact text or page recorded |
+| Q1 | John Proctor / IV | Short excerpt checked in the [Holt, Rinehart and Winston selection](https://fhs.trusd.net/documents/Library/the%20crucible.pdf#page=30), printed p. 249 (PDF page 30). Permission credit appears on PDF page 1; publication year/ISBN not identified. |
+| Q2 | Abigail Williams / I | Short draft excerpt; corroborated in the [online transcription](https://www.culliton.org/uploads/3/4/4/2/34421062/the_crucible_unknown.pdf#page=37), PDF page 37. Edition unidentified. |
+| Q3 | John Proctor / II | Same transcription, PDF page 146. Edition unidentified. |
+| Q4 | Deputy Governor Danforth / III | Same transcription, PDF page 175. Edition unidentified. |
+| Q5 | John Proctor / II | Same transcription, PDF page 146. Edition unidentified. |
 
-For each verification, record exact wording, speaker, act, punctuation/context, edition, page only if checked, verifier/date, and evidence location. Keep unavailable text as a labeled development placeholder. Source verification blocks final release, not scaffolding or mechanics.
+Checked by the implementation agent on 2026-10-01. Only brief excerpts are embedded (22 words total); longer passages remain external reading. The unidentified transcription has visible transcription errors elsewhere, so it is corroboration, not licensed-edition certification. Q2–Q5 retain null edition/page/verifiedAt fields and a `draft` status. PDF viewer locations above are navigation aids, not invented edition pages. All sources are linked from passage panels. Context is original interpretation, visibly separate from the excerpts. No full play or textbook is bundled.
 
-## Other checks
+P1 no longer asserts an exact insertion time. Mary’s account is represented with its initial uncertainty; see transcription PDF pages 143–144. The puzzle orders making, gift, and later evidentiary use, retaining the publisher-guide-supported sequence. It does not equate an allegation with observation. Assigned-edition review remains useful, but unsupported precise timing is no longer a required answer.
 
-- Verify poppet/needle chronology before final puzzle wording (PRD §7).
-- Label the land ledger as invented and Giles’s motive claim as an allegation.
-- Record scene chronology changes and `canonical`, `interpretation`, or `invented` basis per narrative entry.
-- Verify Salem/McCarthyism context and state limits of modern parallels (§9).
-- Record original/third-party asset provenance and license where relevant. No game assets exist yet.
-
-Bootstrap inspected official [Codex command documentation](https://learn.chatgpt.com/docs/developer-commands?surface=cli) and local `codex --help` for launcher support. This is tooling evidence, not literary source verification.
+The brainstorming PDF and assigned classroom edition remain unavailable. The invented ledger, scene condensations, alternative outcomes and original visual/audio assets retain their provenance labels. Contextual sources and previous audit history follow.
 
 ## Session 01 content and assets
 
@@ -76,7 +66,7 @@ The new `src/content/context.ts` records checked dates and direct links. All pan
 
 S33 is now implemented using that checked context. S34 is an expressly invented rumor thought experiment, with no allegation about a modern individual, platform or event. The panel states differences in power, process, scale and consequences and rejects equating all criticism with persecution. No additional direct quotations were copied. Independent classroom review remains open.
 
-### Exact unresolved literary gates
+### Original attempt’s unresolved literary gates (superseded above)
 
 - **Q1:** Proctor soul/name, proposed Act IV; exact wording, punctuation, edition/page and surrounding context unverified.
 - **Q2:** Abigail parental violence, proposed Act I; same verification gaps; notice/Skip behavior implemented.

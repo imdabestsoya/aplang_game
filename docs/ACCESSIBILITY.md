@@ -42,3 +42,7 @@ Session 06 still needs independent human playtesting, a screen-reader pass, brow
 ## Session 06 additional evidence
 
 The clean-copy production suite now includes a complete resistance route navigated by sequential Tab/type-ahead/Enter and a separate 360px touch-emulated route, both after network access is disabled. Q2’s explicit Skip control restores its summary focus, and the consequence region remains atomic/live. The full suite passed 34 tests. These strengthen automated evidence; they do not substitute for the independent reviews listed above.
+
+## Local-play follow-up — 2026-10-01
+
+Converted fixed font sizes to relative units while preserving their default appearance. The new browser check doubles the default text size, verifies the computed dialogue size doubles, exercises evidence and Q2 at that size, checks overflow, and inspects accessible control names. This is automated text-size evidence, not a claim of human screen-reader or physical browser-menu review. Use [PLAYTEST.md](PLAYTEST.md) for the remaining observations.

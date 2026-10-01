@@ -2,7 +2,7 @@
 
 An unofficial educational adaptation of Arthur Miller’s *The Crucible*. Play as John Proctor through four chapters, 16 decision cards and three evidence puzzles. Moral resistance is distinct from physical survival; this is interpretive fiction, not a historical simulation.
 
-**Release status: incomplete — not yet classroom-ready.** The playable loop and saved ending witnesses pass technical checks. Q1–Q5 exact quotations and the precise needle-placement account still need verification against an assigned edition or reliable licensed text. Independent classroom/accessibility review also remains open. See the [release checklist](docs/RELEASE_CHECKLIST.md).
+**Ready for local play; classroom validation remains open.** All four chapters and endings are playable. At your request, short quotation excerpts use best-available act references, with uncertain edition details labeled for your later review. Q1 is checked against a licensed textbook selection; Q2–Q5 are corroborated drafts. Independent reader/accessibility checks remain unperformed. See the [release checklist](docs/RELEASE_CHECKLIST.md).
 
 ## Setup and local play
 
@@ -13,11 +13,10 @@ npm ci
 npm run dev
 ```
 
-Open the localhost URL printed by Vite. To build and serve production files:
+Open the localhost URL printed by Vite. For a production build and local server in one command:
 
 ```sh
-npm run build
-npm run preview
+npm run play
 ```
 
 Do not open `dist/index.html` directly with a file URL. The game needs a local web server but no backend, account, service credentials or runtime AI/network service. Source links are optional external reading; the game works without opening them.
@@ -34,7 +33,7 @@ Enable optional ambience starts sound only after that action. Mute sound and Red
 
 ## Content and attribution
 
-Themes include coercion, false accusations, imprisonment and references to execution, without graphic violence. The optional Abigail passage has a parental-violence notice and a Skip control. Dialogue is original adaptation prose; quotation placeholders are explicitly unverified. P1’s precise needle chronology is provisional. The ledger is invented, and motive claims remain allegations. Original SVG/CSS art and synthesized audio use no downloaded assets; see [sources](docs/SOURCES.md).
+Themes include coercion, false accusations, imprisonment and references to execution, without graphic violence. The optional Abigail passage has a parental-violence notice and a Skip control. Scene dialogue is original adaptation prose; brief quotation excerpts carry source and review labels. P1 distinguishes Mary’s testimony from inference and does not require an exact needle-placement time. The ledger is invented, and motive claims remain allegations. Original SVG/CSS art and synthesized audio use no downloaded assets; see [sources](docs/SOURCES.md).
 
 ## Verification and continuation
 
@@ -48,7 +47,7 @@ python3 scripts/verify_scaffold.py
 
 See [commands](docs/COMMANDS.md) for browser compatibility, cache setup, and actual results. [Accessibility notes](docs/ACCESSIBILITY.md) distinguish automated checks from outstanding independent review.
 
-Resume with `Run session 6`, or `python3 scripts/session.py 6`. Its source and review gates remain open; do not label this a release until the checklist passes.
+Resume with `Run session 6`, or `python3 scripts/session.py 6`. Use the [human review form](docs/PLAYTEST.md) to record the remaining observations. Local play is available now; classroom validation requires that evidence.
 
 ## Project references
 

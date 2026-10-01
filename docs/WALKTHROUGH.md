@@ -18,7 +18,7 @@ A false accusation closes clean resistance and prompts a journal warning. Use **
 
 Refresh preserves solved puzzles, hint levels, consequences and chapter progress. An unfinished form’s selections are not saved; reselect them after refresh. Corrupt/incompatible saves require explicit replacement or play without saving. Storage failure still permits in-memory play.
 
-Q1–Q5 are passage-identification placeholders, not verified quotations. The P1 needle detail is explicitly provisional. Mechanical route proofs do not establish literary source accuracy or classroom release readiness. Session 06 still needs final independent walkthrough and source review.
+Q1 is a checked short excerpt; Q2–Q5 are draft excerpts with act references and source links, pending the user’s edition review. P1 does not require an exact needle-placement time. Mechanical route proofs do not establish literary source accuracy or classroom release readiness. Session 06 still needs final independent walkthrough and source review.
 
 ## Visual and sound controls
 

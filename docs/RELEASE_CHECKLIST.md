@@ -1,15 +1,17 @@
 # Classroom Release Checklist
 
-Audit date: 2026-10-01. **Release incomplete; not classroom-ready.** The local playable deliverable passes the technical checks below. Do not treat successful builds or automated play as literary verification or independent human accessibility review.
+Updated: 2026-10-01, follow-up. **Ready for local play; classroom validation is incomplete.** Run `npm run play` after dependency installation. The user authorized best-knowledge quotation locations with later correction. That changes what may ship for local review, not what has been independently verified.
 
-## Release blockers
+## Release gate disposition
 
-1. **Q1–Q5:** exact wording, punctuation, speaker/act/context and edition evidence remain unverified. Every quotation record still has null text/edition/page; no placeholder is presented as a final quotation.
-2. **P1 needle placement:** broad gift-before-discovery chronology is publisher-guide corroborated, but Mary’s precise needle-placement account awaits an assigned edition or reliable licensed text. Relevant content visibly says provisional.
-3. **Independent review:** no separate human classroom playtest, screen-reader session, physical-device touch test, physical audio listening test, or browser-menu/text-only zoom pass has been performed. Automated Chromium keyboard/touch/CSS-zoom checks do not replace these reviews.
-4. **Timing/learning outcome:** the PRD §3 first-run target of 15–25 minutes and known-route replay target of 5–10 minutes remain unmeasured with readers. No learner explanation of a mechanic, object and color choice has been collected. Automation duration is not a classroom timing result.
+| Original blocker | Disposition | Remaining evidence |
+|---|---|---|
+| Q1–Q5 exact passages | Q1 short excerpt verified; Q2–Q5 supplied as explicitly labeled, source-corroborated drafts under the user’s instruction | Assigned-edition check of Q2–Q5 remains deferred to the user; not marked passed |
+| P1 exact needle placement | Resolved in gameplay by correcting the claim: no exact placement time asserted or required; Mary’s testimony preserves uncertainty | Edition-specific editorial review can still improve wording |
+| Independent accessibility/classroom review | Automated evidence strengthened; **human review still open** | Screen-reader use, physical touch/audio, browser-menu zoom and reader observations require actual people/devices |
+| Timing and learning outcome | Reflection prompts implemented; **measurement still open** | Real first-run/replay timing and learner explanation; do not substitute automation time |
 
-The assigned edition/ISBN or authorized local-text path was requested during this audit. None was supplied before this report. Resume Session 06 with that evidence and the independent review results.
+Use [PLAYTEST.md](PLAYTEST.md) to record the outstanding observations. No human outcome, physical-device observation or waiver of those checks has been invented. These open classroom validation gates do not prevent local play. The original PRD remains unchanged.
 
 ## PRD §16 evidence matrix
 
@@ -25,9 +27,9 @@ The assigned edition/ISBN or authorized local-text path was requested during thi
 | M6: No unavailable-item softlocks; reachable graph | Pass | 85,337-state search includes solved/skipped exercises; all 16 cards reached; no nonterminal dead ends |
 | M7: Final sign/refuse cannot bypass thresholds | Pass | Final-choice and simultaneous-threshold unit cases |
 | N1: 16 cards, three puzzles, consequences | Pass | Content validation, full route/browser execution |
-| N2: Play’s named speakers; John protagonist | Pass within authored adaptation | Speaker allowlist, labeled original dialogue, editorial review; exact scene fidelity remains limited by source access |
-| N3: Five verified quotations OR explicitly incomplete release | Incomplete release explicitly declared | Q1–Q5 trigger/fallback tests pass; exact quotations remain blocked as above |
-| N4: Fact/interpretation/invention distinctions | Partial | Per-record metadata; invented ledger/alleged motive; sourced historical panel and explicit comparison limits; precise P1 claim remains provisional |
+| N2: Play’s named speakers; John protagonist | Pass within authored adaptation | Speaker allowlist, labeled original dialogue, editorial review; assigned-edition fidelity remains for review |
+| N3: Five verified quotations OR explicitly incomplete release | Classroom validation explicitly incomplete | Q1 checked; Q2–Q5 draft excerpts user-authorized for local play; trigger/fallback tests retained |
+| N4: Fact/interpretation/invention distinctions | Pass for revised claims | Per-record metadata; invented ledger/alleged motive; sourced context; P1 no longer asserts precise needle timing |
 | N5: Resolved symbolism IDs and explicit S01–S36 status | Pass | Content validation; all IDs represented; S33/S34 now have sourced/hypothetical contextual implementations |
 | N6: One shared registry for UI/docs | Pass | `symbolism.json` drives typed UI and generated Markdown; stale-doc check |
 | N7: Causal ending audit without moralizing survival/death | Pass | Distinct ending explanations and per-choice audit; informed refusal preserves tragic fate |
@@ -39,7 +41,7 @@ The assigned edition/ISBN or authorized local-text path was requested during thi
 | U6: README setup/controls/content/links | Pass | README rewritten for current game, release status, exact commands, controls and content note |
 | U7: Final reproducible handoff and limitations | Pass | [Session 06 handoff](handoffs/session-06.md), source records and this matrix |
 
-## Verified environment and procedure
+## Prior clean-copy environment and procedure
 
 - macOS 12.7.6 (21H1320), x86_64; Node 22.23.3, npm 10.9.9.
 - Playwright 1.56.1, Chromium/headless-shell 141.0.7390.37, revision 1194.
@@ -48,8 +50,12 @@ The assigned edition/ISBN or authorized local-text path was requested during thi
 - `npm run check`: lint/types, **74 unit + 13 route tests**, generated symbolism check, nine build-time content tests and production build passed.
 - Browser preview is started by Playwright’s webServer using `npm run preview -- --port 4173 --strictPort`. **34 production-browser tests passed**, including both offline routes. Results are recorded in the handoff.
 
+## Follow-up verification
+
+Final check results are recorded in the Session 06 handoff after the follow-up run. Added coverage checks doubled default text sizing, source links and accessible control names. Relative font units preserve text enlargement. This remains automated evidence.
+
 ## Sources and timing boundaries
 
-The publisher excerpt was inspected but does not supply the required passages or needle scene. The checked postgame context links Miller’s retrospective essay, UVA’s Salem archive and the Senate Historical Office; modern rumor is framed as a hypothetical, not a claim about an actual incident. See [source evidence](SOURCES.md).
+The earlier publisher excerpt was insufficient. A licensed school-hosted textbook selection now verifies Q1; a separate unidentified transcription corroborates Q2–Q5 and Mary’s account without establishing edition provenance. The checked postgame context links Miller’s retrospective essay, UVA’s Salem archive and the Senate Historical Office; modern rumor is framed as a hypothetical, not a claim about an actual incident. See [source evidence](SOURCES.md).
 
 Human first-run/replay timing and independent learning/accessibility outcomes remain unmeasured. No automated duration is substituted for them. A future reviewer should follow [the exact walkthrough](WALKTHROUGH.md), record actual reader times and issues, then update this checklist only from observed results.
