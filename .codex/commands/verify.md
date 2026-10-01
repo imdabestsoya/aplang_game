@@ -1,0 +1,3 @@
+# /verify
+
+Read `docs/STATUS.md`, `docs/COMMANDS.md`, and the active session’s acceptance criteria. Inspect available tooling before running commands. Run `python3 scripts/verify_scaffold.py` for workflow validation. At bootstrap, also compare the PRD copy with the original; later approved changes may intentionally differ. After scaffolding, run `npm run check`; run `npm run test:e2e` for browser-impacting changes or a release audit. Check the session’s manual acceptance requirements too. Record exact results in the handoff and command log. Report missing runtime/browser/source prerequisites as incomplete checks. Do not install unrelated tools, change requirements, or declare the release complete solely because automated tests passed.

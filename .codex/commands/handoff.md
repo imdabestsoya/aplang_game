@@ -1,0 +1,3 @@
+# /handoff
+
+Read `docs/STATUS.md` and `docs/HANDOFF_PROTOCOL.md`. Inspect the current diff and exact branch/commit state. Identify the active implementation session; if only bootstrap exists, use Session 00. Run the smallest useful available check and clearly distinguish prior evidence from new results. Complete the template in `.codex/templates/handoff.md`, append to that session’s handoff, and update status with its path and the next three actions. Preserve unresolved work and do not claim a commit or passing check that does not exist. This command records progress; it does not implement the next milestone.
