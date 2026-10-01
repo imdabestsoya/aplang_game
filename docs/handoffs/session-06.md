@@ -65,3 +65,17 @@ See [decisions](../DECISIONS.md). Source summaries are small, attributed, and di
 ## Acceptance criteria still unmet
 
 Verified exact quotations and precise needle chronology; independent manual/accessibility/classroom evidence; final no-unresolved-gates release completion. README, source records, walkthrough and handoff now enable resumption. Every §16 bullet is accounted for, but that accounting is not release approval.
+
+## Follow-up — 2026-10-01: ready for local play
+
+The user asked to finish the blockers and authorized best-knowledge quote locations with later correction. Added 22 words of short excerpts in total: Q1 checked against the licensed Holt textbook selection, Q2–Q5 explicitly draft and source-corroborated. Edition/page/date remain null for drafts. See current `docs/SOURCES.md`; earlier quotation status above is historical.
+
+Corrected P1 to order making, gift and evidentiary use without claiming an exact needle-placement time. Mary’s uncertainty remains visible. Added source links, relative font units for text enlargement, postgame reflection prompts, `npm run play`, and a concrete human review form. No game effects, puzzle solution tokens or save version changed; old saved consequence prose may retain its prior source-warning sentence.
+
+Verification from the repository: `npm run check` passed lint/types, 74 unit tests, 13 route tests, generated docs and build. `E2E_PREVIEW=1 npm run test:e2e` passed all 36 tests in 48.3 seconds, including offline keyboard/touch and doubled default text size. `UPDATE_WITNESSES=1 npm run test:routes` regenerated walkthrough wording; saved witness data did not change. No new dependencies. Follow-up screenshots are under `docs/screenshots/release-followup/`.
+
+Start with `npm run play` (this session uses port 4174 to avoid other previews). Human screen-reader, physical touch/audio, browser-menu zoom, first-run/replay timing and learning outcomes remain unobserved. They are not marked passed or waived; record them in `docs/PLAYTEST.md`. Local play is available now; classroom validation remains open.
+
+Git changed during work: the user committed twice; latest observed HEAD is `fa3e482`, main two commits ahead of origin/main. The agent did not commit, push or deploy. Final documentation updates are subsequent working-tree changes. Preserve those commits and the user’s work.
+
+Launcher verification: corrected nested npm argument forwarding by invoking Vite directly in `play`. `npm run play -- --port 4174 --strictPort` passed its build and served HTTP 200 at `http://127.0.0.1:4174/`; a fresh Chromium page showed the initial heading and two story choices with zero page errors. The server was left running for the user. Scaffold/link checks, whitespace checks and PRD snapshot comparison passed.

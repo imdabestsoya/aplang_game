@@ -38,3 +38,7 @@ Run `npm ci`, `npm run check`, `npm run test:e2e`, and `npm run preview`. Record
 ## Audit — 2026-10-01
 
 Technical audit passed: clean-copy install/build, 74 unit tests, 13 route tests and 34 production-browser tests, including complete offline keyboard and emulated narrow-touch routes. Historical context and comparison limits are implemented and sourced; Q2 has an explicit skip control. Source verification remains partial: Q1–Q5 exact passages and precise P1 needle chronology require an assigned edition or reliable licensed text. Independent accessibility/classroom review and reader timing remain unperformed; automated CSS zoom and touch emulation do not satisfy those manual checks. **Release remains incomplete.** See the [acceptance matrix](../../docs/RELEASE_CHECKLIST.md) and [handoff](../../docs/handoffs/session-06.md) for evidence and resumption steps.
+
+## Local-play follow-up — 2026-10-01
+
+The user authorized best-knowledge quote locations and later correction. Q1 now has a checked short excerpt; Q2–Q5 contain labeled, source-corroborated drafts, without invented edition/page metadata. P1 no longer asserts exact needle timing. `npm run play` builds and serves the game. Relative text sizing and reflection prompts are implemented. Checks passed: 74 unit, 13 route and 36 production-browser tests. Local play is ready; the human review and timing gates remain unperformed, with steps in `docs/PLAYTEST.md`. Earlier evidence above is retained as history, not the current quotation status.

@@ -43,6 +43,6 @@ Use concise imperative subjects, such as `Add deterministic ending resolver`; no
 
 ## Session Handoffs & Content Guardrails
 
-Session 06's technical audit passed; classroom release remains incomplete. Consult `docs/RELEASE_CHECKLIST.md` for outstanding source and independent review gates.
+Local play is available with `npm run play`. The user authorized draft quotation locations for later review; Q1 is checked and Q2–Q5 remain labeled drafts. Classroom validation still requires real reader/accessibility evidence. Consult `docs/RELEASE_CHECKLIST.md`.
 
 Treat `/session N` or `Run session N` as an instruction to execute `.codex/commands/session.md` with `.codex/sessions/session-NN.md`. `/handoff` and `/verify` use their matching command files. Read `docs/PLAYBOOK.md` and follow `docs/HANDOFF_PROTOCOL.md`. Preserve unrelated changes; record results and next actions. Preserve two story choices per card, deterministic solvability, labeled inventions, and verified quotation status.

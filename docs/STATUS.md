@@ -4,7 +4,7 @@ Updated: 2026-10-01. This file is the authoritative short progress record.
 
 ## Current state
 
-**Ready for local play; independent classroom validation remains open.** Run `npm run play`. The follow-up adds source-linked short excerpts, corrects P1’s unsupported exact-timing claim, supports relative text enlargement, and adds reflection prompts. Q1 is checked; the user authorized best-knowledge Q2–Q5 drafts for later edition review. Human accessibility, reader timing and learning outcomes are not yet observed. Existing staged changes are preserved; this follow-up is uncommitted and no remote changes were made.
+**Ready for local play; independent classroom validation remains open.** Run `npm run play`. The follow-up adds source-linked short excerpts, corrects P1’s unsupported exact-timing claim, supports relative text enlargement, and adds reflection prompts. Q1 is checked; the user authorized best-knowledge Q2–Q5 drafts for later edition review. Human accessibility, reader timing and learning outcomes are not yet observed. The user committed the working tree during this follow-up (observed HEAD `fa3e482`, branch main, two commits ahead of origin/main). Final documentation updates may remain uncommitted; the agent made no commit or remote change.
 
 | Session | Status | Gate / next action |
 |---|---|---|

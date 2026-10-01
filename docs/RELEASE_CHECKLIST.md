@@ -52,7 +52,7 @@ Use [PLAYTEST.md](PLAYTEST.md) to record the outstanding observations. No human 
 
 ## Follow-up verification
 
-Final check results are recorded in the Session 06 handoff after the follow-up run. Added coverage checks doubled default text sizing, source links and accessible control names. Relative font units preserve text enlargement. This remains automated evidence.
+`npm run check` passed lint/types, 74 unit tests, 13 route tests and build. `E2E_PREVIEW=1 npm run test:e2e` passed 36 tests in 48.3 seconds from this working tree. `npm run play -- --port 4174 --strictPort` builds and serves the same production output. The prior clean-install evidence above remains historical; dependencies/lockfile did not change. Added coverage checks doubled default text sizing, source links and accessible control names. Relative font units preserve text enlargement. This remains automated evidence.
 
 ## Sources and timing boundaries
 

@@ -20,7 +20,7 @@
     "docs:symbolism": "node scripts/generate-symbolism.mjs",
     "docs:check": "node scripts/generate-symbolism.mjs --check",
     "test:content": "vitest run --config vitest.config.ts tests/unit/narrative.test.ts",
-    "play": "npm run build && npm run preview"
+    "play": "npm run build && vite preview --host 127.0.0.1"
   },
   "dependencies": {
     "react": "^19.3.0",

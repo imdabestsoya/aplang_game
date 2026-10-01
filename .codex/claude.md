@@ -18,7 +18,7 @@ The stack is TypeScript, React, Vite, plain CSS tokens, Vitest, and Playwright (
 - `.codex/`: agent context, command definitions, dedicated session plans, and handoff template.
 - `docs/`: authoritative project status, command reference, handoff protocol, decisions, and literary documentation.
 
-Session 06's technical audit passed from a disposable clean copy. Classroom release remains incomplete pending exact Q1–Q5 verification, precise needle chronology, and independent classroom/accessibility review. Resume using `docs/RELEASE_CHECKLIST.md` and `docs/handoffs/session-06.md`; do not infer source accuracy from passing automated tests.
+Local play is available with `npm run play`. The user authorized best-knowledge quotation locations for later correction. Q1 is checked against a textbook selection; Q2–Q5 are source-corroborated drafts with no invented edition metadata. P1 no longer asserts exact needle timing. Independent classroom/accessibility review remains open. Resume using `docs/RELEASE_CHECKLIST.md` and `docs/handoffs/session-06.md`; do not infer source accuracy or human outcomes from automated tests.
 
 ## Invariants
 
@@ -26,7 +26,7 @@ Preserve PRD §§4–8: four chapters, 16 principal cards, exactly two available
 
 Start Reputation at 65 and Hysteria at 25; clamp both to 0–100. Follow §6 resolution order. H=100 takes precedence over R=0, including on the final choice. Apply effects once. No random failure or hidden morality score. Prove at least two resistance routes and a recoverable mistake (§16).
 
-Use original paraphrased dialogue, `basis`, `actReference`, and source notes (§10). Keep Q1–Q5 as labeled placeholders until actually verified. Track every meaningful symbolic choice against the shared S01–S36 registry (§9); generate documentation and UI from one maintained record. Preserve keyboard access, readable contrast, non-color cues, reduced motion, mute, and spoiler controls (§11).
+Use original paraphrased dialogue, `basis`, `actReference`, and source notes (§10). Preserve the distinction between checked quotations and user-authorized draft excerpts; never mark drafts verified without source evidence. Track every meaningful symbolic choice against the shared S01–S36 registry (§9); generate documentation and UI from one maintained record. Preserve keyboard access, readable contrast, non-color cues, reduced motion, mute, and spoiler controls (§11).
 
 ## Workflow
 
