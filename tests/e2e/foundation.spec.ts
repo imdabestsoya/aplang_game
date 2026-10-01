@@ -7,7 +7,7 @@ test('inspect, decide, read consequence and journal, then explicitly restart', a
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Before a rumor becomes a fact');
   await expect(page.getByRole('group').getByRole('button')).toHaveCount(2);
   await page.getByRole('button', { name: 'Inspect the household report' }).click();
-  await expect(page.getByText('Allegation · source unconfirmed')).toBeVisible();
+  await expect(page.getByText('Allegation · source unconfirmed', { exact: true })).toBeVisible();
   await expect(page.getByText('Rumors spreading', { exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'Ask who witnessed' }).click();
   await expect(page.getByRole('status')).toContainText('You ask for a witness');
@@ -37,5 +37,19 @@ test('keyboard can choose support without inspecting evidence', async ({ page })
   await expect(page.getByRole('status')).toContainText('Your support reassures Parris');
   await expect(page.getByRole('button', { name: 'Journal' })).toContainText('1 decision');
   await expect(page.getByRole('definition').first()).toHaveText('Accepted');
-  await expect(page.getByText(/65|71|33/)).toHaveCount(0);
+  await expect(page.getByRole('complementary', { name: 'Standing and journal' }).getByRole('definition')).toHaveText(['Accepted', 'Rumors spreading']);
+});
+
+test('an actual false accusation explains the closed resistance route and offers replay', async ({ page }) => {
+  await page.goto('/');
+  for (let i = 0; i < 2; i += 1) {
+    await page.getByRole('group').getByRole('button').first().click();
+    await page.getByRole('button', { name: 'Continue', exact: true }).click();
+  }
+  await page.getByRole('group').getByRole('button').nth(1).click();
+  await page.getByRole('button', { name: 'Journal' }).click();
+  await expect(page.getByRole('region', { name: 'Your journal' })).toContainText('closed the clean resistance route');
+  await expect(page.getByText(/Q5:/)).toBeVisible();
+  await page.getByRole('button', { name: 'Replay chapter 1' }).click();
+  await expect(page.getByText('An earlier false accusation', { exact: false })).toHaveCount(0);
 });

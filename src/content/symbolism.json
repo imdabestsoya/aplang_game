@@ -1,0 +1,615 @@
+[
+  {
+    "id": "S01",
+    "choice": "Title: The Weight",
+    "meaning": "Pressure of judgment, accumulated complicity, and an echo of Giles's pressing",
+    "implementation": "Title, journal accumulation, late-game explanation; no physical-pressure minigame",
+    "locations": [
+      "src/content/chapters/whisper.ts",
+      "src/content/chapters/name.ts"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S02",
+    "choice": "Charcoal `#171719`",
+    "meaning": "Institutional enclosure and restricted agency",
+    "implementation": "Background and court frame; never a moral coding of skin or people",
+    "locations": [
+      "src/styles/main.css",
+      "src/styles/tokens.css",
+      "src/components/StoryObjects.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S03",
+    "choice": "Parchment `#F2E6CC`",
+    "meaning": "Written testimony appears durable and authoritative even when unreliable",
+    "implementation": "Evidence cards; distinguish claim from fact in labels",
+    "locations": [
+      "src/styles/main.css",
+      "src/styles/tokens.css",
+      "src/components/StoryObjects.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S04",
+    "choice": "Oxblood `#8B2936`",
+    "meaning": "Accusation, danger, and the human cost of panic",
+    "implementation": "Accusation stamp and danger borders; pair with text/icon",
+    "locations": [
+      "src/styles/main.css",
+      "src/styles/tokens.css",
+      "src/components/StoryObjects.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S05",
+    "choice": "Tarnished gold `#B58A45`",
+    "meaning": "Reputation, status, and the temptation of institutional approval",
+    "implementation": "Reputation emblem; no implication that gold means ethically correct",
+    "locations": [
+      "src/styles/main.css",
+      "src/styles/tokens.css",
+      "src/components/StoryObjects.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S06",
+    "choice": "Muted blue `#6F9CAB`",
+    "meaning": "Examination, doubt, and distance from immediate panic",
+    "implementation": "Inspect and evidence links; evidence can still be incomplete",
+    "locations": [
+      "src/styles/main.css",
+      "src/styles/tokens.css",
+      "src/components/StoryObjects.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S07",
+    "choice": "Bone white `#FAF5E9`",
+    "meaning": "The court's claimed purity, undercut by its actions",
+    "implementation": "Court seals; do not use universal white=good coding",
+    "locations": [
+      "src/styles/main.css",
+      "src/styles/tokens.css",
+      "src/components/StoryObjects.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S08",
+    "choice": "Ember amber `#C87738`",
+    "meaning": "The crucible as a vessel of heat and testing",
+    "implementation": "Subtle frame near crisis; no triumphant purification imagery",
+    "locations": [
+      "src/styles/main.css",
+      "src/styles/tokens.css",
+      "src/components/StoryObjects.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S09",
+    "choice": "Restrained dawn color at resistance ending",
+    "meaning": "Internal clarity within continuing loss",
+    "implementation": "A restrained warm charcoal gradient at the resistance ending; jail-bar illustrations remain in place and the epilogue denies physical escape.",
+    "locations": [
+      "src/styles/main.css",
+      "src/styles/tokens.css",
+      "src/components/StoryObjects.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S10",
+    "choice": "Hidden numbers",
+    "meaning": "Citizens cannot fully measure public judgment",
+    "implementation": "Qualitative warnings remain clear; reveal arithmetic after play",
+    "locations": [
+      "src/styles/main.css",
+      "src/styles/tokens.css",
+      "src/components/StoryObjects.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S11",
+    "choice": "Reputation separate from integrity",
+    "meaning": "Social approval is not moral worth",
+    "implementation": "Harmful actions can increase R",
+    "locations": [
+      "src/content/chapters/whisper.ts",
+      "src/content/chapters/name.ts"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S12",
+    "choice": "Short-term rewards for accusation",
+    "meaning": "Self-preservation reproduces the system",
+    "implementation": "R rises while H rises; consequences name affected characters",
+    "locations": [
+      "src/content/chapters/whisper.ts",
+      "src/content/chapters/name.ts"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S13",
+    "choice": "Two action buttons",
+    "meaning": "Danforth's coercive binary framing",
+    "implementation": "Evidence changes what can be argued inside that frame",
+    "locations": [
+      "src/content/chapters/whisper.ts",
+      "src/content/chapters/court.ts"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S14",
+    "choice": "Evidence inspection",
+    "meaning": "Critical reading interrupts automatic acceptance",
+    "implementation": "Inspect before judging; no “evidence solves everything” ending",
+    "locations": [
+      "src/content/chapters/whisper.ts",
+      "src/content/chapters/needle.ts",
+      "src/content/chapters/court.ts"
+    ],
+    "status": "implemented",
+    "verification": "Poppet sequence and testimony corroborated; exact needle timing is not asserted. See docs/SOURCES.md.",
+    "remaining": "Assigned-edition review remains; the exercise distinguishes testimony from inference.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S15",
+    "choice": "Poppet and needle",
+    "meaning": "An ordinary domestic object becomes incriminating through interpretation",
+    "implementation": "P1; no supernatural animation",
+    "locations": [
+      "src/content/chapters/needle.ts",
+      "src/components/EvidencePuzzle.tsx",
+      "tests/routes/fixtures/narrative.json",
+      "src/components/StoryObjects.tsx"
+    ],
+    "status": "implemented",
+    "verification": "Poppet sequence and testimony corroborated; exact needle timing is not asserted. See docs/SOURCES.md.",
+    "remaining": "Assigned-edition review remains; the exercise distinguishes testimony from inference.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S16",
+    "choice": "Land ledger",
+    "meaning": "Private economic interest may hide behind public righteousness",
+    "implementation": "P2; mark ledger as invented and motives as alleged",
+    "locations": [
+      "src/content/chapters/court.ts",
+      "src/components/EvidencePuzzle.tsx",
+      "tests/routes/fixtures/narrative.json",
+      "src/components/StoryObjects.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S17",
+    "choice": "Signed confession and name",
+    "meaning": "Institutional control over identity and public memory",
+    "implementation": "Final desk and explicit sign/refuse choice; a signature is not a magic key",
+    "locations": [
+      "src/content/chapters/name.ts",
+      "src/components/StoryObjects.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S18",
+    "choice": "Court seal",
+    "meaning": "Procedure can lend authority to unsupported claims",
+    "implementation": "Repeated stamp; classify claims separately from verified evidence",
+    "locations": [
+      "src/content/chapters/needle.ts",
+      "src/content/chapters/court.ts",
+      "src/components/StoryObjects.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S19",
+    "choice": "Jail bars and narrowing margins",
+    "meaning": "The loss of options under institutional pressure",
+    "implementation": "Closer-spaced outer border lines in Chapters III–IV and jail-bar illustrations. Reading width and control sizes never narrow.",
+    "locations": [
+      "src/styles/main.css",
+      "src/styles/tokens.css",
+      "src/components/StoryObjects.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S20",
+    "choice": "Candle",
+    "meaning": "Fragile access to understanding",
+    "implementation": "Inspection motif; never a countdown",
+    "locations": [
+      "src/styles/main.css",
+      "src/styles/tokens.css",
+      "src/components/StoryObjects.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S21",
+    "choice": "Accumulating ink marks",
+    "meaning": "Past decisions persist and acquire weight",
+    "implementation": "Journal consequences remain visible; avoid branding the player as shameful",
+    "locations": [
+      "src/styles/main.css",
+      "src/styles/tokens.css",
+      "src/components/StoryObjects.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S22",
+    "choice": "Repeated accusation cards",
+    "meaning": "Rumor can gain apparent credibility through repetition",
+    "implementation": "Repeat an identifiable claim with its original source retained",
+    "locations": [
+      "src/content/chapters/whisper.ts"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S23",
+    "choice": "Gradually layered murmurs",
+    "meaning": "Collective fear overwhelms individual voices",
+    "implementation": "Optional original synthesized low murmurs gain layers with rising hysteria; persistent mute and always-visible equivalent text descriptions.",
+    "locations": [
+      "src/audio/ambience.ts",
+      "src/components/Ambience.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "Original synthesized low tonal murmur; no recordings or intelligible speech. Explicit enable, persistent mute, text descriptions, silent confession desk.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S24",
+    "choice": "Misaligned decorative court text",
+    "meaning": "The institution's stable appearance fractures",
+    "implementation": "A decorative seal and its COURT lettering tilt slowly near crisis; readable story text stays still. OS and saved reduced-motion preferences disable motion.",
+    "locations": [
+      "src/styles/main.css",
+      "src/styles/tokens.css",
+      "src/components/StoryObjects.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S25",
+    "choice": "Silence at the confession desk",
+    "meaning": "A private conscience confronts public demands",
+    "implementation": "Fade ambience to silence on the confession card and at all endings; descriptions and consequence feedback remain visible.",
+    "locations": [
+      "src/audio/ambience.ts",
+      "src/components/Ambience.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "Original synthesized low tonal murmur; no recordings or intelligible speech. Explicit enable, persistent mute, text descriptions, silent confession desk.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S26",
+    "choice": "Serif headings and plain body text",
+    "meaning": "Official formality versus accessible examination",
+    "implementation": "Restrained serif titles, readable body text; no ornate handwriting for clues",
+    "locations": [
+      "src/styles/main.css",
+      "src/styles/tokens.css",
+      "src/components/StoryObjects.tsx",
+      "src/App.tsx"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S27",
+    "choice": "Changing Hale dialogue",
+    "meaning": "Authority can recognize its own failure",
+    "implementation": "Show a shift in reasoning, not a savior who resets the system",
+    "locations": [
+      "src/content/chapters/whisper.ts",
+      "src/content/chapters/needle.ts",
+      "src/content/chapters/name.ts"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S28",
+    "choice": "Mary's changing testimony",
+    "meaning": "Group pressure can overcome private knowledge",
+    "implementation": "Consequences distinguish coercion from factual reliability",
+    "locations": [
+      "src/content/chapters/needle.ts",
+      "src/content/chapters/court.ts"
+    ],
+    "status": "implemented",
+    "verification": "Poppet sequence and testimony corroborated; exact needle timing is not asserted. See docs/SOURCES.md.",
+    "remaining": "Assigned-edition review remains; the exercise distinguishes testimony from inference.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S29",
+    "choice": "Abigail's threats",
+    "meaning": "Fear can be used strategically to create conformity",
+    "implementation": "Dialogue and card framing; trauma does not excuse or mechanically cause cruelty",
+    "locations": [
+      "src/content/chapters/whisper.ts",
+      "src/content/chapters/court.ts"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S30",
+    "choice": "Elizabeth and John's trust",
+    "meaning": "Private relationships are distorted by public suspicion",
+    "implementation": "Domestic scene and confession reflection; avoid a “trust meter” that quantifies love",
+    "locations": [
+      "src/content/chapters/needle.ts",
+      "src/content/chapters/name.ts"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S31",
+    "choice": "Rebecca's vulnerability",
+    "meaning": "Innocence alone offers little protection in a corrupt process",
+    "implementation": "No automatic immunity mechanic",
+    "locations": [
+      "src/content/chapters/whisper.ts",
+      "src/content/chapters/name.ts"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S32",
+    "choice": "Court logic as a “matrix”",
+    "meaning": "A self-reinforcing account of reality limits what can count as truth",
+    "implementation": "P3 and changing journal interpretation; no literal simulation reveal",
+    "locations": [
+      "src/content/chapters/court.ts",
+      "src/components/EvidencePuzzle.tsx",
+      "tests/routes/fixtures/narrative.json"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S33",
+    "choice": "Salem and McCarthyism",
+    "meaning": "Accusation, compelled naming, and guilt by association are recurring mechanisms",
+    "implementation": "Postgame contextual panel; verify historical wording before release",
+    "locations": [
+      "src/content/context.ts",
+      "src/components/HistoricalContext.tsx"
+    ],
+    "status": "implemented",
+    "verification": "Contextual facts checked 2026-10-01 against Miller’s retrospective essay, the UVA archive and Senate Historical Office; sources are linked in the panel.",
+    "remaining": "Independent classroom review remains required; exact literary quotations are separate unresolved release gates.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S34",
+    "choice": "Modern rumor circulation",
+    "meaning": "Repetition, reputational sanctions, and group alignment resemble some online dynamics",
+    "implementation": "Debrief comparison with explicit limits; criticism is not automatically persecution",
+    "locations": [
+      "src/content/context.ts",
+      "src/components/HistoricalContext.tsx"
+    ],
+    "status": "implemented",
+    "verification": "Explicitly hypothetical reflection under PRD §9; no factual claim about a modern incident. Differences in power, process, scale and consequences are stated.",
+    "remaining": "Independent classroom review remains required; exact literary quotations are separate unresolved release gates.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S35",
+    "choice": "Achievable but tragic resistance",
+    "meaning": "Ethical agency can survive without institutional victory",
+    "implementation": "A Name Preserved; clearly separate game success from physical survival",
+    "locations": [
+      "src/content/chapters/name.ts",
+      "src/components/EvidencePuzzle.tsx",
+      "tests/routes/fixtures/narrative.json"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  },
+  {
+    "id": "S36",
+    "choice": "Replay with a visible decision history",
+    "meaning": "Reflection can reveal participation in harmful systems",
+    "implementation": "Compare choices and consequences without a global “good person” score",
+    "locations": [
+      "src/content/chapters/name.ts"
+    ],
+    "status": "implemented",
+    "verification": "PRD design interpretation; no exact literary quotation asserted.",
+    "remaining": "Implemented in the narrative, interface, or verified route mechanics. Final classroom/source review remains Session 06.",
+    "basis": "interpretation",
+    "actReference": "Acts I–IV (thematic interpretation)",
+    "sourceNote": "PRD §9 symbolism register; interpretation rather than a claim of authorial intent."
+  }
+]

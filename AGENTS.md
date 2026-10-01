@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-**The Weight** is a browser narrative puzzle game inspired by *The Crucible*. Read `.codex/claude.md`, `docs/PRD.md`, and `docs/STATUS.md`. The one-card sample has engine rules, saves, and replay; later sessions complete the story. `The_Weight_PRD.md` remains the supplied snapshot.
+**The Weight** is a browser narrative puzzle game inspired by *The Crucible*. Read `.codex/claude.md`, `docs/PRD.md`, and `docs/STATUS.md`. The 16-card loop includes three evidence exercises, saved ending witnesses, original visual rhetoric and optional ambience. Session 06 handles classroom release verification. `The_Weight_PRD.md` remains the supplied snapshot.
 
 Follow the PRD’s planned TypeScript, React, and Vite structure:
 
@@ -42,5 +42,7 @@ Use `*.test.ts` for Vitest and `*.spec.ts` for Playwright. No percentage coverag
 Use concise imperative subjects, such as `Add deterministic ending resolver`; no established commit convention predates bootstrap. PRs should describe behavior, link relevant issues or PRD requirements, report actual checks, and include screenshots for UI changes.
 
 ## Session Handoffs & Content Guardrails
+
+Session 06's technical audit passed; classroom release remains incomplete. Consult `docs/RELEASE_CHECKLIST.md` for outstanding source and independent review gates.
 
 Treat `/session N` or `Run session N` as an instruction to execute `.codex/commands/session.md` with `.codex/sessions/session-NN.md`. `/handoff` and `/verify` use their matching command files. Read `docs/PLAYBOOK.md` and follow `docs/HANDOFF_PROTOCOL.md`. Preserve unrelated changes; record results and next actions. Preserve two story choices per card, deterministic solvability, labeled inventions, and verified quotation status.

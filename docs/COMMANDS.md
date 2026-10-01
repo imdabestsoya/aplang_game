@@ -68,3 +68,45 @@ See [custom commands](../.codex/commands/README.md) for `/session N`, `/handoff`
 The browser stores `the-weight.run` (format 1, content version `foundation-2`) and `the-weight.settings` separately. Refresh hydrates validated state without redispatching choices. Replay restores the selected checkpoint and discards later history; restart writes a fresh run without clearing preferences or unrelated keys. Different host/port combinations have separate storage.
 
 An unreadable/incompatible save remains intact until the player chooses replacement. “Keep save and play without saving” leaves it untouched. A quota error retains live state but may leave an older disk save; the warning explains that refresh risk. Do not use localStorage.clear() as a recovery shortcut. When modifying state/content contracts, update the appropriate version and test the recovery flow.
+
+## Session 03 observations — 2026-09-30
+
+`npm run docs:symbolism` regenerates `docs/SYMBOLISM.md` from the shared JSON registry. `npm run docs:check` rejects stale generated output; `npm run test:content` runs the eight narrative validity/trigger/reachability checks. Both are included in the production build.
+
+`npm run check` passed lint, typecheck, 58 unit checks, 11 route checks, build-time narrative validation and Vite production build. Development Playwright passed 20 desktop/narrow tests. A first browser run exposed an ambiguous classification selector, corrected to an exact match. Existing synthetic route tests remain distinct from Session 04 final-balance witnesses.
+
+Production content uses `narrative-3` with unchanged save format 1. Old sample saves require explicit replacement or play without saving. No automatic migration is attempted.
+
+Final verification recorded 2026-10-01: `E2E_PREVIEW=1 npm run test:e2e` passed all 20 production-preview browser tests; `python3 scripts/verify_scaffold.py` and `git diff --check` passed. Session changes remain uncommitted; no push was performed.
+
+## Session 04 observations — 2026-10-01
+
+`npm run test:routes` now searches the real narrative graph and replays saved witnesses. It checks four endings, two clean resistance routes, recovery from one initial mistake, all intermediate thresholds, free wrong answers/hints, and exact trace/walkthrough agreement. The search visits 85,337 distinct mechanical states with puzzles solved or skipped.
+
+To intentionally regenerate witnesses and `docs/ROUTES.md` after a reviewed content change, run `UPDATE_WITNESSES=1 npm run test:routes`, inspect the diffs, then run without that variable. Fixtures live in `tests/routes/fixtures/narrative.json`; generation never changes production effects.
+
+`npm run check` passed lint/types, 58 unit and 13 route checks, build-time narrative validation, generated-doc checks and production build. Development browser evidence comprises the existing 20 passing flows plus four complete puzzle-route flows. Keyboard tests use native select type-ahead on this macOS Chromium installation; no developer state is injected.
+
+Content version remains `narrative-3`, format 1. Solved puzzles and hints persist; unfinished form selections do not. Literary release checks remain open.
+
+Final Session 04 verification: the full production-preview suite passed **24 tests**. Screenshot review caught pale puzzle-button text and clipped selected answers on narrow screens; scoped dark button text and wrapped selected-answer summaries fixed both. Lint/build and the four production puzzle-route checks passed again after those corrections. Desktop/narrow puzzle screenshots were inspected; controls, full selected-answer text, hints and explanations are readable. Scaffold verification and `git diff --check` pass. All Session 04 acceptance gates are complete; source verification and independent classroom playtesting remain later release gates. Changes remain uncommitted.
+
+## Session 05 observations — 2026-10-01
+
+`npm run check` passes 73 unit tests (including 15 palette contrast checks), 13 route tests, lint/types, generated symbolism validation and the production build. Engine effects, saves and all five witness fixtures are unchanged.
+
+`tests/e2e/presentation.spec.ts` covers explicit spoiler reveal, registry content, dialog focus restoration, audio gesture gating/failure/mute/silence, OS and saved reduced motion, and 360px/200% CSS zoom. Real AudioContext master gain is observed in the success test; physical speaker output is not audited. The initial suite caught an offscreen modal header under zoom and a hidden-register false positive in an overly broad numeric-text test. The 14 affected development-browser checks passed after fixes.
+
+See `docs/ACCESSIBILITY.md` for measured color pairs, screenshot paths and explicit limitations. No new package dependency or external asset download was required.
+
+Final verification: `E2E_PREVIEW=1 npm run test:e2e` passed all **32 production-browser checks** on desktop and narrow screens. `python3 scripts/verify_scaffold.py` and `git diff --check` pass. Selected screenshot evidence is saved under `docs/screenshots/session-05/`. Session 05 acceptance gates are complete; the explicitly listed source and independent accessibility/classroom reviews remain Session 06 work.
+
+## Session 06 clean-copy audit — 2026-10-01
+
+A disposable copy of tracked and nonignored current working-tree files was created at `/private/tmp/the-weight-session06-jg4xyppa`; `.git`, node_modules, tools/caches and dist were not copied. This includes uncommitted work and is not a new Git revision.
+
+Using Node 22.23.3/npm 10.9.9, `npm ci --offline --cache /Users/krishbehl/aplang_game/.npm-cache --no-audit --no-fund` installed 180 packages. `npm run check` passed lint/types, **74 unit + 13 route tests**, nine build-time content tests, generated-doc checks and production build. `E2E_PREVIEW=1 npm run test:e2e` passed **34 tests** against that copy’s production preview. Playwright automatically ran `npm run preview -- --port 4173 --strictPort`.
+
+Browser environment: Playwright 1.56.1, Chromium/headless-shell 141.0.7390.37 revision 1194, macOS 12.7.6 x86_64. Local browser path was `/Users/krishbehl/aplang_game/.tools/browsers`. Normal contributors can use `npm ci` online and the documented browser installation; cached install was a reproducibility check, not a required distribution of `.tools` or `.npm-cache`.
+
+`tests/e2e/release.spec.ts` completes resistance through keyboard or narrow-touch controls after disabling networking. No external runtime request is made. Human reader timing and independent accessibility review remain unmeasured; see `docs/RELEASE_CHECKLIST.md`. Literary source gates remain open despite passing technical checks.

@@ -1,4 +1,4 @@
-import { firstCard, evidence } from '../../src/content/foundation';
+import { firstCard, evidence } from '../fixtures/foundation';
 import { resolveChoice, transition } from '../../src/engine/transition';
 import type { Action, Card, Content, GameState } from '../../src/engine/types';
 

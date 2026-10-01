@@ -1,33 +1,33 @@
 # Project Status
 
-Updated: 2026-09-30. This file is the authoritative short progress record.
+Updated: 2026-10-01. This file is the authoritative short progress record.
 
 ## Current state
 
-Session 02 is complete: the one-card sample now uses a deterministic engine, versioned run saves, chapter replay, recovery, and separate persistent preferences. The remaining narrative and puzzle UI are not built. Local `main` tracks `origin/main`; both were at `1480466` before Session 02 changes. Origin is `https://github.com/imdabestsoya/aplang_game.git`. This session does not push remotely. `docs/PRD.md` remains identical to the supplied snapshot.
+Session 06’s technical audit is finished; **classroom release remains incomplete**. A clean-copy install/build passed 74 unit, 13 route and 34 production-browser checks, including complete offline keyboard/touch routes. S33/S34 now have sourced or explicitly hypothetical postgame context. Exact Q1–Q5 text, precise needle chronology and independent classroom/accessibility review remain blocked. All Session 03–06 changes are still uncommitted; no remote changes were made.
 
 | Session | Status | Gate / next action |
 |---|---|---|
 | 00 — Planning bootstrap | Complete | Agent guides, launcher, plans, protocol, records, local Git |
 | 01 — Foundation | Complete | Clean install; lint/types/build; 20 unit + 5 route tests; dev/preview browser checks |
 | 02 — Engine | Complete | 50 unit + 11 route tests; lint/types/build; 18 dev + 18 preview browser checks |
-| 03 — Narrative | Ready / not started | Engine gates passed; author 16 cards and shared source/symbolism records |
-| 04 — Evidence and balance | Not started | Requires 03 |
-| 05 — Visual rhetoric | Not started | Requires 04 |
-| 06 — Classroom readiness | Not started | Requires 05 and verified sources for release |
+| 03 — Narrative | Complete | 16 reachable cards; 58 unit + 11 route checks; 20 dev + 20 preview browser checks; generated registry |
+| 04 — Evidence and balance | Complete | Three puzzles; 85,337-state search; five witnesses; 58 unit + 13 route checks; browser flows |
+| 05 — Visual rhetoric | Complete | Shared guide; original visuals/audio; 73 unit + 13 route checks; 32 production-browser checks |
+| 06 — Classroom readiness | Release blocked | Technical audit passed; Q1–Q5, precise needle chronology and independent review remain unmet |
 
-Latest handoff: [session-02.md](handoffs/session-02.md).
+Latest handoff: [session-06.md](handoffs/session-06.md). See [release evidence](RELEASE_CHECKLIST.md).
 
 ## Known prerequisites and limitations
 
 - Node 22.23.3/npm 10.9.9 are available in ignored `.tools/`; see README for PATH setup. Playwright 1.56.1/Chromium 141 are pinned for this macOS 12 environment. `gh` remains unavailable.
-- Engine and persistence checks pass. Full story, puzzle UI, final narrative route proofs, generated symbolism, and release QA remain pending.
-- Saves use format 1/content version `foundation-2`; they are local to each browser origin. Unsupported saves require explicit replacement or play without saving.
-- Q1–Q5, poppet scene details, and historical parallels remain unverified. The proposed brainstorming PDF and assigned edition are not in this workspace.
+- Engine and persistence checks pass. Puzzle UI and narrative route proofs pass; presentation checks pass; source verification and classroom release QA remain pending.
+- Saves use format 1/content version `narrative-3`; they are local to each browser origin. Unsupported saves require explicit replacement or play without saving.
+- Q1–Q5 and exact needle-placement detail remain unverified; contextual facts are now checked and comparison limits stated; broad gift-before-discovery chronology is publisher-guide corroborated. The proposed brainstorming PDF and assigned edition are not in this workspace.
 - GitHub origin is configured; recorded `origin/main` points to the Foundation commit. Session 02 makes no remote changes.
 
 ## Next three actions
 
-1. Run `/session 3` or `python3 scripts/session.py 3` to author the complete narrative.
-2. Populate source metadata, quotation slots, and the shared symbolism registry; adapt chapter/evidence views and review save compatibility.
-3. Validate counts/references/reachability, run checks, and write `docs/handoffs/session-03.md`.
+1. Provide an assigned edition/authorized readable text to verify Q1–Q5 and exact needle chronology.
+2. Record independent reader/accessibility review and first-run/replay timing against PRD §3.
+3. Resume `/session 6`, fix findings, rerun clean-copy checks and update the release checklist before declaring readiness.

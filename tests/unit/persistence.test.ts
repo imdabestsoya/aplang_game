@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { content } from '../../src/content/foundation';
+import { content } from '../fixtures/foundation';
 import { initialState, transition } from '../../src/engine/transition';
 import { loadRun, loadSettings, RUN_KEY, saveRun, saveSettings, serializeRun, SETTINGS_KEY } from '../../src/persistence/storage';
 import { validState } from '../../src/persistence/validation';

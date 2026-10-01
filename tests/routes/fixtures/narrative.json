@@ -1,0 +1,1856 @@
+{
+  "states": 85337,
+  "witnesses": {
+    "name-preserved": {
+      "steps": [
+        {
+          "cardId": "whisper-01",
+          "choiceId": "question-source",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-02",
+          "choiceId": "ask-standard",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-03",
+          "choiceId": "refuse-name",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-04",
+          "choiceId": "record-source",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-01",
+          "choiceId": "hear-elizabeth",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-02",
+          "choiceId": "preserve-account",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-03",
+          "choiceId": "separate-intent",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-04",
+          "choiceId": "challenge-chain",
+          "puzzleAnswers": [
+            {
+              "puzzleId": "P1",
+              "answer": [
+                "sewing",
+                "gift",
+                "accusation",
+                "possession-not-intent"
+              ]
+            }
+          ]
+        },
+        {
+          "cardId": "court-01",
+          "choiceId": "qualify-allegation",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "court-02",
+          "choiceId": "examine-motive",
+          "puzzleAnswers": [
+            {
+              "puzzleId": "P2",
+              "answer": [
+                "observation",
+                "allegation",
+                "inference",
+                "scrutiny-not-proof"
+              ]
+            }
+          ]
+        },
+        {
+          "cardId": "court-03",
+          "choiceId": "support-testimony",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "court-04",
+          "choiceId": "challenge-circle",
+          "puzzleAnswers": [
+            {
+              "puzzleId": "P3",
+              "answer": [
+                "accusation-confirms",
+                "defense-confirms",
+                "no-disproof"
+              ]
+            }
+          ]
+        },
+        {
+          "cardId": "name-01",
+          "choiceId": "own-cost",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-02",
+          "choiceId": "hear-doubt",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-03",
+          "choiceId": "own-answer",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-04",
+          "choiceId": "refuse-confession",
+          "puzzleAnswers": []
+        }
+      ],
+      "trace": [
+        {
+          "label": "Ask who witnessed the alleged witchcraft",
+          "cardId": "whisper-01",
+          "choiceId": "question-source",
+          "variantId": null,
+          "reputation": 61,
+          "hysteria": 19,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Ask what evidence could change Hale’s conclusion",
+          "cardId": "whisper-02",
+          "choiceId": "ask-standard",
+          "variantId": null,
+          "reputation": 57,
+          "hysteria": 16,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Refuse to place Rebecca’s name inside the rumor",
+          "cardId": "whisper-03",
+          "choiceId": "refuse-name",
+          "variantId": null,
+          "reputation": 51,
+          "hysteria": 11,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Record the claim, its source, and what remains unknown",
+          "cardId": "whisper-04",
+          "choiceId": "record-source",
+          "variantId": null,
+          "reputation": 49,
+          "hysteria": 8,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Hear Elizabeth’s account before assigning the poppet a meaning",
+          "cardId": "needle-01",
+          "choiceId": "hear-elizabeth",
+          "variantId": null,
+          "reputation": 45,
+          "hysteria": 5,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Record Mary’s account without forcing it into a verdict",
+          "cardId": "needle-02",
+          "choiceId": "preserve-account",
+          "variantId": null,
+          "reputation": 37,
+          "hysteria": 2,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Reject the leap from possession to harmful intent",
+          "cardId": "needle-03",
+          "choiceId": "separate-intent",
+          "variantId": null,
+          "reputation": 29,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Use the provenance record to separate possession from intent",
+          "cardId": "needle-04",
+          "choiceId": "challenge-chain",
+          "variantId": "provenance",
+          "reputation": 26,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Record Giles’s allegation as a question requiring corroboration",
+          "cardId": "court-01",
+          "choiceId": "qualify-allegation",
+          "variantId": null,
+          "reputation": 22,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Distinguish the observation, allegation, and inference before judging",
+          "cardId": "court-02",
+          "choiceId": "examine-motive",
+          "variantId": "classified",
+          "reputation": 19,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Return to the examined provenance without threatening Mary",
+          "cardId": "court-03",
+          "choiceId": "support-testimony",
+          "variantId": "grounded-account",
+          "reputation": 15,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Show how the rule counts both accusation and defense as guilt",
+          "cardId": "court-04",
+          "choiceId": "challenge-circle",
+          "variantId": "closed-circle",
+          "reputation": 11,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Keep Rebecca’s name out of my defense",
+          "cardId": "name-01",
+          "choiceId": "own-cost",
+          "variantId": null,
+          "reputation": 8,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Hear Hale’s plea while refusing to blame another person",
+          "cardId": "name-02",
+          "choiceId": "hear-doubt",
+          "variantId": null,
+          "reputation": 10,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Accept responsibility for the answer I am about to give",
+          "cardId": "name-03",
+          "choiceId": "own-answer",
+          "variantId": null,
+          "reputation": 8,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Refuse the false confession with the court’s logic examined",
+          "cardId": "name-04",
+          "choiceId": "refuse-confession",
+          "variantId": "informed-refusal",
+          "reputation": 4,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": "name-preserved"
+        }
+      ],
+      "ending": "name-preserved"
+    },
+    "within-system": {
+      "steps": [
+        {
+          "cardId": "whisper-01",
+          "choiceId": "question-source",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-02",
+          "choiceId": "ask-standard",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-03",
+          "choiceId": "refuse-name",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-04",
+          "choiceId": "record-source",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-01",
+          "choiceId": "hear-elizabeth",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-02",
+          "choiceId": "preserve-account",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-03",
+          "choiceId": "separate-intent",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-04",
+          "choiceId": "challenge-chain",
+          "puzzleAnswers": [
+            {
+              "puzzleId": "P1",
+              "answer": [
+                "sewing",
+                "gift",
+                "accusation",
+                "possession-not-intent"
+              ]
+            }
+          ]
+        },
+        {
+          "cardId": "court-01",
+          "choiceId": "qualify-allegation",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "court-02",
+          "choiceId": "examine-motive",
+          "puzzleAnswers": [
+            {
+              "puzzleId": "P2",
+              "answer": [
+                "observation",
+                "allegation",
+                "inference",
+                "scrutiny-not-proof"
+              ]
+            }
+          ]
+        },
+        {
+          "cardId": "court-03",
+          "choiceId": "support-testimony",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "court-04",
+          "choiceId": "challenge-circle",
+          "puzzleAnswers": [
+            {
+              "puzzleId": "P3",
+              "answer": [
+                "accusation-confirms",
+                "defense-confirms",
+                "no-disproof"
+              ]
+            }
+          ]
+        },
+        {
+          "cardId": "name-01",
+          "choiceId": "own-cost",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-02",
+          "choiceId": "hear-doubt",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-03",
+          "choiceId": "own-answer",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-04",
+          "choiceId": "sign-confession",
+          "puzzleAnswers": []
+        }
+      ],
+      "trace": [
+        {
+          "label": "Ask who witnessed the alleged witchcraft",
+          "cardId": "whisper-01",
+          "choiceId": "question-source",
+          "variantId": null,
+          "reputation": 61,
+          "hysteria": 19,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Ask what evidence could change Hale’s conclusion",
+          "cardId": "whisper-02",
+          "choiceId": "ask-standard",
+          "variantId": null,
+          "reputation": 57,
+          "hysteria": 16,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Refuse to place Rebecca’s name inside the rumor",
+          "cardId": "whisper-03",
+          "choiceId": "refuse-name",
+          "variantId": null,
+          "reputation": 51,
+          "hysteria": 11,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Record the claim, its source, and what remains unknown",
+          "cardId": "whisper-04",
+          "choiceId": "record-source",
+          "variantId": null,
+          "reputation": 49,
+          "hysteria": 8,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Hear Elizabeth’s account before assigning the poppet a meaning",
+          "cardId": "needle-01",
+          "choiceId": "hear-elizabeth",
+          "variantId": null,
+          "reputation": 45,
+          "hysteria": 5,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Record Mary’s account without forcing it into a verdict",
+          "cardId": "needle-02",
+          "choiceId": "preserve-account",
+          "variantId": null,
+          "reputation": 37,
+          "hysteria": 2,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Reject the leap from possession to harmful intent",
+          "cardId": "needle-03",
+          "choiceId": "separate-intent",
+          "variantId": null,
+          "reputation": 29,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Use the provenance record to separate possession from intent",
+          "cardId": "needle-04",
+          "choiceId": "challenge-chain",
+          "variantId": "provenance",
+          "reputation": 26,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Record Giles’s allegation as a question requiring corroboration",
+          "cardId": "court-01",
+          "choiceId": "qualify-allegation",
+          "variantId": null,
+          "reputation": 22,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Distinguish the observation, allegation, and inference before judging",
+          "cardId": "court-02",
+          "choiceId": "examine-motive",
+          "variantId": "classified",
+          "reputation": 19,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Return to the examined provenance without threatening Mary",
+          "cardId": "court-03",
+          "choiceId": "support-testimony",
+          "variantId": "grounded-account",
+          "reputation": 15,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Show how the rule counts both accusation and defense as guilt",
+          "cardId": "court-04",
+          "choiceId": "challenge-circle",
+          "variantId": "closed-circle",
+          "reputation": 11,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Keep Rebecca’s name out of my defense",
+          "cardId": "name-01",
+          "choiceId": "own-cost",
+          "variantId": null,
+          "reputation": 8,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Hear Hale’s plea while refusing to blame another person",
+          "cardId": "name-02",
+          "choiceId": "hear-doubt",
+          "variantId": null,
+          "reputation": 10,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Accept responsibility for the answer I am about to give",
+          "cardId": "name-03",
+          "choiceId": "own-answer",
+          "variantId": null,
+          "reputation": 8,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Sign the false confession in hope of surviving",
+          "cardId": "name-04",
+          "choiceId": "sign-confession",
+          "variantId": null,
+          "reputation": 16,
+          "hysteria": 8,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": true
+          },
+          "ending": "within-system"
+        }
+      ],
+      "ending": "within-system"
+    },
+    "condemned": {
+      "steps": [
+        {
+          "cardId": "whisper-01",
+          "choiceId": "question-source",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-02",
+          "choiceId": "ask-standard",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-03",
+          "choiceId": "refuse-name",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-04",
+          "choiceId": "record-source",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-01",
+          "choiceId": "hear-elizabeth",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-02",
+          "choiceId": "preserve-account",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-03",
+          "choiceId": "separate-intent",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-04",
+          "choiceId": "challenge-chain",
+          "puzzleAnswers": [
+            {
+              "puzzleId": "P1",
+              "answer": [
+                "sewing",
+                "gift",
+                "accusation",
+                "possession-not-intent"
+              ]
+            }
+          ]
+        },
+        {
+          "cardId": "court-01",
+          "choiceId": "qualify-allegation",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "court-02",
+          "choiceId": "examine-motive",
+          "puzzleAnswers": [
+            {
+              "puzzleId": "P2",
+              "answer": [
+                "observation",
+                "allegation",
+                "inference",
+                "scrutiny-not-proof"
+              ]
+            }
+          ]
+        },
+        {
+          "cardId": "court-03",
+          "choiceId": "support-testimony",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "court-04",
+          "choiceId": "challenge-circle",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-01",
+          "choiceId": "own-cost",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-02",
+          "choiceId": "hear-doubt",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-03",
+          "choiceId": "own-answer",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-04",
+          "choiceId": "refuse-confession",
+          "puzzleAnswers": []
+        }
+      ],
+      "trace": [
+        {
+          "label": "Ask who witnessed the alleged witchcraft",
+          "cardId": "whisper-01",
+          "choiceId": "question-source",
+          "variantId": null,
+          "reputation": 61,
+          "hysteria": 19,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Ask what evidence could change Hale’s conclusion",
+          "cardId": "whisper-02",
+          "choiceId": "ask-standard",
+          "variantId": null,
+          "reputation": 57,
+          "hysteria": 16,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Refuse to place Rebecca’s name inside the rumor",
+          "cardId": "whisper-03",
+          "choiceId": "refuse-name",
+          "variantId": null,
+          "reputation": 51,
+          "hysteria": 11,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Record the claim, its source, and what remains unknown",
+          "cardId": "whisper-04",
+          "choiceId": "record-source",
+          "variantId": null,
+          "reputation": 49,
+          "hysteria": 8,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Hear Elizabeth’s account before assigning the poppet a meaning",
+          "cardId": "needle-01",
+          "choiceId": "hear-elizabeth",
+          "variantId": null,
+          "reputation": 45,
+          "hysteria": 5,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Record Mary’s account without forcing it into a verdict",
+          "cardId": "needle-02",
+          "choiceId": "preserve-account",
+          "variantId": null,
+          "reputation": 37,
+          "hysteria": 2,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Reject the leap from possession to harmful intent",
+          "cardId": "needle-03",
+          "choiceId": "separate-intent",
+          "variantId": null,
+          "reputation": 29,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Use the provenance record to separate possession from intent",
+          "cardId": "needle-04",
+          "choiceId": "challenge-chain",
+          "variantId": "provenance",
+          "reputation": 26,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Record Giles’s allegation as a question requiring corroboration",
+          "cardId": "court-01",
+          "choiceId": "qualify-allegation",
+          "variantId": null,
+          "reputation": 22,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Distinguish the observation, allegation, and inference before judging",
+          "cardId": "court-02",
+          "choiceId": "examine-motive",
+          "variantId": "classified",
+          "reputation": 19,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Return to the examined provenance without threatening Mary",
+          "cardId": "court-03",
+          "choiceId": "support-testimony",
+          "variantId": "grounded-account",
+          "reputation": 15,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Reject the court’s binary without a completed counterargument",
+          "cardId": "court-04",
+          "choiceId": "challenge-circle",
+          "variantId": null,
+          "reputation": 5,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Keep Rebecca’s name out of my defense",
+          "cardId": "name-01",
+          "choiceId": "own-cost",
+          "variantId": null,
+          "reputation": 2,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Hear Hale’s plea while refusing to blame another person",
+          "cardId": "name-02",
+          "choiceId": "hear-doubt",
+          "variantId": null,
+          "reputation": 4,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Accept responsibility for the answer I am about to give",
+          "cardId": "name-03",
+          "choiceId": "own-answer",
+          "variantId": null,
+          "reputation": 2,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Refuse the false confession and face the unresolved record",
+          "cardId": "name-04",
+          "choiceId": "refuse-confession",
+          "variantId": null,
+          "reputation": 0,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": "condemned"
+        }
+      ],
+      "ending": "condemned"
+    },
+    "town-rupture": {
+      "steps": [
+        {
+          "cardId": "whisper-01",
+          "choiceId": "question-source",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-02",
+          "choiceId": "ask-standard",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-03",
+          "choiceId": "refuse-name",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-04",
+          "choiceId": "record-source",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-01",
+          "choiceId": "hear-elizabeth",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-02",
+          "choiceId": "demand-certainty",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-03",
+          "choiceId": "endorse-charge",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-04",
+          "choiceId": "defer-chain",
+          "puzzleAnswers": [
+            {
+              "puzzleId": "P1",
+              "answer": [
+                "sewing",
+                "gift",
+                "accusation",
+                "possession-not-intent"
+              ]
+            }
+          ]
+        },
+        {
+          "cardId": "court-01",
+          "choiceId": "demand-source-name",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "court-02",
+          "choiceId": "accuse-putnam",
+          "puzzleAnswers": [
+            {
+              "puzzleId": "P2",
+              "answer": [
+                "observation",
+                "allegation",
+                "inference",
+                "scrutiny-not-proof"
+              ]
+            }
+          ]
+        },
+        {
+          "cardId": "court-03",
+          "choiceId": "disown-mary",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "court-04",
+          "choiceId": "accept-binary",
+          "puzzleAnswers": [
+            {
+              "puzzleId": "P3",
+              "answer": [
+                "accusation-confirms",
+                "defense-confirms",
+                "no-disproof"
+              ]
+            }
+          ]
+        },
+        {
+          "cardId": "name-01",
+          "choiceId": "trade-name",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-02",
+          "choiceId": "borrow-certainty",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-03",
+          "choiceId": "ask-absolution",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-04",
+          "choiceId": "sign-confession",
+          "puzzleAnswers": []
+        }
+      ],
+      "trace": [
+        {
+          "label": "Ask who witnessed the alleged witchcraft",
+          "cardId": "whisper-01",
+          "choiceId": "question-source",
+          "variantId": null,
+          "reputation": 61,
+          "hysteria": 19,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Ask what evidence could change Hale’s conclusion",
+          "cardId": "whisper-02",
+          "choiceId": "ask-standard",
+          "variantId": null,
+          "reputation": 57,
+          "hysteria": 16,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Refuse to place Rebecca’s name inside the rumor",
+          "cardId": "whisper-03",
+          "choiceId": "refuse-name",
+          "variantId": null,
+          "reputation": 51,
+          "hysteria": 11,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Record the claim, its source, and what remains unknown",
+          "cardId": "whisper-04",
+          "choiceId": "record-source",
+          "variantId": null,
+          "reputation": 49,
+          "hysteria": 8,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Hear Elizabeth’s account before assigning the poppet a meaning",
+          "cardId": "needle-01",
+          "choiceId": "hear-elizabeth",
+          "variantId": null,
+          "reputation": 45,
+          "hysteria": 5,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Demand that Mary guarantee the court will accept her account",
+          "cardId": "needle-02",
+          "choiceId": "demand-certainty",
+          "variantId": null,
+          "reputation": 49,
+          "hysteria": 12,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Repeat the charge against Elizabeth to protect my standing",
+          "cardId": "needle-03",
+          "choiceId": "endorse-charge",
+          "variantId": null,
+          "reputation": 57,
+          "hysteria": 24,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": true,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Accept the court’s interpretation of the object as sufficient",
+          "cardId": "needle-04",
+          "choiceId": "defer-chain",
+          "variantId": null,
+          "reputation": 63,
+          "hysteria": 33,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": true,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Demand that Giles expose his source before I listen",
+          "cardId": "court-01",
+          "choiceId": "demand-source-name",
+          "variantId": null,
+          "reputation": 69,
+          "hysteria": 41,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": true,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Accuse Putnam of witchcraft to discredit his defense",
+          "cardId": "court-02",
+          "choiceId": "accuse-putnam",
+          "variantId": null,
+          "reputation": 77,
+          "hysteria": 53,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": true,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Call Mary an agent of witchcraft to distance myself from her",
+          "cardId": "court-03",
+          "choiceId": "disown-mary",
+          "variantId": null,
+          "reputation": 85,
+          "hysteria": 65,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": true,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Accept the rule that defending the accused creates suspicion",
+          "cardId": "court-04",
+          "choiceId": "accept-binary",
+          "variantId": null,
+          "reputation": 93,
+          "hysteria": 75,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": true,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Offer Rebecca’s name as a false accusation to protect mine",
+          "cardId": "name-01",
+          "choiceId": "trade-name",
+          "variantId": null,
+          "reputation": 100,
+          "hysteria": 87,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": true,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Use Hale’s former certainty to excuse my own choices",
+          "cardId": "name-02",
+          "choiceId": "borrow-certainty",
+          "variantId": null,
+          "reputation": 100,
+          "hysteria": 93,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": true,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Ask Elizabeth to make the decision for me",
+          "cardId": "name-03",
+          "choiceId": "ask-absolution",
+          "variantId": null,
+          "reputation": 100,
+          "hysteria": 96,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": true,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Sign the false confession in hope of surviving",
+          "cardId": "name-04",
+          "choiceId": "sign-confession",
+          "variantId": null,
+          "reputation": 100,
+          "hysteria": 100,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": true,
+            "signedFalseConfession": true
+          },
+          "ending": "town-rupture"
+        }
+      ],
+      "ending": "town-rupture"
+    },
+    "recoverable-mistake": {
+      "steps": [
+        {
+          "cardId": "whisper-01",
+          "choiceId": "defer-authority",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-02",
+          "choiceId": "ask-standard",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-03",
+          "choiceId": "refuse-name",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "whisper-04",
+          "choiceId": "record-source",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-01",
+          "choiceId": "hear-elizabeth",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-02",
+          "choiceId": "preserve-account",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-03",
+          "choiceId": "separate-intent",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "needle-04",
+          "choiceId": "challenge-chain",
+          "puzzleAnswers": [
+            {
+              "puzzleId": "P1",
+              "answer": [
+                "sewing",
+                "gift",
+                "accusation",
+                "possession-not-intent"
+              ]
+            }
+          ]
+        },
+        {
+          "cardId": "court-01",
+          "choiceId": "qualify-allegation",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "court-02",
+          "choiceId": "examine-motive",
+          "puzzleAnswers": [
+            {
+              "puzzleId": "P2",
+              "answer": [
+                "observation",
+                "allegation",
+                "inference",
+                "scrutiny-not-proof"
+              ]
+            }
+          ]
+        },
+        {
+          "cardId": "court-03",
+          "choiceId": "support-testimony",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "court-04",
+          "choiceId": "challenge-circle",
+          "puzzleAnswers": [
+            {
+              "puzzleId": "P3",
+              "answer": [
+                "accusation-confirms",
+                "defense-confirms",
+                "no-disproof"
+              ]
+            }
+          ]
+        },
+        {
+          "cardId": "name-01",
+          "choiceId": "own-cost",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-02",
+          "choiceId": "hear-doubt",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-03",
+          "choiceId": "own-answer",
+          "puzzleAnswers": []
+        },
+        {
+          "cardId": "name-04",
+          "choiceId": "refuse-confession",
+          "puzzleAnswers": []
+        }
+      ],
+      "trace": [
+        {
+          "label": "Support Parris’s call to trust the report",
+          "cardId": "whisper-01",
+          "choiceId": "defer-authority",
+          "variantId": null,
+          "reputation": 71,
+          "hysteria": 33,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Ask what evidence could change Hale’s conclusion",
+          "cardId": "whisper-02",
+          "choiceId": "ask-standard",
+          "variantId": null,
+          "reputation": 67,
+          "hysteria": 30,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Refuse to place Rebecca’s name inside the rumor",
+          "cardId": "whisper-03",
+          "choiceId": "refuse-name",
+          "variantId": null,
+          "reputation": 61,
+          "hysteria": 25,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Record the claim, its source, and what remains unknown",
+          "cardId": "whisper-04",
+          "choiceId": "record-source",
+          "variantId": null,
+          "reputation": 59,
+          "hysteria": 22,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Hear Elizabeth’s account before assigning the poppet a meaning",
+          "cardId": "needle-01",
+          "choiceId": "hear-elizabeth",
+          "variantId": null,
+          "reputation": 55,
+          "hysteria": 19,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Record Mary’s account without forcing it into a verdict",
+          "cardId": "needle-02",
+          "choiceId": "preserve-account",
+          "variantId": null,
+          "reputation": 47,
+          "hysteria": 16,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Reject the leap from possession to harmful intent",
+          "cardId": "needle-03",
+          "choiceId": "separate-intent",
+          "variantId": null,
+          "reputation": 39,
+          "hysteria": 12,
+          "flags": {
+            "poppetProvenance": false,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Use the provenance record to separate possession from intent",
+          "cardId": "needle-04",
+          "choiceId": "challenge-chain",
+          "variantId": "provenance",
+          "reputation": 36,
+          "hysteria": 5,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Record Giles’s allegation as a question requiring corroboration",
+          "cardId": "court-01",
+          "choiceId": "qualify-allegation",
+          "variantId": null,
+          "reputation": 32,
+          "hysteria": 2,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": false,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Distinguish the observation, allegation, and inference before judging",
+          "cardId": "court-02",
+          "choiceId": "examine-motive",
+          "variantId": "classified",
+          "reputation": 29,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Return to the examined provenance without threatening Mary",
+          "cardId": "court-03",
+          "choiceId": "support-testimony",
+          "variantId": "grounded-account",
+          "reputation": 25,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": false,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Show how the rule counts both accusation and defense as guilt",
+          "cardId": "court-04",
+          "choiceId": "challenge-circle",
+          "variantId": "closed-circle",
+          "reputation": 21,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Keep Rebecca’s name out of my defense",
+          "cardId": "name-01",
+          "choiceId": "own-cost",
+          "variantId": null,
+          "reputation": 18,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Hear Hale’s plea while refusing to blame another person",
+          "cardId": "name-02",
+          "choiceId": "hear-doubt",
+          "variantId": null,
+          "reputation": 20,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Accept responsibility for the answer I am about to give",
+          "cardId": "name-03",
+          "choiceId": "own-answer",
+          "variantId": null,
+          "reputation": 18,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": null
+        },
+        {
+          "label": "Refuse the false confession with the court’s logic examined",
+          "cardId": "name-04",
+          "choiceId": "refuse-confession",
+          "variantId": "informed-refusal",
+          "reputation": 14,
+          "hysteria": 0,
+          "flags": {
+            "poppetProvenance": true,
+            "landMotiveExamined": true,
+            "courtContradiction": true,
+            "falseAccusation": false,
+            "signedFalseConfession": false
+          },
+          "ending": "name-preserved"
+        }
+      ],
+      "ending": "name-preserved"
+    }
+  }
+}

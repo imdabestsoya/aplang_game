@@ -10,13 +10,13 @@ Session 02’s transition, persistence, and ending contracts are verified. Read 
 
 ## Work checklist
 
-- [ ] Write four principal cards per chapter: The Whisper, The Needle, The Court, The Name. Use John Proctor as protagonist and the PRD’s character guardrails.
-- [ ] Give each card exactly two available actions, exact effects, requirements/variants, consequences, next IDs, evidence IDs, and symbolism IDs (§12).
-- [ ] Supply `basis: canonical | interpretation | invented`, `actReference`, and source notes for narrative records; identify chronology changes and distinguish allegations from facts.
-- [ ] Populate all evidence/clues needed for P1–P3 before their relevant choices. Mark the land ledger as invented; verify poppet chronology before final wording.
-- [ ] Create Q1–Q5 records with status, speaker, act, source/edition/page fields, placement, and context. Keep unavailable wording as explicit development placeholders; do not invent quotes or pages. Track proposed triggers/fallbacks from §10.
-- [ ] Establish `src/content/symbolism.ts` (or equivalent) as the shared S01–S36 record; generate `docs/SYMBOLISM.md` from it and later reuse it in the UI.
-- [ ] Add content validation for unique IDs, references, two-choice cardinality, metadata, chapter counts, and graph reachability. Test endings’ distinct causal narratives and the closed-resistance warning.
+- [x] Write four principal cards per chapter: The Whisper, The Needle, The Court, The Name. Use John Proctor as protagonist and the PRD’s character guardrails.
+- [x] Give each card exactly two available actions, exact effects, requirements/variants, consequences, next IDs, evidence IDs, and symbolism IDs (§12).
+- [x] Supply `basis: canonical | interpretation | invented`, `actReference`, and source notes for narrative records; identify chronology changes and distinguish allegations from facts.
+- [x] Populate all evidence/clues needed for P1–P3 before their relevant choices. Mark the land ledger as invented; verify poppet chronology before final wording. Broad chronology corroborated by the publisher guide; exact needle placement remains explicitly provisional, not final wording (see `docs/SOURCES.md`).
+- [x] Create Q1–Q5 records with status, speaker, act, source/edition/page fields, placement, and context. Keep unavailable wording as explicit development placeholders; do not invent quotes or pages. Track proposed triggers/fallbacks from §10.
+- [x] Establish `src/content/symbolism.ts` (or equivalent) as the shared S01–S36 record; generate `docs/SYMBOLISM.md` from it and later reuse it in the UI.
+- [x] Add content validation for unique IDs, references, two-choice cardinality, metadata, chapter counts, and graph reachability. Test endings’ distinct causal narratives and the closed-resistance warning.
 
 ## Expected files touched
 
@@ -28,9 +28,9 @@ Run `npm run check` with content validation integrated into tests/build. Travers
 
 ## Acceptance criteria
 
-- [ ] Exactly 16 principal cards across four chapters; each reachable and offering two story choices.
-- [ ] All referenced IDs resolve; all narrative entries include required metadata.
-- [ ] All named speakers come from the play; original dialogue is labeled as adaptation.
-- [ ] Five quotation slots have correct planned triggers/fallbacks and honest verification status.
-- [ ] S01–S36 are represented in one maintained registry with implementation/deferred status.
-- [ ] Checks pass; unresolved literary verification and balance work appear in `docs/handoffs/session-03.md`.
+- [x] Exactly 16 principal cards across four chapters; each reachable and offering two story choices.
+- [x] All referenced IDs resolve; all narrative entries include required metadata.
+- [x] All named speakers come from the play; original dialogue is labeled as adaptation.
+- [x] Five quotation slots have correct planned triggers/fallbacks and honest verification status.
+- [x] S01–S36 are represented in one maintained registry with implementation/deferred status.
+- [x] Checks pass; unresolved literary verification and balance work appear in `docs/handoffs/session-03.md`.

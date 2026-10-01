@@ -45,3 +45,37 @@ Do not overwrite unreadable or incompatible saves on mount. Ask the player to re
 ## 2026-09-30 — Engine fixtures are not the final narrative
 
 `tests/fixtures/engine.ts` supplies synthetic multi-chapter cards and puzzle tokens to exercise all ending rules, evidence variants, hints, saves, and replay. These fixtures are never mounted in the app. The public sample still has one card; full narrative, puzzle UI, final balance/search proofs, and complete source verification remain Sessions 03–06. New utility controls/recovery framing are functional, with no new symbolic claim. No new dependencies or runtime versions were needed.
+
+## Session 03 — Authored content and source boundary
+
+- Move the one-card content into test fixtures; production consumes four chapter modules and content version `narrative-3`. Incompatible saves use existing explicit recovery; no guessed migration.
+- Retain two available story actions per card. Puzzle rewards change labeled variants but reading evidence never silently grants a solution. P1–P3 data and clues exist; interactive exercises belong to Session 04.
+- Derive quotation triggers from history so refresh and chapter replay remain consistent. Withhold all exact text pending edition verification.
+- Maintain symbolism in JSON, expose typed records through `symbolism.ts`, and generate Markdown. Build rejects stale output and invalid narrative content.
+- Distinguish graph/engine card reachability from final balance proofs. Session 03 does not certify all-ending witnesses, two clean resistance paths, or recoverable mistakes.
+
+## Session 04 — Puzzle interactions and deterministic balance
+
+- Use native labeled select controls rather than drag-only ordering. Show all required clue records in each exercise; inspection is helpful but never a prerequisite that can block an answer or story choice.
+- Retain `narrative-3` and save format 1: no card effects, IDs, reward rules, or saved-state shape changed. Only UI, clearer graduated hints, and validation were added. Unfinished form selections are local UI state; solved flags and hint levels remain persisted.
+- Search 85,337 mechanically distinct states with solved and skipped puzzle branches. Wrong answers and hints are equivalent for meter/flag reachability; every witness is also replayed with wrong submissions and all hints. No effect tuning was necessary.
+- Save four ending routes plus a second clean resistance route differing only at the first choice. The latter recovers from endorsing an unconfirmed report without falsely naming anyone, surviving at R=14/H=0 versus the primary R=4/H=0. Both survive every earlier threshold.
+- Generate exact walkthrough tables from the saved choices and production labels; tests reject stale traces or prose tables. Source verification remains separate from solvability.
+
+## Session 05 — Accessible visual rhetoric
+
+- Author decorative SVG geometry directly in React. All clue meaning remains in text. Enclosure uses outer stripes and fixed-size illustrations, never narrower reading columns; the warm resistance treatment retains bars and the tragic-outcome explanation.
+- Use a native labeled dialog for the shared symbolism registry. Explicit reveal warns about spoilers during play; Escape/Close restores the opener. Source basis and deferred status remain visible rather than implying every literary claim is verified.
+- Ambience is optional synthesized low tonal murmuring. Each page load requires explicit enable, even when saved mute is off. Persistent mute controls the master gain; OS and saved reduced-motion preferences independently disable decorative movement. Captions never disappear when sound is off or unavailable.
+- Keep engine effects, save versions and route fixtures unchanged. Focus after Continue/replay/restart moves after React commits, with ending focus going to its heading.
+- Add dark-on-parchment focus and control-border tokens for contrast, with no new symbolism. Tested pairs and remaining review limits are in `docs/ACCESSIBILITY.md`.
+- Zoom testing exposed a modal whose viewport-unit maximum height could put its header outside the zoomed viewport. Constrain it with fixed insets instead. Test qualitative meters in their actual display rather than matching numbers in the hidden symbolism register.
+
+## Session 06 — Release audit boundary
+
+- Keep the release explicitly incomplete while Q1–Q5 and precise needle chronology remain unverified. A publisher introduction is not a substitute for the requested play passages. Source access was requested; no exact words/pages were invented.
+- Implement S33 using checked author/archive/Senate context, and S34 as an explicitly hypothetical comparison with limits. Keep optional external source links separate from offline gameplay.
+- Add an explicit Skip optional passage control for Q2 and restore focus to its summary. Extract quotation presentation so verified records can eventually display with accurate status.
+- Test a whole resistance route using real sequential keyboard navigation and a separate narrow touch route with networking disabled after load. The tests do not inject game state. Preserve all engine effects, fixtures and save contracts.
+- Verify a disposable clean copy of the uncommitted working tree rather than claiming the old HEAD contains the deliverable. Use an empty dependency directory with cached lockfile packages for reproducibility.
+- Distinguish automated checks and editorial/screenshot inspection from independent human, screen-reader, physical-device, audio-listening and reader-timing evidence. Those unperformed reviews remain explicit in the release checklist.

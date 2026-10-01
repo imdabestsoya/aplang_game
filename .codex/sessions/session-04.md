@@ -10,13 +10,13 @@ Session 03’s 16-card graph and metadata validation pass; Session 02’s engine
 
 ## Work checklist
 
-- [ ] Implement P1 ordering/provenance and “possession alone does not establish intent”; P2 observation/allegation/inference classification; P3 accusation/defense circularity.
-- [ ] Add three graduated hints per puzzle and feedback with penalty-free retry. Keep puzzles accessible without drag-only interactions; show all necessary clues before decisions.
-- [ ] Connect puzzle flags to explicitly labeled sourced responses and the informed final refusal. Preserve two available story actions even with missing evidence.
-- [ ] Search/enumerate the real decision graph, including puzzle outcomes and flags; detect dead ends and unreachable cards. Save reproducible card/choice/puzzle inputs as fixtures, with per-step state traces.
-- [ ] Tune effects until all four endings have witnesses, at least two distinct clean resistance routes survive every intermediate threshold, and a nonterminal single-choice mistake is demonstrably recoverable.
-- [ ] Assert witnesses start from normal initial state with no debug mutation, false accusation, or signed false confession on resistance paths. Hints must remain valid.
-- [ ] Explain closed resistance paths in the journal and support chapter replay. Document exact submissions and card choices in the walkthrough, including a recovery example.
+- [x] Implement P1 ordering/provenance and “possession alone does not establish intent”; P2 observation/allegation/inference classification; P3 accusation/defense circularity.
+- [x] Add three graduated hints per puzzle and feedback with penalty-free retry. Keep puzzles accessible without drag-only interactions; show all necessary clues before decisions.
+- [x] Connect puzzle flags to explicitly labeled sourced responses and the informed final refusal. Preserve two available story actions even with missing evidence.
+- [x] Search/enumerate the real decision graph, including puzzle outcomes and flags; detect dead ends and unreachable cards. Save reproducible card/choice/puzzle inputs as fixtures, with per-step state traces.
+- [x] Tune effects until all four endings have witnesses, at least two distinct clean resistance routes survive every intermediate threshold, and a nonterminal single-choice mistake is demonstrably recoverable.
+- [x] Assert witnesses start from normal initial state with no debug mutation, false accusation, or signed false confession on resistance paths. Hints must remain valid.
+- [x] Explain closed resistance paths in the journal and support chapter replay. Document exact submissions and card choices in the walkthrough, including a recovery example.
 
 ## Expected files touched
 
@@ -28,9 +28,9 @@ Run `npm run test:routes`, `npm run check`, and puzzle/replay browser flows via 
 
 ## Acceptance criteria
 
-- [ ] All three puzzles work with retry, hints, and keyboard controls; no missing-evidence softlocks.
-- [ ] Four saved ending witnesses pass against actual content.
-- [ ] Two distinct valid resistance routes and one recoverable mistake are proven with traces.
-- [ ] Graph traversal detects unreachable cards/dead ends; threshold precedence still passes.
-- [ ] Exact walkthrough matches tested submissions and choices.
-- [ ] Checks and witness locations appear in `docs/handoffs/session-04.md`.
+- [x] All three puzzles work with retry, hints, and keyboard controls; no missing-evidence softlocks.
+- [x] Four saved ending witnesses pass against actual content.
+- [x] Two distinct valid resistance routes and one recoverable mistake are proven with traces.
+- [x] Graph traversal detects unreachable cards/dead ends; threshold precedence still passes.
+- [x] Exact walkthrough matches tested submissions and choices.
+- [x] Checks and witness locations appear in `docs/handoffs/session-04.md`.

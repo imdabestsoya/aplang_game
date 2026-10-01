@@ -1,5 +1,5 @@
-import type { Card, Content, Evidence } from '../engine/types';
-import { validateContent } from '../engine/content';
+import type { Card, Content, Evidence } from '../../src/engine/types';
+import { validateContent } from '../../src/engine/content';
 
 export const evidence: Evidence = {
   id: 'household-report',

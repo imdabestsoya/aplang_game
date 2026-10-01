@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { firstCard, evidence, content } from '../../src/content/foundation';
+import { firstCard, evidence, content } from '../fixtures/foundation';
 import { hysteriaLabel, reputationLabel } from '../../src/engine/foundation';
 import { initialState, transition } from '../../src/engine/transition';
 import { act, pick } from '../fixtures/engine';

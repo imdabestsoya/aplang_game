@@ -1,0 +1,11 @@
+import { whisper } from './chapters/whisper';
+import { needle } from './chapters/needle';
+import { court } from './chapters/court';
+import { name } from './chapters/name';
+import { evidence } from './evidence';
+import { puzzles } from './puzzles';
+import { validateNarrative } from './validation';
+export const chapterNames = ['The Whisper', 'The Needle', 'The Court', 'The Name'];
+export const content = { version: 'narrative-3', firstCardId: 'whisper-01', cards: [...whisper, ...needle, ...court, ...name], evidence, puzzles };
+const errors = validateNarrative(content);
+if (errors.length) throw new Error(errors.join('\n'));

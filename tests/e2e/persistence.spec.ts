@@ -16,9 +16,9 @@ test('rapid clicks record once; reload keeps consequence, journal and continuati
   await expect(page.getByRole('region', { name: 'Your journal' }).getByRole('listitem')).toHaveCount(1);
   await expect(page.getByRole('region', { name: 'Your journal' })).toContainText('source unconfirmed');
   await page.getByRole('button', { name: 'Continue', exact: true }).click();
-  await expect(page.getByText('This is not a game ending.', { exact: false })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: 'The authority of a learned voice' })).toBeVisible();
   await page.reload();
-  await expect(page.getByText('This is not a game ending.', { exact: false })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: 'The authority of a learned voice' })).toBeVisible();
 });
 
 test('replay and restart reset run data but preserve preferences and unrelated keys', async ({ page }) => {
@@ -86,5 +86,5 @@ test('quota failures preserve live state and explain refresh risk', async ({ pag
   await expect(page.getByRole('alert')).toContainText('Progress could not be saved');
   await expect(page.getByRole('button', { name: 'Journal' })).toContainText('1 decision');
   await page.getByRole('button', { name: 'Continue', exact: true }).click();
-  await expect(page.getByText('This is not a game ending.', { exact: false })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: 'The authority of a learned voice' })).toBeVisible();
 });

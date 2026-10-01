@@ -3,7 +3,7 @@ import { validateContent } from '../../src/engine/content';
 import { resolveEnding } from '../../src/engine/endings';
 import { initialState, resolveChoice, transition } from '../../src/engine/transition';
 import { fixture, act, pick, prepared } from '../fixtures/engine';
-import { content } from '../../src/content/foundation';
+import { content } from '../fixtures/foundation';
 import type { Card, GameState } from '../../src/engine/types';
 
 const final = fixture.cards[3];

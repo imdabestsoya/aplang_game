@@ -9,4 +9,11 @@
   --muted: #b9b2a7;
   --rule: #514b42;
   --panel: #222224;
+  --paper-muted: #514a40;
+  --paper-focus: #365866;
+  --paper-border: #746a5b;
+  --dawn: #302820;
 }
+
+.puzzle-field { display: grid; gap: .5rem; margin: 1rem 0; }
+.puzzle-field select { width: 100%; min-width: 0; min-height: 44px; padding: .65rem; font: inherit; color: #171719; background: #f2e6cc; }

@@ -9,14 +9,18 @@
   },
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "tsc --noEmit && vite build",
+    "build": "npm run docs:check && npm run test:content && tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "lint": "eslint . --max-warnings 0",
     "typecheck": "tsc --noEmit",
     "test": "vitest --config vitest.config.ts",
     "test:routes": "vitest run --config vitest.routes.config.ts",
     "test:e2e": "playwright test",
-    "check": "npm run lint && npm run typecheck && npm run test -- --run && npm run test:routes && npm run build"
+    "check": "npm run lint && npm run typecheck && npm run test -- --run && npm run test:routes && npm run build",
+    "docs:symbolism": "node scripts/generate-symbolism.mjs",
+    "docs:check": "node scripts/generate-symbolism.mjs --check",
+    "test:content": "vitest run --config vitest.config.ts tests/unit/narrative.test.ts",
+    "play": "npm run build && npm run preview"
   },
   "dependencies": {
     "react": "^19.3.0",

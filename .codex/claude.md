@@ -8,7 +8,7 @@ Read [AGENTS.md](../AGENTS.md), [PRD](../docs/PRD.md), [status](../docs/STATUS.m
 
 ## Architecture
 
-The stack is TypeScript, React, Vite, plain CSS tokens, Vitest, and Playwright (PRD §12). Session 02 adds deterministic transitions, endings, saves/recovery, replay, and preferences to the one-card sample. Full-story content and balance remain pending. Use Node 22.23.3/npm 10.9.9 and the npm lockfile; see `docs/COMMANDS.md` for setup, results, and save-version contracts.
+The stack is TypeScript, React, Vite, plain CSS tokens, Vitest, and Playwright (PRD §12). The 16-card narrative includes three interactive evidence exercises, saved ending witnesses, quotation placeholders, original illustrations, optional described ambience and a shared symbolism guide on top of the deterministic engine, saves, and replay. Session 06 audits classroom readiness and unresolved source/accessibility checks. Use Node 22.23.3/npm 10.9.9 and the npm lockfile; see `docs/COMMANDS.md` for setup, results, and save-version contracts.
 
 - `src/engine/`: pure, deterministic transitions and ending resolution.
 - `src/content/`: declarative cards, evidence, quotations, symbolism, and source metadata.
@@ -17,6 +17,8 @@ The stack is TypeScript, React, Vite, plain CSS tokens, Vitest, and Playwright (
 - `tests/{unit,routes,e2e}/`: state, graph traversal, and user flows.
 - `.codex/`: agent context, command definitions, dedicated session plans, and handoff template.
 - `docs/`: authoritative project status, command reference, handoff protocol, decisions, and literary documentation.
+
+Session 06's technical audit passed from a disposable clean copy. Classroom release remains incomplete pending exact Q1–Q5 verification, precise needle chronology, and independent classroom/accessibility review. Resume using `docs/RELEASE_CHECKLIST.md` and `docs/handoffs/session-06.md`; do not infer source accuracy from passing automated tests.
 
 ## Invariants
 
