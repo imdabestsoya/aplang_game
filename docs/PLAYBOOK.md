@@ -1,18 +1,30 @@
 # Implementation Playbook
 
-This expands PRD §15 without changing scope. Bootstrap (Session 00) creates planning infrastructure only; it does **not** satisfy Session 01’s runnable one-card requirement (§13).
+## Current goal
+Maintain and finish review of the eight-day Town Judge game in docs/PRD.md. Preserve automatic visitors, winter courthouse art, movement, fullscreen popups, visible meters, evidence-based victory, Shame, supplied scenario quotes and natural copy without em dashes. Do not restore travel survival or rebuild completed features.
 
-Start with `/session 1`, `Run session 1`, or `python3 scripts/session.py 1`. See [command behavior](../.codex/commands/README.md). Each session can span multiple chats; resume from [status](STATUS.md) and the latest handoff.
+## Session map
+| Session | Scope | Status |
+|---|---|---|
+| 01 | Repository foundation | Historical baseline; no rebuild |
+| 02 | Rules and saves | Historical baseline; no rebuild |
+| 03 | Cases and evidence | Historical baseline; no rebuild |
+| 04 | Outcomes and balance | Historical baseline; no rebuild |
+| 05 | Presentation and controls | Historical baseline; no rebuild |
+| 06 | Release groundwork | Historical baseline; no rebuild |
+| 07 | Pixel world foundation | Historical baseline; no rebuild |
+| 08 | Playable judge experience | Historical baseline; no rebuild |
+| 09 | Judge integration and save audit | Pending audit |
+| 10 | Narrative, evidence and quotation audit | Pending audit |
+| 11 | Balance and discoverability audit | Pending audit |
+| 12 | Courthouse polish and accessibility audit | Pending audit |
+| 13 | Judge release and classroom review | Pending audit |
 
-| Session | Dedicated plan | Prerequisites | Exit evidence |
-|---|---|---|---|
-| 01 — Foundation | [session-01.md](../.codex/sessions/session-01.md) | Bootstrap; Node/npm available or installed | Clean install, working card, typecheck/build |
-| 02 — Engine | [session-02.md](../.codex/sessions/session-02.md) | 01 complete | Transition, terminal, persistence tests |
-| 03 — Narrative | [session-03.md](../.codex/sessions/session-03.md) | 02 complete | 16 reachable cards; valid references and source metadata |
-| 04 — Evidence and balance | [session-04.md](../.codex/sessions/session-04.md) | 03 complete | Four ending witnesses; two resistance routes; recovery |
-| 05 — Visual rhetoric | [session-05.md](../.codex/sessions/session-05.md) | 04 complete | Shared symbolism output; accessible visuals and settings |
-| 06 — Classroom readiness | [session-06.md](../.codex/sessions/session-06.md) | 05 complete; source access for release | Full PRD §16 audit, browser QA, verified sources |
+## Running a session
+Use `Run session 9` or `python3 scripts/session.py 9 --print`. Read the matching .codex/sessions/session-NN.md and docs/STATUS.md. Every plan includes prerequisites, work, candidate files, verification and acceptance criteria. Sessions 09-13 audit existing functionality and implement only needed fixes. An explicitly requested Session 01-08 reviews its current foundation rather than recreating the old game.
 
-Every plan includes tasks, anticipated files, verification, and acceptance criteria. Paths can evolve with logged reasons. All sessions update `docs/STATUS.md`, `docs/COMMANDS.md`, and their handoff; update decisions, sources, and symbolism when relevant. Follow [HANDOFF_PROTOCOL.md](HANDOFF_PROTOCOL.md).
+## Dependencies and completion
+Run 09, then 10, 11, 12 and 13. Missing literary or human evidence does not prevent independent engineering checks; carry unresolved reviews explicitly into release review. Only mark an audit complete after its stated criteria have evidence. No session authorizes a push, deployment or new repository.
 
-Use checkboxes in the plans as evidence-backed gates. The status table records overall progress; neither replaces test results. Finish mechanics and available QA even if licensed text is unavailable, but keep the release incomplete. Do not add multiplayer, accounts, analytics, AI services, deployment, or other excluded scope (PRD §4).
+## Historical plans
+Original plans are preserved under docs/session-history. Earlier handoffs remain historical evidence. Their old PRD sections, travel mechanics and test counts are not current acceptance requirements. Follow docs/HANDOFF_PROTOCOL.md and append new attempts without rewriting history.

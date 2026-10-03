@@ -1,0 +1,90 @@
+@import './tokens.css';
+
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #101113; }
+body { font-family: Arial, sans-serif; color: #f2e6cc; }
+button, select, input { font: inherit; }
+button { cursor: pointer; }
+button, summary { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid #6f9cab; outline-offset: -3px; }
+h1, h2, h3, p, button, summary { overflow-wrap: anywhere; }
+.game-shell { width: 100%; height: 100dvh; height: 100svh; display: flex; flex-direction: column; position: relative; overflow: hidden; background: #171719; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+@supports (height: 100dvh) { .game-shell { height: 100dvh; } }
+.game-shell:fullscreen { width: 100%; height: 100%; }
+.game-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; border-bottom: 2px solid #66543e; padding: 6px 14px; flex: 0 0 auto; }
+.game-header h1 { font: bold 1.05rem/1.3 monospace; letter-spacing: .12em; margin: 0; }
+.game-header h1 span { display: block; color: #b58a45; font-size: .55rem; letter-spacing: .2em; }
+.game-header-actions svg { vertical-align: middle; }
+.game-header-actions { display: flex; gap: 6px; }
+.game-shell button { min-width: 44px; min-height: 44px; border: 2px solid #86694a; background: #25282c; color: #f2e6cc; padding: 8px 12px; font: bold .85rem/1.3 monospace; box-shadow: inset 0 -3px #171719; }
+.game-shell button:hover:not(:disabled) { border-color: #b58a45; background: #302820; }
+.game-shell button:disabled { opacity: .55; cursor: not-allowed; }
+.trail-hud { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1px; margin: 0; background: #66543e; flex: 0 0 auto; border-bottom: 2px solid #66543e; }
+.trail-hud > div { display: flex; align-items: baseline; justify-content: center; gap: 8px; min-width: 0; background: #222224; padding: 7px 4px; }
+.trail-hud dt { font: .7rem monospace; color: #c9c2b5; text-transform: uppercase; overflow-wrap: anywhere; }
+.trail-hud dd { font: bold 1.05rem monospace; margin: 0; }
+.game-world { position: relative; flex: 1 1 auto; min-height: 0; background: #101113; isolation: isolate; }
+.world-canvas { position: absolute; inset: 0; display: flex; justify-content: center; align-items: center; overflow: hidden; }
+.world-canvas canvas { display: block; image-rendering: pixelated; max-width: 100%; height: auto; aspect-ratio: 16/9; }
+.world-canvas [role="alert"] { position: absolute; inset: 30% 10%; padding: 12px; background: #171719; }
+.game-location { position: absolute; z-index: 1; top: 10px; left: 14px; background: #171719ed; border-left: 3px solid #b58a45; padding: 7px 12px; max-width: calc(100% - 28px); pointer-events: none; }
+.game-location span { display: block; font: .6rem/1.5 monospace; color: #b58a45; }
+.game-location strong { font: bold .85rem/1.5 monospace; }
+.game-touch, .game-context { position: absolute; z-index: 1; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; max-width: 100%; }
+.game-touch button { background: #171719e8; padding: 8px; }
+.game-touch button:last-child { min-width: 100px; }
+.game-status { flex: 0 0 auto; padding: 7px 12px; margin: 0; font: .75rem/1.4 monospace; color: #c9c2b5; border-top: 2px solid #66543e; max-height: 4.2em; overflow: auto; }
+.game-toolbar { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; flex: 0 0 auto; padding: 4px 8px 8px; background: #171719; }
+.game-dialog { position: fixed; inset: 0; margin: auto; width: min(700px, calc(100% - 24px)); max-width: none; max-height: calc(100% - 24px); padding: 0; color: #171719; background: #f2e6cc; border: 4px solid #86694a; box-shadow: 6px 6px #171719; overflow: auto; overscroll-behavior: contain; }
+.game-dialog::backdrop { background: #101113a8; }
+.game-dialog-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; position: sticky; top: 0; z-index: 2; background: #302820; color: #f2e6cc; padding: 8px 12px; border-bottom: 3px solid #86694a; }
+.game-dialog-header h2 { font: bold 1.15rem/1.4 monospace; margin: 0; min-width: 0; }
+.game-dialog-header button { flex: 0 0 44px; }
+.game-dialog-body { padding: 12px 20px; }
+.game-dialog-body p { line-height: 1.6; }
+.game-dialog-body h3 { font: bold 1rem/1.5 monospace; }
+.game-dialog-body button { margin: 4px 4px 4px 0; }
+.game-dialog-body details { border-top: 1px solid #86694a; padding: 12px 0; }
+.game-dialog-body summary { cursor: pointer; min-height: 44px; display: list-item; padding: 10px 0; }
+.game-dialog-body :focus-visible { outline-color: #365866; }
+.game-dialog-footer { padding: 8px 20px 16px; }
+.game-dialog kbd { font-size: .75em; color: #c9c2b5; }
+.trail-kicker { font: .7rem/1.5 monospace; letter-spacing: .1em; }
+.trail-objects { display: grid; gap: 10px; }
+.trail-objects button { text-align: left; }
+.trail-objects small { display: block; font: .75rem/1.5 Arial, sans-serif; color: #c9c2b5; margin-top: 4px; }
+.trail-policies, .trail-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+.trail-policies label, .trail-action { flex: 1 1 180px; min-width: 0; }
+.trail-policies select { display: block; width: 100%; min-height: 44px; margin-top: .5rem; color: #171719; background: #faf5e9; border: 2px solid #66543e; }
+.trail-route { border-top: 2px solid #86694a; margin-top: 1.5rem; padding-top: .5rem; }
+.trail-motion { display: flex; align-items: center; gap: 12px; min-height: 44px; }
+.trail-motion input { width: 22px; height: 22px; flex-shrink: 0; }
+@media (max-width: 600px) {
+  .game-header { padding-inline: 8px; }
+  .game-header-actions button span { display: none; }
+  .trail-hud { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .trail-hud > div { padding: 5px 2px; gap: 5px; }
+  .game-location { left: 8px; top: 8px; padding: 4px 8px; }
+  .game-toolbar { gap: 3px; padding: 3px; }
+  .game-toolbar button { padding: 8px 2px; font-size: .75rem; }
+  .game-dialog-body { padding: 10px 14px; }
+  .game-touch { gap: 3px; }
+  .game-touch button:last-child { min-width: 108px; }
+}
+@media (max-height: 450px) {
+  .game-header h1 span { display: none; }
+  .game-header { padding-block: 0; }
+  .game-location { top: 4px; padding-block: 2px; }
+  .game-location span { display: none; }
+  .game-touch, .game-context { bottom: 4px; left: auto; right: 8px; transform: none; }
+  .game-status { max-height: 2.5em; padding-block: 3px; }
+}
+
+.tutorial-progress { display: block; width: 100%; height: 8px; accent-color: #66543e; }
+.tutorial-navigation { display: flex; justify-content: space-between; gap: 12px; margin-top: 24px; padding-block: 12px; border-top: 2px solid #86694a; }
+.tutorial-keys { display: grid; justify-items: center; gap: 5px; margin: 20px 0; }
+.tutorial-keys span { display: flex; gap: 5px; }
+.game-dialog-body kbd { background: #302820; color: #f2e6cc; padding: 3px 7px; border: 1px solid #86694a; font: bold .9em monospace; }
+.tutorial-keys kbd { padding: 10px 14px; }
+
+.game-dialog-body select { display: block; max-width: 100%; min-height: 44px; margin-block: 8px; color: #171719; background: #faf5e9; border: 2px solid #66543e; }

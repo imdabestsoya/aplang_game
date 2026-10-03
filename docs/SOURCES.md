@@ -1,5 +1,9 @@
 # Sources and Verification
 
+## Trail migration scope — 2026-10-02
+
+Active trail source obligations are PRD §13. Preserve the evidence below; draft excerpts remain draft until verified. Add invented itinerary/horse-cart/chronology and new encounter provenance as Sessions 07–13 implement them.
+
 PRD §§2, 5, 7, and 10 define source obligations. The supplied PRD is a product specification, not independent verification of Miller’s words or historical claims.
 
 ## Current source status — 2026-10-01 follow-up
@@ -76,3 +80,11 @@ S33 is now implemented using that checked context. S34 is an expressly invented 
 - **P1:** Mary’s precise needle-placement account remains provisional. Final wording must be checked against licensed play text before classroom release.
 
 The scene meetings, numerical effects, document combinations and alternate outcomes remain labeled inventions/interpretations. Their labeling has been audited; exact play-scene fidelity is not claimed to have been independently verified.
+
+## Session 07 original scene provenance
+
+The Parris-house layout, John sprite, four observation texts and exploration mechanics are original invented adaptation material. They establish no new historical claims or Miller quotations. The scene and atlas are indexed pixel data with provenance and interim status in the [asset inventory](ASSETS.md). The horse-cart/travel system is not implemented yet. Existing quotation verification remains unchanged.
+
+## After the 8-bit-only interface change
+
+The retired card UI no longer presents quotations, puzzles or source panels. Its pure narrative/source records remain development references for the future trail story; historical verification notes above do not claim those scenes currently exist in the trail. Current observation provenance appears inside each in-game popup. The first-leg boundary and outstanding literary verification are unchanged.

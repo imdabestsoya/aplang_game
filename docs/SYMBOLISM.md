@@ -1,4 +1,6 @@
-# Symbolism Register
+# Historical Card Symbolism Register
+
+This register describes the retired interface; its file locations and implementation statuses are historical. The current 8-bit register is in `src/content/trail/foundation.json`.
 
 Generated from `src/content/symbolism.json`; run `npm run docs:symbolism` after editing the registry. All interpretations are adaptation decisions, not claims of authorial intent.
 

@@ -1,41 +1,30 @@
-# Session 02 — Deterministic Engine and Saves
+# Session 02: Rules and saves
+
+Status: **Historical baseline; already established**. Updated for the current Town Judge goal.
 
 ## Objective and PRD references
 
-Implement the rules underlying the complete game. Read PRD §§6–8, 11–12, and 16 (Mechanics). Full narrative balancing follows in Session 04.
+Use `docs/PRD.md`, `docs/STATUS.md` and `docs/PLAYBOOK.md`. The active game has eight binary judge hearings, automatic visitors, a snowy courthouse, visible Reputation/Hysteria meters, evidence-based victory, Shame and scenario quotations. Preserve natural copy without em dashes. No travel, supplies, carts or itinerary systems belong in active gameplay.
+
+The previous plan is preserved in `docs/session-history/session-02.md`; it is not executable scope. Historical completion does not certify the current release.
 
 ## Prerequisites
 
-Session 01’s clean install, working card, typecheck, and build gates pass. Inspect the current engine contract and tests. Run `npm run test -- --run` as the baseline.
+This is a historical baseline, not a queued rebuild. If explicitly requested, audit the current judge implementation and fix only demonstrated gaps. Preserve the working game, user edits and existing saves. Do not restart or renumber the project.
 
 ## Work checklist
 
-- [x] Define typed state with R=65, H=25, stable evidence IDs, explicit flags, decision history, and no morality score. Match qualitative bands in §6.
-- [x] Implement pure transitions: validate → atomic effects → clamp → record → consequence → ending → save. Coordinate the UI so consequences remain visible before advancing.
-- [x] Enforce H=100 precedence over R=0, simultaneous condemnation detail, final-choice prerequisites, and all four ending classifications including unresolved resistance.
-- [x] Model declarative evidence variants without executing content expressions. Keep both story choices available; inspect/hints neither consume evidence nor alter meters.
-- [x] Prevent duplicate or stale submissions in engine/UI and across refresh.
-- [x] Add versioned saves, restore without replaying effects, corrupt/incompatible-save messaging, and an in-memory fallback when storage fails.
-- [x] Implement chapter snapshots/replay that discard later history, explicit restart, and persistent settings separate from run data.
-- [x] Add focused unit, route-fixture, and browser regression tests for these behaviors.
+- [ ] Use the active judge engine and isolated judge saves. Retain earlier engines only as historical references.
 
 ## Expected files touched
 
-`src/engine/{types,transition,endings}.ts`, `src/persistence/`, `src/components/`, `src/App.tsx`, initial content contracts, `tests/unit/`, `tests/routes/`, `tests/e2e/`, and shared session records. Filenames may adapt to Session 01’s structure.
+src/engine/judge/, src/persistence/judge/. Update `docs/STATUS.md`, `docs/PLAYTEST.md` when relevant and `docs/handoffs/session-02.md`. These are candidate paths, not a requirement to edit working code.
 
 ## Verification
 
-Run `npm run test -- --run`, `npm run test:routes`, `npm run check`, and targeted `npm run test:e2e`. Exercise rapid repeated clicks, refresh, invalid saves, blocked storage, replay, and restart. Unit tests must cover clamp boundaries and both thresholds on the final turn. Fixture routes are not substitutes for final narrative witnesses.
+Run `python3 scripts/verify_scaffold.py`. For code changes, run targeted tests and `npm run check`; for UI/save changes, build and run `E2E_PORT=4183 E2E_PREVIEW=1 npm run test:e2e` with the configured Node/browser environment. Documentation-only work needs link/launcher verification, not an invented app-test result. Record exact commands and distinguish historical tests, current judge checks and human observations.
 
 ## Acceptance criteria
 
-- [x] Boundary/precedence tests pass, including simultaneous thresholds and final-choice ordering.
-- [x] A valid action changes state exactly once; invalid/stale actions do not partially mutate it.
-- [x] Refresh restores equivalent state; corrupt or blocked storage has usable recovery.
-- [x] Hints/inspection remain free; both actions remain available.
-- [x] Chapter replay restores its starting state and discards later history; restart requires explicit action.
-- [x] Relevant automated checks pass and remaining narrative/route gaps are recorded in `docs/handoffs/session-02.md`.
-
-## Completion evidence — 2026-09-30
-
-Completed; see [Session 02 handoff](../../docs/handoffs/session-02.md). Lint, types, production build, 50 unit tests, 11 route tests, and 18 browser tests on each of dev/preview passed. Multi-chapter ending/replay witnesses are synthetic engine fixtures; final story balance and puzzle UI remain later-session work. The one-card app now persists progress, offers recovery, and preserves settings across replay/restart.
+- [ ] Judge save namespaces and existing progress are preserved; no card-game UI is restored.
+- [ ] The handoff records what was checked, what changed, actual results, unresolved review items and the next session. Do not claim pre-existing work was implemented again.

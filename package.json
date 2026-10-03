@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "npm run docs:check && npm run test:content && tsc --noEmit && vite build",
+    "build": "npm run docs:check && npm run validate:content && npm run validate:assets && tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "lint": "eslint . --max-warnings 0",
     "typecheck": "tsc --noEmit",
@@ -20,7 +20,9 @@
     "docs:symbolism": "node scripts/generate-symbolism.mjs",
     "docs:check": "node scripts/generate-symbolism.mjs --check",
     "test:content": "vitest run --config vitest.config.ts tests/unit/narrative.test.ts",
-    "play": "npm run build && vite preview --host 127.0.0.1"
+    "play": "npm run build && vite preview --host 127.0.0.1",
+    "validate:content": "npm run test:content && node --experimental-strip-types scripts/validate-trail.mjs",
+    "validate:assets": "node --experimental-strip-types scripts/validate-trail.mjs --assets"
   },
   "dependencies": {
     "react": "^19.3.0",

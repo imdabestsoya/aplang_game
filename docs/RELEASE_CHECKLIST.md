@@ -1,61 +1,38 @@
-# Classroom Release Checklist
+> **Premise update (2026-10-03):** This document contains historical card/travel checks. The active game is [Town Judge](PRD.md); use its [handoff](handoffs/town-judge.md) for current verification. Old route and supply checks are not release requirements for the judge game.
 
-Updated: 2026-10-01, follow-up. **Ready for local play; classroom validation is incomplete.** Run `npm run play` after dependency installation. The user authorized best-knowledge quotation locations with later correction. That changes what may ship for local review, not what has been independently verified.
+# Salem Trail Release Checklist
 
-## Release gate disposition
+Active PRD §17; updated 2026-10-02. **Full trail release remains incomplete; Session07 foundation is implemented.** The [prior card checklist](RELEASE_CHECKLIST-v1-card.md) is preserved separately. Prior tests do not certify new travel systems. Session 13 records final evidence; earlier sessions fill their gates as implemented.
 
-| Original blocker | Disposition | Remaining evidence |
-|---|---|---|
-| Q1–Q5 exact passages | Q1 short excerpt verified; Q2–Q5 supplied as explicitly labeled, source-corroborated drafts under the user’s instruction | Assigned-edition check of Q2–Q5 remains deferred to the user; not marked passed |
-| P1 exact needle placement | Resolved in gameplay by correcting the claim: no exact placement time asserted or required; Mary’s testimony preserves uncertainty | Edition-specific editorial review can still improve wording |
-| Independent accessibility/classroom review | Automated evidence strengthened; **human review still open** | Screen-reader use, physical touch/audio, browser-menu zoom and reader observations require actual people/devices |
-| Timing and learning outcome | Reflection prompts implemented; **measurement still open** | Real first-run/replay timing and learner explanation; do not substitute automation time |
+| Gate | Owner | Required evidence | Status |
+|---|---|---|---|
+| Real redesign | 07–10 | Visible original player/cart; travel, preparation and explorable landmarks determine progress, not a card reskin | Open |
+| Complete content | 10 | Five legs, six landmarks, four acts, 16 mandatory encounters, three puzzles and jail | Open |
+| Variant fairness | 11 | Eight variants × two clean resistance witnesses differing in route/pace; no debug overrides | Open |
+| Strategies | 11 | Road and detour viable; useful rest/trade; forced pace not universally optimal; recoverable mistake | Open |
+| Endings | 11 | Five ending witnesses, threshold precedence and simultaneous cause audit | Open |
+| Resource edges | 08–11 | No-food, exhaustion, broken cart, unaffordable trade, caps and full short-day cost | Open |
+| Atomicity | 09 | Daily/crossing/event/arrival effects once; pending-event reload neither recharges nor rerolls | Open |
+| No softlocks | 09–11 | Safe event choice or deterministic skip; permanent critical evidence; checkpoint recovery | Open |
+| Frozen jail | 10 | No physical depletion after surviving court arrival | Open |
+| Pixel fidelity | 07,12 | Crisp original assets, manifest and screenshots; 360px/200% readable HTML | Open |
+| Access | 12–13 | Complete keyboard/touch/assistive alternatives; settings, focus, contrast, mute/motion | Open |
+| Simulation independence | 08–13 | Skipped animations, low frame rate and tab changes preserve outcomes | Open |
+| Reader timing | 13 | Observed first run25–40min and replay10–20min; record outcomes and learning reflection | Unmeasured |
+| Literary verification | 13 | All five passages and required claims verified; Q2–Q5 drafts remain explicit until checked | Open |
+| Sources and symbolism | 10–13 | Invention/interpretation/canon distinguished; all S01–S52 linked and in debrief | Open |
+| Delivery | 13 | Current source/asset/walkthrough/commands/handoff docs; clean npm ci/check/build/preview and browser flows | Open |
 
-Use [PLAYTEST.md](PLAYTEST.md) to record the outstanding observations. No human outcome, physical-device observation or waiver of those checks has been invented. These open classroom validation gates do not prevent local play. The original PRD remains unchanged.
+For every pass record date, environment, command or reviewer procedure and evidence path. Never use automation time as reader timing or promote placeholders to verified assets/quotations. Existing permission for provisional quote locations supports development; it does not establish source verification. No release declaration until required gates pass.
 
-## PRD §16 evidence matrix
+## Session07 evidence
 
-“Pass” below denotes the named technical/inspection evidence, not a blanket release certification.
+One pixel landmark, four objects, original interim art, HTML alternatives and isolated exploration saves are implemented. Clean install/build and83 unit/13 route/42 browser checks pass. See [handoff](handoffs/session-07.md) and [assets](ASSETS.md). This satisfies the Session07 foundation gate only; all full-journey gates above remain open.
 
-| Requirement | Status | Evidence / limitation |
-|---|---|---|
-| M1: R=0, H=100, simultaneous threshold precedence | Pass | `tests/unit/engine.test.ts`; saved route fixtures; H=100 precedence retained |
-| M2: Exactly-once choice effects after load/rapid clicks | Pass | Engine revision rejection; unit save tests; persistence browser flows |
-| M3: Free inspection/hints and valid resistance | Pass | Unit tests; every witness replayed with wrong answers and all hints |
-| M4: Four reproducible ending routes | Pass | `tests/routes/fixtures/narrative.json`, production transition replay |
-| M5: Two resistance routes and recoverable mistake | Pass | Two routes differ at the first choice; all intermediate meters/flags asserted |
-| M6: No unavailable-item softlocks; reachable graph | Pass | 85,337-state search includes solved/skipped exercises; all 16 cards reached; no nonterminal dead ends |
-| M7: Final sign/refuse cannot bypass thresholds | Pass | Final-choice and simultaneous-threshold unit cases |
-| N1: 16 cards, three puzzles, consequences | Pass | Content validation, full route/browser execution |
-| N2: Play’s named speakers; John protagonist | Pass within authored adaptation | Speaker allowlist, labeled original dialogue, editorial review; assigned-edition fidelity remains for review |
-| N3: Five verified quotations OR explicitly incomplete release | Classroom validation explicitly incomplete | Q1 checked; Q2–Q5 draft excerpts user-authorized for local play; trigger/fallback tests retained |
-| N4: Fact/interpretation/invention distinctions | Pass for revised claims | Per-record metadata; invented ledger/alleged motive; sourced context; P1 no longer asserts precise needle timing |
-| N5: Resolved symbolism IDs and explicit S01–S36 status | Pass | Content validation; all IDs represented; S33/S34 now have sourced/hypothetical contextual implementations |
-| N6: One shared registry for UI/docs | Pass | `symbolism.json` drives typed UI and generated Markdown; stale-doc check |
-| N7: Causal ending audit without moralizing survival/death | Pass | Distinct ending explanations and per-choice audit; informed refusal preserves tragic fate |
-| U1: Complete keyboard and narrow touch play | Automated pass; independent review open | Offline full route via Tab/type-ahead/Enter; 360px story controls tapped, native select values exercised; no debug game state |
-| U2: Motion/mute/contrast/focus/non-color status | Automated pass; independent review open | 15 contrast tests; real audio gain/gesture tests; OS and saved motion preferences; zoom/dialog/ending focus; written danger cues |
-| U3: Refresh and corrupt/blocked-storage fallback | Pass | Browser reload, quota/security failure, recovery/opt-out, replay and restart cases |
-| U4: Fresh install and build | Pass from disposable clean copy | `npm ci --offline` installed 180 packages into empty node_modules; full check/build passed from copied working-tree files |
-| U5: No credentials/runtime AI/external service | Pass | Full routes after network disabled; zero external requests; source links optional |
-| U6: README setup/controls/content/links | Pass | README rewritten for current game, release status, exact commands, controls and content note |
-| U7: Final reproducible handoff and limitations | Pass | [Session 06 handoff](handoffs/session-06.md), source records and this matrix |
+## Session08 evidence
 
-## Prior clean-copy environment and procedure
+The first road/detour leg, exact resource rules, preparation/trade, severe-risk forecasts and simulation-independent animation are implemented.94 unit and13 route checks pass. See [Session08 handoff](handoffs/session-08.md) for final browser results and screenshots. These demonstrate first-leg behavior only: full-route event atomicity, variant fairness, checkpoints, final art and classroom review remain open above.
 
-- macOS 12.7.6 (21H1320), x86_64; Node 22.23.3, npm 10.9.9.
-- Playwright 1.56.1, Chromium/headless-shell 141.0.7390.37, revision 1194.
-- Clean copy: `/private/tmp/the-weight-session06-jg4xyppa`, copied tracked and nonignored working-tree files, excluding `.git`, ignored tools/caches, dependencies and build output. This is a snapshot of **uncommitted work**, not a new Git commit or a claim that HEAD contains it.
-- Install used cached package tarballs, with no existing node_modules: `npm ci --offline --cache /Users/krishbehl/aplang_game/.npm-cache --no-audit --no-fund`.
-- `npm run check`: lint/types, **74 unit + 13 route tests**, generated symbolism check, nine build-time content tests and production build passed.
-- Browser preview is started by Playwright’s webServer using `npm run preview -- --port 4173 --strictPort`. **34 production-browser tests passed**, including both offline routes. Results are recorded in the handoff.
+## User-requested 8-bit-only viewport
 
-## Follow-up verification
-
-`npm run check` passed lint/types, 74 unit tests, 13 route tests and build. `E2E_PREVIEW=1 npm run test:e2e` passed 36 tests in 48.3 seconds from this working tree. `npm run play -- --port 4174 --strictPort` builds and serves the same production output. The prior clean-install evidence above remains historical; dependencies/lockfile did not change. Added coverage checks doubled default text sizing, source links and accessible control names. Relative font units preserve text enlargement. This remains automated evidence.
-
-## Sources and timing boundaries
-
-The earlier publisher excerpt was insufficient. A licensed school-hosted textbook selection now verifies Q1; a separate unidentified transcription corroborates Q2–Q5 and Mary’s account without establishing edition provenance. The checked postgame context links Miller’s retrospective essay, UVA’s Salem archive and the Senate Historical Office; modern rumor is framed as a hypothetical, not a claim about an actual incident. See [source evidence](SOURCES.md).
-
-Human first-run/replay timing and independent learning/accessibility outcomes remain unmeasured. No automated duration is substituted for them. A future reviewer should follow [the exact walkthrough](WALKTHROUGH.md), record actual reader times and issues, then update this checklist only from observed results.
+The card interface is retired. The current game is the sole experience at `/` and `/trail`, with E-triggered observations, game menus and recovery inside modal overlays, arrow controls and native fullscreen. See [viewport handoff](handoffs/game-viewport.md). This changes presentation and browser coverage; it does not mark the remaining story, event or classroom gates complete.

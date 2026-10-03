@@ -87,3 +87,60 @@ The user authorized best-knowledge quote locations and will correct them if need
 Correct P1 by removing the unsupported exact needle-placement time. Retain making/gift/evidentiary-use ordering and represent Mary’s account as uncertain testimony. Puzzle IDs, solutions, effects and save format remain unchanged. Existing saved consequence text may retain its earlier source-warning sentence; new decisions use the revised prose.
 
 Use relative font units for user text enlargement, and provide postgame reflection prompts to support the PRD learning outcome. `npm run play` builds and serves the local game. Human review and timing remain evidence to collect, with a concrete review form rather than fabricated passes.
+
+## 2026-10-02 — Continue as Salem Trail v2
+
+The user authorized updating the existing scaffolding for the supplied 8-bit PRD and creating new sessions without restarting work. Archive the old PRD verbatim as `docs/PRD-v1-card.md`; the supplied v2 becomes `docs/PRD.md` verbatim. Preserve historical plans/status/release evidence. New Sessions 07–13 map to v2 milestones01–07, avoiding ID collisions.
+
+This task prepares implementation; it does not mark the redesigned game complete. Keep current gameplay working and reuse tested logic/content. Separate trail saves; choose incremental entry-point migration in07 and make the full trail primary in10. Put coherent art direction in07 rather than postponing all design to12. New validators belong to07 and must inspect actual data/assets. Preserve existing remote and defer publication to an explicit request.
+
+## Session 07 — Pixel landmark foundation
+
+Preserve the card game at `/` and expose the trail at `/trail`, with discoverable links both ways. Canvas receives exploration snapshots and owns no survival state. Use a 20×11 tile map inside the fixed320×180 view instead of stretching the PRD's approximate20×12 map. Exploration is grid-based with collision and four reachable objects; named HTML controls deliberately bypass precise navigation for equal access.
+
+Keep a separate `the-weight:trail:exploration:v1` key, schema1/content `trail-foundation-1`. Persist position/facing/inspected IDs; leave corrupt saves untouched pending explicit replacement. The future travel save must version/migrate this exploration-only schema deliberately; do not assume it already has event transactions. Current resource values are the PRD starting snapshot and never change in Session07.
+
+Use original indexed-pixel JSON assets with an actual manifest validator and explicit interim/replacement metadata. Existing SVG assets remain only in the old game. Define all future Route/Encounter/Action/Puzzle/Symbol/Asset contracts now, while routes and puzzles are intentionally absent from this one-landmark dataset. Validators report scope rather than pretending future content exists. Keep the old S01–S36 registry intact; trail-only symbols have a separate scoped record until Session10 migrates the full register.
+
+Browser verification identified a HUD assertion comparing rendered uppercase text with textContent; fixed the test to compare rendered text consistently. The resulting 200% narrow-layout test exposed genuine grid overflow; fixed with shrinkable tracks and wrapping instead of hiding overflow.
+
+## Session 08 — First-leg resource simulation
+
+Implement PRD §§5–7 and10 with pure forecast/transition functions, revision guards, threshold precedence and immediate stable saves. Animation follows the committed state for four seconds; skip, reduced motion and hidden-tab dismissal only affect presentation. Arrival R−3 occurs once for the road, never for the detour; daily costs precede arrival. Rest adds16 then applies the ration modifier before the final resource cap. No resource tuning was introduced.
+
+Trade accepts whole bundles only; a three-food purchase requires three free slots, avoiding charging a full coin for a partial bundle. L2 and L3 share eligibility, but only L2 exists in this milestone. Initial terminal outcomes offer an explicit first-leg restart; full landmark checkpoints belong to11. No events, variants, crossing, remaining legs or canonical farm dialogue are claimed.
+
+Journey saves use a new schema1/content `trail-journey-1` namespace, `the-weight:trail:journey:v1`. When absent, the old exploration save is read and imported without mutation. Corrupt saves disable automatic writes until explicit replacement; replacing creates/overwrites only the new journey key. Per-landmark observations remain available in the journal. Pending-event persistence is Session09 work.
+
+## 2026-10-02 — User-directed 8-bit-only viewport
+
+The user explicitly superseded the dual-interface migration plan: remove the card experience, keep all game interaction inside the game and add fullscreen. Both `/` and `/trail` now render TrailApp. Removed the retired App, its UI components, sound controller, React save hook and stylesheet. Retained pure narrative/source modules and their regression tests as development references for later story work; the production entry imports only the trail. Historical handoffs describe earlier states and are not current feature claims.
+
+Use a fixed, responsive game viewport with a Canvas world, compact HUD and in-game menus. Native modal dialogs provide focus containment and Escape behavior while remaining descendants of the fullscreen element. HTML text stays readable and accessible within those overlays; long menus scroll internally. Keyboard arrows/WASD operate when gameplay has focus, E opens a nearby observation, and modal/input controls suppress world movement. Fullscreen failures produce an in-game message without interrupting play. Canvas scaling now fits both available width and height.
+
+Removed browser tests specific to the intentionally retired interface and replaced them with current game-only navigation, save recovery, focus, fullscreen, enlarged text and journey tests. Pure rule tests remain unchanged. No journey balance or save schema changes. The first leg remains the content boundary.
+
+## Pre-game tutorial
+
+First-time players receive five modal lessons before gameplay. Initial onboarding closes only with Start game after the last lesson; Previous allows review. Completion is remembered in `the-weight:trail:tutorial:v1`, independent of journey data. Returning players enter directly; Settings provides replay with normal Escape/Close dismissal. If storage is unavailable, completion applies for the current tab and never blocks play. Lessons accurately distinguish the playable first leg from the planned wider story and do not consume resources, advance days or mutate journey saves.
+
+
+## 2026-10-03 — Judge premise replaces travel
+
+Explicit user direction supersedes Session09 and remaining travel scope. Preserve pixel rendering and movement, but render only JudgeApp. Hidden reputation/fear, eight binary hearings and evidence-supported institutional change determine outcomes. The winning process is discoverable in the tutorial and records. Save under a new namespace; preserve historical code and previous user progress. Supplied quotes use provisional act references pending edition review.
+
+
+## Automatic hearings and winter courthouse
+The user requested people approach the judge instead of manually starting cases. Animate each petitioner before automatically presenting the hearing; retain deliberate adjournment so the evidence-based victory remains possible. Keep decision rules unchanged. Each new day returns to the bench. Draw original code-native pixel courthouse scenery and window snow, honoring reduced motion and preserving evidence/save namespaces.
+
+
+## Visible live meters
+At the user’s request, replace hidden pressures with labeled 0–100 Reputation and Hysteria bars in the top HUD and modal hearings. Render directly from the committed game state, showing signed ruling changes in consequences and endings. Preserve numerical rules and saves. Update tutorial/help to explain visibility.
+
+
+## Plain-language game copy
+Revised the eight scenarios, consequences, evidence, tutorial, hints and interface messages for natural phrasing and clear grammar. Explain unfamiliar roles, use concrete actions, and avoid em dashes in authored game text. Preserve the supplied Crucible quotations verbatim. No rule or save-format changes.
+
+## Align every session with the judge goal
+
+At the user's request, archive the original 01-13 plans and replace active files with current-goal guidance. Sessions 01-08 preserve completed foundations; 09-13 audit the existing judge game and fix demonstrated gaps. All launcher prompts use the active judge PRD. Do not revive travel scope or claim pending audits are complete. Start at Session 09.

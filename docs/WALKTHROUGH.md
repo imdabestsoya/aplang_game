@@ -1,4 +1,10 @@
+> **Premise update (2026-10-03):** This document contains historical card/travel checks. The active game is [Town Judge](PRD.md); use its [handoff](handoffs/town-judge.md) for current verification. Old route and supply checks are not release requirements for the judge game.
+
 # Walkthrough
+
+## Trail migration scope — 2026-10-02
+
+The routes below describe the existing card game. Trail walkthroughs will be authored in Sessions 10–11 after real simulation witnesses exist; do not use old routes as v2 proofs.
 
 The [verified narrative routes](ROUTES.md) list exact puzzle submissions, displayed story choices, and per-step meters for all four endings. They are generated from production content and the saved witnesses in `tests/routes/fixtures/narrative.json`. `npm run test:routes` searches the real graph, replays the inputs, compares every trace, and rejects stale walkthrough output.
 

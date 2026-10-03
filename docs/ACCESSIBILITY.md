@@ -1,5 +1,9 @@
 # Accessibility and Presentation Checks
 
+## Trail migration scope — 2026-10-02
+
+The checks below concern the card game. Trail requirements in PRD §14 add Canvas-equivalent HTML interactions and large-text/instant-dialogue/numeric-meter settings; Sessions 07–13 must establish new evidence.
+
 Session 05, 2026-10-01. These are scoped checks, not a claim of complete accessibility certification.
 
 ## Contrast
@@ -46,3 +50,11 @@ The clean-copy production suite now includes a complete resistance route navigat
 ## Local-play follow-up — 2026-10-01
 
 Converted fixed font sizes to relative units while preserving their default appearance. The new browser check doubles the default text size, verifies the computed dialogue size doubles, exercises evidence and Q2 at that size, checks overflow, and inspects accessible control names. This is automated text-size evidence, not a claim of human screen-reader or physical browser-menu review. Use [PLAYTEST.md](PLAYTEST.md) for the remaining observations.
+
+## Session 07 trail foundation
+
+The canvas is decorative to assistive technology; the focusable exploration region supports movement/interaction keys and the named object list supplies every essential action. Inspection focuses the observation heading and announces completion without changing day/resources. Touch movement controls have44px minimum targets. Reduced scene motion and the OS preference select a static frame. The scene motion override is currently tab-local; complete persistent settings are Session12 work. Browser tests cover360px and doubled default text size, plus save recovery. These are automated checks, not human screen-reader certification.
+
+## 8-bit-only viewport update
+
+All current gameplay is inside a window-filling game element. E/Enter observations, named object alternatives, journal, supplies and settings use native modal dialogs with heading focus, contained Tab navigation, close controls and Escape dismissal. Arrow keys/WASD move John while no dialog is open; they do not scroll the document or move him behind a popup. Long dialog contents scroll within the viewport for360px/200% text. Touch buttons remain at least44px. Fullscreen includes the dialogs and has an explicit exit; unsupported/denied fullscreen leaves windowed play available. Human screen-reader and physical-device results remain uncollected.

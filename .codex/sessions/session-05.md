@@ -1,36 +1,30 @@
-# Session 05 — Visual Rhetoric and Symbolism
+# Session 05: Presentation and controls
+
+Status: **Historical baseline; already established**. Updated for the current Town Judge goal.
 
 ## Objective and PRD references
 
-Make the complete playable loop communicate its literary argument accessibly. Read PRD §§3, 9–11, and 16 (Narrative, symbolism, usability). Preserve Session 04’s route proofs.
+Use `docs/PRD.md`, `docs/STATUS.md` and `docs/PLAYBOOK.md`. The active game has eight binary judge hearings, automatic visitors, a snowy courthouse, visible Reputation/Hysteria meters, evidence-based victory, Shame and scenario quotations. Preserve natural copy without em dashes. No travel, supplies, carts or itinerary systems belong in active gameplay.
+
+The previous plan is preserved in `docs/session-history/session-05.md`; it is not executable scope. Historical completion does not certify the current release.
 
 ## Prerequisites
 
-Session 04’s puzzles, witnesses, and recovery gates pass. The shared symbolism registry exists. Run `npm run check` and inspect current browser flows before UI changes.
+This is a historical baseline, not a queued rebuild. If explicitly requested, audit the current judge implementation and fix only demonstrated gaps. Preserve the working game, user edits and existing saves. Do not restart or renumber the project.
 
 ## Work checklist
 
-- [x] Create original CSS/SVG object illustrations for poppet/needle, ledger, seal, candle, confession/name, and bars as appropriate; document provenance and interpretation.
-- [x] Apply palette tokens and typography with tested foreground/background contrast. Record accessibility-driven shade changes without inventing symbolism.
-- [x] Implement pressure/narrowing decoration without reducing legibility, hit targets, or critical information. Never imply supernatural proof or physical rescue at the resistance ending.
-- [x] Complete journal history, non-color qualitative warnings, postgame numerical/causal audit, and spoiler-aware symbolism reveal using the shared registry.
-- [x] Generate documentation from that same registry and validate every content ID. Account for all S01–S36 as implemented or explicitly deferred with reasons; add records for new meaningful choices.
-- [x] Add optional ambience only after interaction, equivalent captions/text, persistent mute/reduced-motion settings, and silent confession-desk treatment. Avoid flashing or timed decisions.
-- [x] Verify semantic headings, dialogs/focus restoration, live announcements, visible focus, 44px target aim, 200% zoom, and a 360px viewport.
+- [ ] Preserve in-game popups, fullscreen, arrows/WASD, touch alternatives, visible meters and reduced motion.
 
 ## Expected files touched
 
-`src/styles/`, `src/components/`, original assets under `src/assets/` or `public/`, `src/content/symbolism.ts`, persistent settings, documentation generation scripts, `tests/e2e/`, `docs/SYMBOLISM.md`, `docs/SOURCES.md` (asset provenance), and shared session records.
+src/components/, src/styles/, src/rendering/. Update `docs/STATUS.md`, `docs/PLAYTEST.md` when relevant and `docs/handoffs/session-05.md`. These are candidate paths, not a requirement to edit working code.
 
 ## Verification
 
-Run `npm run check` and `npm run test:e2e`. Manually exercise keyboard-only play, narrow touch layout, zoom, reduced motion, mute, spoiler reveal, and focus restoration. Record tested color pairs and contrast results. Compare generated documentation with the registry and re-run route witnesses after any content changes.
+Run `python3 scripts/verify_scaffold.py`. For code changes, run targeted tests and `npm run check`; for UI/save changes, build and run `E2E_PORT=4183 E2E_PREVIEW=1 npm run test:e2e` with the configured Node/browser environment. Documentation-only work needs link/launcher verification, not an invented app-test result. Record exact commands and distinguish historical tests, current judge checks and human observations.
 
 ## Acceptance criteria
 
-- [x] Every meaningful symbolic design has a record; all used IDs resolve and S01–S36 statuses are explicit.
-- [x] Documentation and in-game explanations derive from one maintained registry.
-- [x] Information never depends on color, animation, or sound alone; settings persist.
-- [x] Tested layouts retain readable text and usable controls at 360px/200% zoom.
-- [x] Existing ending witnesses still pass; UI/browser checks pass.
-- [x] Screenshots/manual evidence and unresolved accessibility issues are recorded in `docs/handoffs/session-05.md`.
+- [ ] All gameplay stays inside the game viewport; no external card panels return.
+- [ ] The handoff records what was checked, what changed, actual results, unresolved review items and the next session. Do not claim pre-existing work was implemented again.

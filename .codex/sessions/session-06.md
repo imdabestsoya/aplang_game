@@ -1,44 +1,30 @@
-# Session 06 — Classroom Readiness and Release Audit
+# Session 06: Release groundwork
+
+Status: **Historical baseline; review carried forward**. Updated for the current Town Judge goal.
 
 ## Objective and PRD references
 
-Verify the complete local educational deliverable against every requirement in PRD §16. Read §§2–3, 8–11, and 13–16. Release here means classroom-ready local files; deployment is not included.
+Use `docs/PRD.md`, `docs/STATUS.md` and `docs/PLAYBOOK.md`. The active game has eight binary judge hearings, automatic visitors, a snowy courthouse, visible Reputation/Hysteria meters, evidence-based victory, Shame and scenario quotations. Preserve natural copy without em dashes. No travel, supplies, carts or itinerary systems belong in active gameplay.
+
+The previous plan is preserved in `docs/session-history/session-06.md`; it is not executable scope. Historical completion does not certify the current release.
 
 ## Prerequisites
 
-Session 05’s implementation and accessible UI gates pass. Read all source limitations and the walkthrough. Obtain the assigned edition or reliable licensed text for quotation verification. Missing source access blocks release, not remaining functional QA.
+This is a historical baseline, not a queued rebuild. If explicitly requested, audit the current judge implementation and fix only demonstrated gaps. Preserve the working game, user edits and existing saves. Do not restart or renumber the project.
 
 ## Work checklist
 
-- [ ] Verify Q1–Q5 exact wording, punctuation, speaker, act, and context. Record edition/page only when checked, with verification date and evidence. Implement and check every trigger and fallback from §10.
-- [ ] Verify poppet chronology, scene adaptations, and historical claims. Distinguish Miller’s Salem, historical Salem, McCarthyism, and modern rumor; explain limits of parallels.
-- [x] Confirm attribution, unofficial educational adaptation statement, content note/skip control, and original-versus-quoted dialogue distinctions.
-- [x] Audit all mechanics gates: threshold precedence, exactly-once effects, no penalty for hints, four ending witnesses, two clean resistance routes, recoverable mistake, no softlocks, final-choice ordering.
-- [ ] Run complete keyboard and narrow-touch playthroughs, 200% zoom, focus/dialog/live-region checks, reduced motion, mute, contrast, refresh, corrupt/blocked storage, replay, and restart.
-- [x] Validate 16 cards, three puzzles, all symbolism statuses, causal ending audits, and spoiler behavior. Test with no runtime network services.
-- [x] Perform a clean dependency install/build and preview from a fresh checkout or disposable clean copy. Record exact environment and browser versions.
-- [x] Finish README setup/controls/content note, exact walkthrough, generated symbolism, source notes, and final acceptance report. Observe first-run/replay timing against §3 targets when practical; report unmeasured timing honestly.
+- [ ] Retain earlier source and release evidence as history. Carry genuine outstanding human/edition checks to Session 13.
 
 ## Expected files touched
 
-`src/content/quotations.ts` and source metadata, focused bug fixes in UI/engine/persistence, `tests/e2e/`, route/unit regressions when needed, `README.md`, `docs/{SOURCES,WALKTHROUGH,SYMBOLISM,COMMANDS,STATUS}.md`, `docs/RELEASE_CHECKLIST.md`, and `docs/handoffs/session-06.md`.
+docs/SOURCES.md, docs/RELEASE_CHECKLIST.md, docs/PLAYTEST.md. Update `docs/STATUS.md`, `docs/PLAYTEST.md` when relevant and `docs/handoffs/session-06.md`. These are candidate paths, not a requirement to edit working code.
 
 ## Verification
 
-Run `npm ci`, `npm run check`, `npm run test:e2e`, and `npm run preview`. Record manual evidence against each PRD §16 bullet in `docs/RELEASE_CHECKLIST.md`; build success alone does not establish literary or accessibility accuracy. Reproduce walkthrough/witness routes from initial state without developer overrides.
+Run `python3 scripts/verify_scaffold.py`. For code changes, run targeted tests and `npm run check`; for UI/save changes, build and run `E2E_PORT=4183 E2E_PREVIEW=1 npm run test:e2e` with the configured Node/browser environment. Documentation-only work needs link/launcher verification, not an invented app-test result. Record exact commands and distinguish historical tests, current judge checks and human observations.
 
 ## Acceptance criteria
 
-- [ ] Every PRD §16 requirement has passing evidence or an explicit unmet entry; no unresolved required gate remains for release completion.
-- [ ] All five quotations and required literary/historical claims are verified; no placeholder is presented as final text.
-- [ ] Fresh install/build, full automated checks, and manual keyboard/touch/accessibility/storage flows pass.
-- [x] README, walkthrough, source record, symbolism, and final handoff enable another session to reproduce the result.
-- [x] Status explicitly declares classroom readiness only if all gates pass. Otherwise name exact blocked quotation/claim/check and finish all independent work.
-
-## Audit — 2026-10-01
-
-Technical audit passed: clean-copy install/build, 74 unit tests, 13 route tests and 34 production-browser tests, including complete offline keyboard and emulated narrow-touch routes. Historical context and comparison limits are implemented and sourced; Q2 has an explicit skip control. Source verification remains partial: Q1–Q5 exact passages and precise P1 needle chronology require an assigned edition or reliable licensed text. Independent accessibility/classroom review and reader timing remain unperformed; automated CSS zoom and touch emulation do not satisfy those manual checks. **Release remains incomplete.** See the [acceptance matrix](../../docs/RELEASE_CHECKLIST.md) and [handoff](../../docs/handoffs/session-06.md) for evidence and resumption steps.
-
-## Local-play follow-up — 2026-10-01
-
-The user authorized best-knowledge quote locations and later correction. Q1 now has a checked short excerpt; Q2–Q5 contain labeled, source-corroborated drafts, without invented edition/page metadata. P1 no longer asserts exact needle timing. `npm run play` builds and serves the game. Relative text sizing and reflection prompts are implemented. Checks passed: 74 unit, 13 route and 36 production-browser tests. Local play is ready; the human review and timing gates remain unperformed, with steps in `docs/PLAYTEST.md`. Earlier evidence above is retained as history, not the current quotation status.
+- [ ] Historical release evidence is clearly separated from current judge-game verification.
+- [ ] The handoff records what was checked, what changed, actual results, unresolved review items and the next session. Do not claim pre-existing work was implemented again.

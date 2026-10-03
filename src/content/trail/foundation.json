@@ -1,0 +1,1455 @@
+{
+  "version": "trail-foundation-1",
+  "firstLandmark": "L1",
+  "landmarks": [
+    {
+      "id": "L1",
+      "title": "Parris’s house",
+      "assetId": "parris-room",
+      "width": 20,
+      "height": 11,
+      "spawn": {
+        "x": 9,
+        "y": 8
+      },
+      "walkable": [
+        "00000000000000000000",
+        "00000000000000000000",
+        "00000000000000000000",
+        "00000000000000000000",
+        "01111111111111111110",
+        "01000111111111111110",
+        "01111111111111101110",
+        "01111111111111101110",
+        "01111111111111111110",
+        "00000000000000000000",
+        "00000000000000000000"
+      ],
+      "interactions": [
+        {
+          "basis": "invented",
+          "actReference": "Act I (adapted location)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "window",
+          "title": "The window",
+          "x": 3,
+          "y": 3,
+          "body": "Outside, the road disappears between the trees. Nothing you can see from this room establishes the truth of the report.",
+          "encounterId": "inspect-window"
+        },
+        {
+          "basis": "invented",
+          "actReference": "Act I (adapted location)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "hearth",
+          "title": "The hearth",
+          "x": 9,
+          "y": 3,
+          "body": "The fire gives the room light, not certainty. A frightened household still needs to distinguish what was seen from what was repeated.",
+          "encounterId": "inspect-hearth"
+        },
+        {
+          "basis": "invented",
+          "actReference": "Act I (adapted location)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "notice",
+          "title": "The household report",
+          "x": 15,
+          "y": 3,
+          "body": "A report has arrived without a named witness. Before repeating it, ask who observed the event and who merely heard about it.",
+          "encounterId": "inspect-notice"
+        },
+        {
+          "basis": "invented",
+          "actReference": "Act I (adapted location)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "satchel",
+          "title": "Your satchel",
+          "x": 15,
+          "y": 6,
+          "body": "Your belongings are ready for a journey. Testimony belongs in your journal, separate from the supplies you may use along the road.",
+          "encounterId": "inspect-satchel"
+        }
+      ]
+    },
+    {
+      "id": "L2",
+      "title": "Proctor farm",
+      "assetId": "proctor-farm",
+      "width": 20,
+      "height": 11,
+      "spawn": {
+        "x": 9,
+        "y": 8
+      },
+      "walkable": [
+        "00000000000000000000",
+        "00000000000000000000",
+        "00000000000000000000",
+        "00000000000000000000",
+        "01111111111111111110",
+        "01111111111111111110",
+        "01111111111111111110",
+        "01111111111111111110",
+        "01111111111111111110",
+        "00000000000000000000",
+        "00000000000000000000"
+      ],
+      "interactions": [
+        {
+          "basis": "invented",
+          "actReference": "Act II (adapted location)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "farm-window",
+          "title": "The farm window",
+          "x": 3,
+          "y": 3,
+          "body": "Beyond the window the road continues. Arriving home does not stop the town’s rumors.",
+          "encounterId": "inspect-farm-window"
+        },
+        {
+          "basis": "invented",
+          "actReference": "Act II (adapted location)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "worktable",
+          "title": "The worktable",
+          "x": 5,
+          "y": 5,
+          "body": "Work leaves ordinary traces. An object alone cannot tell you a person’s intentions.",
+          "encounterId": "inspect-worktable"
+        },
+        {
+          "basis": "invented",
+          "actReference": "Act II (adapted location)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "supply-chest",
+          "title": "The supply chest",
+          "x": 9,
+          "y": 7,
+          "body": "Food and repair kits can be bought here without accusing a neighbor. These supplies and this counter are invented for the journey.",
+          "encounterId": "inspect-supply-chest"
+        },
+        {
+          "basis": "invented",
+          "actReference": "Act II (adapted location)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "folded-cloth",
+          "title": "The folded cloth",
+          "x": 14,
+          "y": 5,
+          "body": "A folded cloth waits on the table. The full domestic evidence scene will arrive with the story milestone.",
+          "encounterId": "inspect-folded-cloth"
+        }
+      ]
+    },
+    {
+      "id": "L3",
+      "title": "Meetinghouse yard",
+      "assetId": "meetinghouse-yard",
+      "width": 20,
+      "height": 11,
+      "spawn": {
+        "x": 9,
+        "y": 8
+      },
+      "walkable": [
+        "00000000000000000000",
+        "00000000000000000000",
+        "00000000000000000000",
+        "00000000000000000000",
+        "01111111111111111110",
+        "01111111111111111110",
+        "01111111111111111110",
+        "01111111111111111110",
+        "01111111111111111110",
+        "00000000000000000000",
+        "00000000000000000000"
+      ],
+      "interactions": [
+        {
+          "basis": "invented",
+          "actReference": "Between Acts II–III (invented travel stop)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "stop3-object0",
+          "title": "The noticeboard",
+          "x": 3,
+          "y": 3,
+          "body": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+          "encounterId": "inspect-stop3-0"
+        },
+        {
+          "basis": "invented",
+          "actReference": "Between Acts II–III (invented travel stop)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "stop3-object1",
+          "title": "The supply counter",
+          "x": 5,
+          "y": 5,
+          "body": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+          "encounterId": "inspect-stop3-1"
+        },
+        {
+          "basis": "invented",
+          "actReference": "Between Acts II–III (invented travel stop)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "stop3-object2",
+          "title": "The meetinghouse door",
+          "x": 9,
+          "y": 7,
+          "body": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+          "encounterId": "inspect-stop3-2"
+        },
+        {
+          "basis": "invented",
+          "actReference": "Between Acts II–III (invented travel stop)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "stop3-object3",
+          "title": "The roadside bench",
+          "x": 14,
+          "y": 5,
+          "body": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+          "encounterId": "inspect-stop3-3"
+        }
+      ]
+    },
+    {
+      "id": "L4",
+      "title": "Field boundary",
+      "assetId": "field-boundary",
+      "width": 20,
+      "height": 11,
+      "spawn": {
+        "x": 9,
+        "y": 8
+      },
+      "walkable": [
+        "00000000000000000000",
+        "00000000000000000000",
+        "00000000000000000000",
+        "00000000000000000000",
+        "01111111111111111110",
+        "01111111111111111110",
+        "01111111111111111110",
+        "01111111111111111110",
+        "01111111111111111110",
+        "00000000000000000000",
+        "00000000000000000000"
+      ],
+      "interactions": [
+        {
+          "basis": "invented",
+          "actReference": "Between Acts II–III (invented travel stop)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "stop4-object0",
+          "title": "The fence",
+          "x": 3,
+          "y": 3,
+          "body": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+          "encounterId": "inspect-stop4-0"
+        },
+        {
+          "basis": "invented",
+          "actReference": "Between Acts II–III (invented travel stop)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "stop4-object1",
+          "title": "The boundary marker",
+          "x": 5,
+          "y": 5,
+          "body": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+          "encounterId": "inspect-stop4-1"
+        },
+        {
+          "basis": "invented",
+          "actReference": "Between Acts II–III (invented travel stop)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "stop4-object2",
+          "title": "The field path",
+          "x": 9,
+          "y": 7,
+          "body": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+          "encounterId": "inspect-stop4-2"
+        },
+        {
+          "basis": "invented",
+          "actReference": "Between Acts II–III (invented travel stop)",
+          "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+          "symbolismIds": [
+            "S14"
+          ],
+          "id": "stop4-object3",
+          "title": "The blank ledger",
+          "x": 14,
+          "y": 5,
+          "body": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+          "encounterId": "inspect-stop4-3"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "leg1-road",
+      "origin": "L1",
+      "destination": "L2",
+      "length": 4,
+      "arrivalEffects": {
+        "reputation": -3
+      },
+      "obstacle": null,
+      "eventThresholds": []
+    },
+    {
+      "id": "leg1-detour",
+      "origin": "L1",
+      "destination": "L2",
+      "length": 6,
+      "arrivalEffects": {},
+      "obstacle": null,
+      "eventThresholds": []
+    },
+    {
+      "id": "leg2-road",
+      "origin": "L2",
+      "destination": "L3",
+      "length": 4,
+      "arrivalEffects": {
+        "reputation": -3
+      },
+      "obstacle": null,
+      "eventThresholds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "leg2-detour",
+      "origin": "L2",
+      "destination": "L3",
+      "length": 6,
+      "arrivalEffects": {},
+      "obstacle": null,
+      "eventThresholds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "leg3-road",
+      "origin": "L3",
+      "destination": "L4",
+      "length": 4,
+      "arrivalEffects": {
+        "reputation": -3
+      },
+      "obstacle": "crossing",
+      "eventThresholds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "leg3-detour",
+      "origin": "L3",
+      "destination": "L4",
+      "length": 6,
+      "arrivalEffects": {},
+      "obstacle": "crossing",
+      "eventThresholds": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "encounters": [
+    {
+      "basis": "invented",
+      "actReference": "Act I (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-window",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "Outside, the road disappears between the trees. Nothing you can see from this room establishes the truth of the report.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act I (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-hearth",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "The fire gives the room light, not certainty. A frightened household still needs to distinguish what was seen from what was repeated.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act I (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-notice",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "A report has arrived without a named witness. Before repeating it, ask who observed the event and who merely heard about it.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act I (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-satchel",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "Your belongings are ready for a journey. Testimony belongs in your journal, separate from the supplies you may use along the road.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act II (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-farm-window",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "Beyond the window the road continues. Arriving home does not stop the town’s rumors.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act II (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-worktable",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "Work leaves ordinary traces. An object alone cannot tell you a person’s intentions.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act II (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-supply-chest",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "Food and repair kits can be bought here without accusing a neighbor. These supplies and this counter are invented for the journey.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act II (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-folded-cloth",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "A folded cloth waits on the table. The full domestic evidence scene will arrive with the story milestone.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "id": "rain",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "Rain reaches the open cart. Choose what to protect.",
+      "basis": "invented",
+      "actReference": "Journey between Acts I–III (invented adaptation)",
+      "sourceNote": "Original game encounter, not Miller dialogue or a historical claim. Social effects interpret how repetition and inquiry affect fear.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "actions": [
+        {
+          "id": "supplies",
+          "label": "Protect supplies",
+          "costs": {},
+          "deltas": {
+            "condition": -4
+          },
+          "flags": {},
+          "nextPhase": "travel"
+        },
+        {
+          "id": "cart",
+          "label": "Protect cart",
+          "costs": {
+            "food": 2
+          },
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "travel"
+        }
+      ]
+    },
+    {
+      "id": "wheel",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "A loose wheel knocks against its pin.",
+      "basis": "invented",
+      "actReference": "Journey between Acts I–III (invented adaptation)",
+      "sourceNote": "Original game encounter, not Miller dialogue or a historical claim. Social effects interpret how repetition and inquiry affect fear.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "actions": [
+        {
+          "id": "brace",
+          "label": "Stop and brace it",
+          "costs": {},
+          "deltas": {
+            "stamina": -4
+          },
+          "flags": {},
+          "nextPhase": "travel"
+        },
+        {
+          "id": "continue",
+          "label": "Continue carefully",
+          "costs": {},
+          "deltas": {
+            "condition": -5
+          },
+          "flags": {},
+          "nextPhase": "travel"
+        }
+      ]
+    },
+    {
+      "id": "rumor",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "A posted accusation has no named witness. Repeating it would spread an unsupported charge.",
+      "basis": "invented",
+      "actReference": "Journey between Acts I–III (invented adaptation)",
+      "sourceNote": "Original game encounter, not Miller dialogue or a historical claim. Social effects interpret how repetition and inquiry affect fear.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "actions": [
+        {
+          "id": "question",
+          "label": "Question its source",
+          "costs": {},
+          "deltas": {
+            "reputation": -3,
+            "hysteria": -5
+          },
+          "flags": {},
+          "nextPhase": "travel"
+        },
+        {
+          "id": "repeat",
+          "label": "Repeat the accusation",
+          "costs": {},
+          "deltas": {
+            "reputation": 7,
+            "hysteria": 8
+          },
+          "flags": {
+            "falseAccusation": true
+          },
+          "nextPhase": "travel"
+        }
+      ]
+    },
+    {
+      "id": "inspection",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "An official asks for your record. Your observations remain yours in either case.",
+      "basis": "invented",
+      "actReference": "Journey between Acts I–III (invented adaptation)",
+      "sourceNote": "Original game encounter, not Miller dialogue or a historical claim. Social effects interpret how repetition and inquiry affect fear.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "actions": [
+        {
+          "id": "records",
+          "label": "Show your records",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "travel"
+        },
+        {
+          "id": "scrutiny",
+          "label": "Accept extra scrutiny",
+          "costs": {},
+          "deltas": {
+            "reputation": -4
+          },
+          "flags": {},
+          "nextPhase": "travel"
+        }
+      ]
+    },
+    {
+      "id": "neighbor",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "A neighbor asks for two portions. Declining does not harm your standing.",
+      "basis": "invented",
+      "actReference": "Journey between Acts I–III (invented adaptation)",
+      "sourceNote": "Original game encounter, not Miller dialogue or a historical claim. Social effects interpret how repetition and inquiry affect fear.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "actions": [
+        {
+          "id": "share",
+          "label": "Share 2 food",
+          "costs": {
+            "food": 2
+          },
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "travel"
+        },
+        {
+          "id": "decline",
+          "label": "Decline politely",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "travel"
+        }
+      ]
+    },
+    {
+      "id": "accounts",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "Two travelers tell incompatible versions of a scene neither observed directly.",
+      "basis": "invented",
+      "actReference": "Journey between Acts I–III (invented adaptation)",
+      "sourceNote": "Original game encounter, not Miller dialogue or a historical claim. Social effects interpret how repetition and inquiry affect fear.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record the accounts separately",
+          "costs": {},
+          "deltas": {
+            "hysteria": -2
+          },
+          "flags": {},
+          "nextPhase": "travel"
+        },
+        {
+          "id": "repeat",
+          "label": "Repeat the dramatic version",
+          "costs": {},
+          "deltas": {
+            "reputation": 3,
+            "hysteria": 4
+          },
+          "flags": {
+            "falseAccusation": true
+          },
+          "nextPhase": "travel"
+        }
+      ]
+    },
+    {
+      "id": "shelter",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "A household offers a place to rest. Rest uses your own chosen rations and advances one day.",
+      "basis": "invented",
+      "actReference": "Journey between Acts I–III (invented adaptation)",
+      "sourceNote": "Original game encounter, not Miller dialogue or a historical claim. Social effects interpret how repetition and inquiry affect fear.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "actions": [
+        {
+          "id": "rest",
+          "label": "Rest in shelter",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "travel"
+        },
+        {
+          "id": "continue",
+          "label": "Continue without resting",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "travel"
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "The road clears and the horse settles into a gentler rhythm.",
+      "basis": "invented",
+      "actReference": "Journey between Acts I–III (invented adaptation)",
+      "sourceNote": "Original game encounter, not Miller dialogue or a historical claim. Social effects interpret how repetition and inquiry affect fear.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "actions": [
+        {
+          "id": "boost",
+          "label": "Take the easier stretch",
+          "costs": {},
+          "deltas": {
+            "stamina": 3
+          },
+          "flags": {},
+          "nextPhase": "travel"
+        },
+        {
+          "id": "routine",
+          "label": "Preserve the routine",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "travel"
+        }
+      ]
+    },
+    {
+      "id": "crossing",
+      "mandatory": true,
+      "conditions": {},
+      "dialogue": "The bridge is damaged. Both routes meet at this crossing. All costs are known; there is no chance-based failure.",
+      "basis": "invented",
+      "actReference": "Journey between Acts I–III (invented adaptation)",
+      "sourceNote": "Original game encounter, not Miller dialogue or a historical claim. Social effects interpret how repetition and inquiry affect fear.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "actions": [
+        {
+          "id": "wait",
+          "label": "Wait for repair",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "travel"
+        },
+        {
+          "id": "hire",
+          "label": "Hire assistance",
+          "costs": {
+            "coins": 3
+          },
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "travel"
+        },
+        {
+          "id": "ford",
+          "label": "Take the shallow ford",
+          "costs": {},
+          "deltas": {
+            "condition": -10,
+            "stamina": -5
+          },
+          "flags": {},
+          "nextPhase": "travel"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act I (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-stop3-0",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act I (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-stop3-1",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act I (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-stop3-2",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act I (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-stop3-3",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act I (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-stop4-0",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act I (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-stop4-1",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act I (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-stop4-2",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    },
+    {
+      "basis": "invented",
+      "actReference": "Act I (adapted location)",
+      "sourceNote": "Original game scene and prose, not Miller dialogue or a historical reconstruction.",
+      "symbolismIds": [
+        "S14"
+      ],
+      "id": "inspect-stop4-3",
+      "mandatory": false,
+      "conditions": {},
+      "dialogue": "This invented travel stop marks a place to pause and examine what is around you. Its full story and evidence scene is still to come.",
+      "actions": [
+        {
+          "id": "record",
+          "label": "Record this observation",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        },
+        {
+          "id": "return",
+          "label": "Return to the room",
+          "costs": {},
+          "deltas": {},
+          "flags": {},
+          "nextPhase": "landmark"
+        }
+      ]
+    }
+  ],
+  "puzzles": [],
+  "symbols": [
+    {
+      "id": "S14",
+      "decision": "Inspect before repeating",
+      "rationale": "Objects invite scrutiny, not automatic judgment.",
+      "basis": "interpretation",
+      "implementationReferences": [
+        "src/components/TrailApp.tsx"
+      ],
+      "status": "implemented"
+    },
+    {
+      "id": "S50",
+      "decision": "Original pixel art",
+      "rationale": "A legible invented journey leaves room for reflection.",
+      "basis": "interpretation",
+      "implementationReferences": [
+        "src/rendering/TrailWorld.tsx"
+      ],
+      "status": "partial"
+    }
+  ],
+  "assets": [
+    {
+      "id": "parris-room",
+      "path": "/assets/trail/parris-room.json",
+      "width": 320,
+      "height": 180,
+      "frameWidth": 320,
+      "frameHeight": 180,
+      "frames": 1,
+      "palette": [
+        "#171719",
+        "#25282c",
+        "#343a3b",
+        "#4b4a40",
+        "#66543e",
+        "#86694a",
+        "#b58a45",
+        "#f2e6cc",
+        "#6f9cab",
+        "#365866",
+        "#c87738",
+        "#8b2936",
+        "#b78260",
+        "#e2b68e",
+        "#302820",
+        "#514a40",
+        "transparent"
+      ],
+      "creator": "The Weight contributors; original authored pixel geometry",
+      "license": "Original project artwork; no third-party assets",
+      "placeholder": true,
+      "replacementOwner": "Session 12: complete and review final sprite/background inventory"
+    },
+    {
+      "id": "john",
+      "path": "/assets/trail/john.json",
+      "width": 96,
+      "height": 128,
+      "frameWidth": 16,
+      "frameHeight": 32,
+      "frames": 24,
+      "palette": [
+        "#171719",
+        "#25282c",
+        "#343a3b",
+        "#4b4a40",
+        "#66543e",
+        "#86694a",
+        "#b58a45",
+        "#f2e6cc",
+        "#6f9cab",
+        "#365866",
+        "#c87738",
+        "#8b2936",
+        "#b78260",
+        "#e2b68e",
+        "#302820",
+        "#514a40",
+        "transparent"
+      ],
+      "creator": "The Weight contributors; original authored pixel geometry",
+      "license": "Original project artwork; no third-party assets",
+      "placeholder": true,
+      "replacementOwner": "Session 12: complete and review final sprite/background inventory"
+    },
+    {
+      "id": "proctor-farm",
+      "path": "/assets/trail/proctor-farm.json",
+      "width": 320,
+      "height": 180,
+      "frameWidth": 320,
+      "frameHeight": 180,
+      "frames": 1,
+      "palette": [
+        "#171719",
+        "#25282c",
+        "#343a3b",
+        "#4b4a40",
+        "#66543e",
+        "#86694a",
+        "#b58a45",
+        "#f2e6cc",
+        "#6f9cab",
+        "#365866",
+        "#c87738",
+        "#8b2936",
+        "#b78260",
+        "#e2b68e",
+        "#302820",
+        "#514a40",
+        "transparent"
+      ],
+      "creator": "The Weight contributors; original authored pixel geometry",
+      "license": "Original project artwork; no third-party assets",
+      "placeholder": true,
+      "replacementOwner": "Session 12: complete and review final sprite/background inventory"
+    },
+    {
+      "id": "country-road",
+      "path": "/assets/trail/country-road.json",
+      "width": 320,
+      "height": 180,
+      "frameWidth": 320,
+      "frameHeight": 180,
+      "frames": 1,
+      "palette": [
+        "#171719",
+        "#25282c",
+        "#343a3b",
+        "#4b4a40",
+        "#66543e",
+        "#86694a",
+        "#b58a45",
+        "#f2e6cc",
+        "#6f9cab",
+        "#365866",
+        "#c87738",
+        "#8b2936",
+        "#b78260",
+        "#e2b68e",
+        "#302820",
+        "#514a40",
+        "transparent"
+      ],
+      "creator": "The Weight contributors; original authored pixel geometry",
+      "license": "Original project artwork; no third-party assets",
+      "placeholder": true,
+      "replacementOwner": "Session 12: complete and review final sprite/background inventory"
+    },
+    {
+      "id": "horse-cart",
+      "path": "/assets/trail/horse-cart.json",
+      "width": 256,
+      "height": 40,
+      "frameWidth": 64,
+      "frameHeight": 40,
+      "frames": 4,
+      "palette": [
+        "#171719",
+        "#25282c",
+        "#343a3b",
+        "#4b4a40",
+        "#66543e",
+        "#86694a",
+        "#b58a45",
+        "#f2e6cc",
+        "#6f9cab",
+        "#365866",
+        "#c87738",
+        "#8b2936",
+        "#b78260",
+        "#e2b68e",
+        "#302820",
+        "#514a40",
+        "transparent"
+      ],
+      "creator": "The Weight contributors; original authored pixel geometry",
+      "license": "Original project artwork; no third-party assets",
+      "placeholder": true,
+      "replacementOwner": "Session 12: complete and review final sprite/background inventory"
+    },
+    {
+      "id": "meetinghouse-yard",
+      "path": "/assets/trail/meetinghouse-yard.json",
+      "width": 320,
+      "height": 180,
+      "frameWidth": 320,
+      "frameHeight": 180,
+      "frames": 1,
+      "palette": [
+        "#171719",
+        "#25282c",
+        "#343a3b",
+        "#4b4a40",
+        "#66543e",
+        "#86694a",
+        "#b58a45",
+        "#f2e6cc",
+        "#6f9cab",
+        "#365866",
+        "#c87738",
+        "#8b2936",
+        "#b78260",
+        "#e2b68e",
+        "#302820",
+        "#514a40",
+        "transparent"
+      ],
+      "creator": "The Weight contributors; original authored pixel geometry",
+      "license": "Original project artwork; no third-party assets",
+      "placeholder": true,
+      "replacementOwner": "Session 12: complete and review final sprite/background inventory"
+    },
+    {
+      "id": "field-boundary",
+      "path": "/assets/trail/field-boundary.json",
+      "width": 320,
+      "height": 180,
+      "frameWidth": 320,
+      "frameHeight": 180,
+      "frames": 1,
+      "palette": [
+        "#171719",
+        "#25282c",
+        "#343a3b",
+        "#4b4a40",
+        "#66543e",
+        "#86694a",
+        "#b58a45",
+        "#f2e6cc",
+        "#6f9cab",
+        "#365866",
+        "#c87738",
+        "#8b2936",
+        "#b78260",
+        "#e2b68e",
+        "#302820",
+        "#514a40",
+        "transparent"
+      ],
+      "creator": "The Weight contributors; original authored pixel geometry",
+      "license": "Original project artwork; no third-party assets",
+      "placeholder": true,
+      "replacementOwner": "Session 12: complete and review final sprite/background inventory"
+    }
+  ]
+}

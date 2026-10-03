@@ -1,6 +1,6 @@
 # Multi-session Handoff Protocol
 
-Implements PRD §14. The [playbook](PLAYBOOK.md) defines deliverables; [STATUS.md](STATUS.md) is the short, authoritative progress record. Detailed history lives in `docs/handoffs/`.
+All active session plans use the Town Judge PRD. Sessions 01-08 are historical baselines; Sessions 09-13 are the current audit sequence. The [playbook](PLAYBOOK.md) defines scope and [status](STATUS.md) identifies the next session. Old plans in docs/session-history are preserved for reference only.
 
 ## Start a session
 
@@ -19,3 +19,7 @@ Implements PRD §14. The [playbook](PLAYBOOK.md) defines deliverables; [STATUS.m
 5. Set status to complete only if every exit gate passes; otherwise record `in progress` or `blocked`, the blocker, and exact next steps. Link the latest handoff and list the next three concrete actions.
 
 Session boundaries do not require new approvals. If the user requested one session, stop after it; if they requested several, proceed through satisfied dependencies. Source access can block release without blocking mechanics work. Never overwrite another contributor’s changes or claim uncommitted files are saved in Git.
+
+## Judge-game continuity
+
+Start with Session 09 unless status identifies another active audit. Preserve existing features and append new attempts to handoffs without replacing old evidence. Record active judge behavior, save compatibility, quotations, visible meters and current browser coverage. Keep historical card/travel tests distinct from judge proof. Record model settings only when known. Human review and quotation verification must never be inferred from automation.

@@ -1,0 +1,40 @@
+.judge-hud { display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; gap: 6px; padding: 8px; background: #222224; border-bottom: 2px solid #66543e; font: .8rem/1.5 monospace; }
+.judge-toolbar { grid-template-columns: repeat(5,minmax(0,1fr)); }
+.judge-quote { font: .75rem/1.5 Georgia, serif; background: #171719ed; color: #f2e6cc; border-left: 2px solid #b58a45; padding: 8px 12px; }
+.game-world > .judge-quote { position: absolute; top: 10px; right: 12px; width: min(340px,55%); max-height: 38%; overflow: auto; z-index: 2; }
+.judge-quote blockquote { margin: 0; }
+.judge-quote blockquote + blockquote { margin-top: 10px; border-top: 1px solid #86694a; padding-top: 8px; }
+.judge-quote p { margin: 0 0 4px; font: inherit; }
+.judge-quote cite { font: .7rem/1.4 monospace; color: #d3b77e; }
+.dialog-corner { display: flex; justify-content: flex-end; margin: -4px -8px 16px 0; }
+.dialog-corner .judge-quote { width: min(390px,100%); }
+.game-dialog-body .judge-quote { position: static; }
+.binary-choices { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; margin: 16px 0; }
+.binary-choices button { text-align: left; min-width: 0; }
+.binary-choices small { display: block; margin-top: 8px; color: #d3b77e; }
+.ruling-hint { border-left: 3px solid #365866; padding-left: 12px; }
+.case-note { font-size: .8rem; color: #514a40; }
+.record-connection { padding-block: 12px; border-bottom: 2px solid #86694a; }
+.game-shell .shame-badge { min-height: 32px; color: #faf5e9; border-color: #c87738; background: #68232c; padding: 3px 9px; }
+.shame-note { border-left: 4px solid #8b2936; padding-left: 12px; }
+.pressure-rising .game-location { border-color: #c87738; }
+.pressure-high .game-header { border-color: #c87738; }
+.pressure-high:not(.quiet-motion) .game-header h1 { animation: court-interference 7s steps(1,end) infinite; }
+@keyframes court-interference { 0%,93%,97%,100% { transform: translateX(0); text-shadow: none; } 94%,96% { transform: translateX(1px); text-shadow: -2px 0 #8b2936; } 95% { transform: translateX(-1px); text-shadow: 2px 0 #6f9cab; } }
+@media(prefers-reduced-motion:reduce) { .game-header h1 { animation: none !important; } }
+@media(max-width:600px) { .binary-choices { grid-template-columns: 1fr; } .judge-toolbar button { font-size: .68rem; } .judge-hud { font-size: .7rem; } .game-world > .judge-quote { max-height: 32%; width: min(250px,60%); } }
+
+.judge-meters { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; min-width: 0; width: 100%; font: .75rem/1.5 monospace; }
+.judge-hud > .judge-meters { flex: 1; max-width: 720px; }
+.meter-caption { display: flex; justify-content: space-between; gap: 5px; flex-wrap: wrap; color: #f2e6cc; }
+.meter-caption small { font: inherit; color: #f2d399; white-space: nowrap; }
+.meter-track { height: 12px; margin-top: 3px; border: 2px solid #a68b65; background: #11181d; overflow: hidden; }
+.meter-track > span { display: block; height: 100%; background: repeating-linear-gradient(90deg,#8ab9b0 0 8px,#608c86 8px 10px); }
+.hysteria .meter-track > span { background: repeating-linear-gradient(90deg,#d79c56 0 8px,#a9693d 8px 10px); }
+.meter-danger .meter-track { border-color: #ed8b7f; }
+.meter-danger .meter-track > span { background: #c9655d; }
+.hearing-status { width: 100%; }
+.hearing-status > .judge-meters { padding: 8px; background: #222224; border: 2px solid #66543e; margin-bottom: 10px; }
+.hearing-status > .judge-quote { margin-left: auto; }
+@media(max-width:600px) { .judge-meters { font-size: .65rem; gap: 8px; } .judge-hud { gap: 8px; } .judge-hud > .judge-meters { flex-basis: calc(100% - 75px); } }
+@media(max-width:600px) { .meter-caption { flex-direction: column; gap: 0; align-items: flex-start; } }

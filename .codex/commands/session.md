@@ -1,19 +1,16 @@
 # /session [session number]
 
 ## Input
-
-Accept exactly one number, 1–6 (leading zero optional). If omitted, report the next incomplete session from `docs/STATUS.md` and ask which to run. Reject other values without modifying files. `Run session N` has the same meaning.
+Accept 1-13, including 01-09. "Run session N" is equivalent. All active plan files use docs/PRD.md. Sessions 01-08 are historical baselines; 09-13 are the current judge-game audit sequence. Without a number, use the in-progress session or next pending session in docs/STATUS.md, initially 09.
 
 ## Execution
-
-1. Read root `AGENTS.md`, `.codex/claude.md`, `docs/STATUS.md`, `docs/HANDOFF_PROTOCOL.md`, the latest handoff named in status, and `.codex/sessions/session-NN.md`.
-2. Read the plan’s referenced sections in `docs/PRD.md`. Inspect Git branch, HEAD (which may not exist yet), and dirty state. Preserve existing work.
-3. Check dependency gates against actual files and recorded evidence. For an incomplete earlier milestone, report the missing gate and perform only work that does not depend on it; do not pretend the requested session is complete. Resolve routine environment prerequisites within user authorization.
-4. State the deliverable; run the smallest relevant baseline. Set status to `in progress`. Implement the plan, making routine decisions and recording their reasons. Expected paths are guidance, not a prohibition on necessary supporting edits.
-5. Run listed verification and fix failures caused by the changes. Each acceptance checkbox needs evidence; unavailable checks remain incomplete. Never use skipped tests or placeholder assertions to satisfy a gate.
-6. Update status, commands, decisions, sources, and symbolism as applicable. Follow the handoff protocol and write `docs/handoffs/session-NN.md` even when incomplete. On repeat runs, append a dated attempt rather than erasing earlier evidence.
-7. Report changed behavior, checks, remaining gates, and the next session. Stop after this session unless the user requested additional sessions. A session number is a deliverable, not a mandatory new chat or approval boundary.
+1. Read AGENTS.md, .codex/claude.md, docs/STATUS.md, docs/PLAYBOOK.md, docs/HANDOFF_PROTOCOL.md, the latest handoff and the selected plan.
+2. Inspect Git and existing changes. Preserve work and saves. Never dispatch docs/session-history plans or restore retired travel requirements.
+3. For an explicitly requested historical Session 01-08, audit the corresponding current judge foundation and fix demonstrated gaps only. Do not rebuild completed features.
+4. For Session 09-13, check actual prerequisites and mark the audit in progress. Implement necessary fixes, not the entire existing game again. Complete independent work while source/human evidence remains unavailable.
+5. Run the plan's verification. Separate current judge checks from historical route tests and actual human review.
+6. Update status, decisions and affected documentation. Append a dated current-goal audit to docs/handoffs/session-NN.md without overwriting historical evidence.
+7. Mark complete only when the plan's acceptance criteria are met. Record missing reviews and the next session. Stop after the requested session unless several were requested.
 
 ## Completion
-
-Only mark complete when every required acceptance gate passes. Keep Session 06/release incomplete while any quotation or required source claim remains unverified (PRD §§10, 15–16). Do not publish, deploy, or connect a remote as a side effect of `/session`.
+The active PRD and Session 13 define release review. Historical approvals cannot certify the current game. No commit, push, deployment or new remote is implied.

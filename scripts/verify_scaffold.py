@@ -13,14 +13,17 @@ import tempfile
 def main():
     root = Path(__file__).resolve().parent.parent
     runner = root / "scripts/session.py"
-    for number in ("1", "02", "3", "04", "5", "06"):
+    for number in tuple(str(n) for n in range(1, 14)) + ("01", "02", "07", "08", "09"):
         result = subprocess.run(
             [sys.executable, str(runner), number, "--print"],
             cwd=tempfile.gettempdir(), capture_output=True, text=True,
         )
         assert result.returncode == 0, result.stderr
         assert f"session-{int(number):02d}.md" in result.stdout
-    for number in ("0", "7", "-1", "abc", "../01", "001"):
+        expected_prd = "docs/PRD.md"
+        assert f"Follow {expected_prd}," in result.stdout
+        assert "Do not execute archived travel plans" in result.stdout
+    for number in ("0", "14", "99", "-1", "abc", "../01", "001", "007", "1.0", "1;echo bad"):
         result = subprocess.run(
             [sys.executable, str(runner), number, "--print"],
             capture_output=True, text=True,
@@ -36,21 +39,29 @@ def main():
         stub.chmod(0o755)
         environment = dict(os.environ, PATH=directory)
         result = subprocess.run(
-            [sys.executable, str(runner), "1"], env=environment,
+            [sys.executable, str(runner), "7"], env=environment,
             cwd=directory, capture_output=True, text=True,
         )
         assert result.returncode == 0, result.stderr
         observed = json.loads(result.stdout)
         assert observed["args"][:2] == ["-C", str(root)]
         assert observed["cwd"] == str(root)
-        assert "session-01.md" in observed["args"][2]
+        assert "session-07.md" in observed["args"][2]
         stub.unlink()
         result = subprocess.run(
-            [sys.executable, str(runner), "1"], env=environment,
+            [sys.executable, str(runner), "7"], env=environment,
             capture_output=True, text=True,
         )
         assert result.returncode == 2 and "not on PATH" in result.stderr
-    for number in range(1, 7):
+    with tempfile.TemporaryDirectory() as directory:
+        sandbox = Path(directory)
+        (sandbox / "scripts").mkdir()
+        copied_runner = sandbox / "scripts/session.py"
+        copied_runner.write_bytes(runner.read_bytes())
+        result = subprocess.run([sys.executable, str(copied_runner), "7", "--print"],
+                                capture_output=True, text=True)
+        assert result.returncode == 2 and "session plan missing" in result.stderr
+    for number in range(1, 14):
         plan = (root / f".codex/sessions/session-{number:02d}.md").read_text()
         for heading in ("Prerequisites", "Work checklist", "Expected files touched",
                         "Verification", "Acceptance criteria"):
@@ -58,7 +69,7 @@ def main():
     # Deliberately check workflow docs, not links/examples inside the supplied PRD.
     documents = [root / "AGENTS.md", root / "README.md"]
     documents += list((root / ".codex").rglob("*.md"))
-    documents += [p for p in (root / "docs").rglob("*.md") if p.name != "PRD.md"]
+    documents += [p for p in (root / "docs").rglob("*.md") if p.name not in ("PRD.md", "PRD-v1-card.md")]
     for document in documents:
         for link in re.findall(r"\]\(([^)]+)\)", document.read_text()):
             if "://" in link or link.startswith("#"):

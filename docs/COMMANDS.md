@@ -1,6 +1,8 @@
+> Current session sequence: 09-13 audits the Town Judge game. Use `python3 scripts/session.py 9 --print`. Earlier observed command results below are historical; current results are in STATUS.md and PLAYTEST.md. All active plans use docs/PRD.md.
+
 # Command Reference
 
-Run from the repository root. Application scripts now implement PRD §13. Verified on macOS 12.7.6 x64 with Node 22.23.3, npm 10.9.9, Playwright 1.56.1, and Chromium 141.0.7390.37. `.nvmrc` pins Node; `package-lock.json` pins dependencies.
+Run from the repository root. Existing application scripts implement the archived card PRD. Active trail command requirements are in PRD §16. Verified on macOS 12.7.6 x64 with Node 22.23.3, npm 10.9.9, Playwright 1.56.1, and Chromium 141.0.7390.37. `.nvmrc` pins Node; `package-lock.json` pins dependencies.
 
 ## Environment
 
@@ -55,8 +57,8 @@ The browser suite covers real keyboard tab order, both choices, inspection, cons
 
 | Command | Purpose | Observed result |
 |---|---|---|
-| `python3 scripts/session.py 3 --print` | Print next session prompt without launching | Launcher verified during bootstrap |
-| `python3 scripts/session.py 3` | Launch authenticated Codex; requires CLI on PATH | Dispatch stub tested; no nested agent launched |
+| `python3 scripts/session.py 9 --print` | Print next session prompt without launching | Launcher verified during bootstrap |
+| `python3 scripts/session.py 9` | Launch authenticated Codex; requires CLI on PATH | Dispatch stub tested; no nested agent launched |
 | `python3 scripts/verify_scaffold.py` | Validate workflow plans/links/launcher | Passed at bootstrap and Session 01 baseline |
 | `git status --short --branch` | Inspect branch and dirty files | main tracking origin/main; validation base 1480466; Session 02 changes listed in handoff |
 | `git diff --check` | Tracked patch whitespace check | Passed for Session 02 |
@@ -114,3 +116,45 @@ Browser environment: Playwright 1.56.1, Chromium/headless-shell 141.0.7390.37 re
 ## Start the playable game
 
 After `npm ci`, run `npm run play` to build and start the production preview on localhost (normally port 4173). On this machine first set `export PATH="$PWD/.tools/node-v22.23.3-darwin-x64/bin:$PATH"`. Leave the server terminal running; Ctrl+C stops it. For a different port, use `npm run play -- --port 4174`. No remote deployment or credentials are required.
+
+## Trail migration commands — 2026-10-02
+
+- `python3 scripts/session.py 7 --print`: preview the first trail prompt; 07–13 use the active PRD and 01–06 use the archive.
+- `python3 scripts/session.py 7`: open the installed interactive Codex CLI in this repository. Active agents execute the plan directly.
+- `python3 scripts/verify_scaffold.py`: test accepted/rejected session IDs, PRD routing, missing plans/CLI, stub dispatch and local documentation links.
+- `npm run validate:content` and `npm run validate:assets`: **planned for Session 07**, not implemented by this documentation update. They must validate actual contracts/assets and join `npm run check`; empty always-passing scripts are unacceptable.
+
+The launcher keeps client model/authentication/approval settings. Official [command reference](https://learn.chatgpt.com/docs/developer-commands?surface=cli) and local `codex --help` were inspected; no live agent inference was launched during verification.
+
+## Setup verification — 2026-10-02
+
+- `python3 scripts/verify_scaffold.py`: passed all 1–13 dispatch cases, invalid IDs, missing plan/CLI, stub launch and documentation links.
+- Launcher prompt checks for07/13 selected active PRD;06 selected archived PRD.
+- Byte comparisons: active PRD exactly matches supplied 8-bit file; archived PRD exactly matches `The_Weight_PRD.md`.
+- `npm run check`: lint/types, 74 unit tests, 13 route tests, generated symbolism check, nine build-time content tests and Vite production build passed. This validates the preserved card app, not unimplemented trail features.
+- `git diff --check`: passed. No new dependencies or app-source changes. Browser suite not rerun for this documentation/launcher-only change; prior browser evidence is historical.
+
+## Session 07 validator interfaces
+
+`npm run validate:content` now runs the existing narrative checks and validates actual trail contracts, IDs, references, collision data, action/puzzle/route shapes and provenance. `npm run validate:assets` checks pixel files against the manifest, palette, dimensions and frame counts. Both run through build and therefore `npm run check`; no new dependencies were introduced. The Node22 strip-types flag executes the shared pure TypeScript validator from the CLI. The old entry marking these commands planned is historical.
+
+## Session07 observed results — 2026-10-02
+
+- Repository and clean copy: `npm run check` passed83 unit +13 route tests, lint/types, content/assets validators and production build.
+- `/private/tmp/the-weight-session07-1clspgqj`: `npm ci --offline --cache /Users/krishbehl/aplang_game/.npm-cache --no-audit --no-fund` installed180 packages from cached tarballs into empty dependencies.
+- Clean-copy final `E2E_PREVIEW=1 npm run test:e2e`:42 passed in47.5 seconds, including preserved card flows and new trail keyboard/touch/reload/200% text checks.
+- `python3 scripts/verify_scaffold.py` and `git diff --check`: passed.
+
+Use `npm run play`, then `/trail`; the old game stays at `/`. Future sessions start at08.
+
+## Session08 observed checks (2026-10-02)
+
+`npm run check` passed94 unit tests,13 route tests, lint/types, document checks, content/assets validation and production build with the existing Node22.23.3 runtime. `python3 scripts/verify_scaffold.py` passed. Final production browser result is recorded in [Session08 handoff](handoffs/session-08.md). No package changes or fresh install were needed. Run `npm run play` and open `/trail` for the first complete leg; road/detour, pace/rations, rest/repair and farm trade are live.
+
+## 8-bit-only viewport verification
+
+The production entry is now the 8-bit game at `/` and `/trail`. Use `E2E_PORT=4183 E2E_PREVIEW=1 npm run test:e2e` when4173 is occupied; the port override starts an isolated test preview without stopping a user's server. Browser tests now target only the current game interface. Retained pure narrative tests remain development-reference checks, not evidence of additional playable trail content. See [viewport handoff](handoffs/game-viewport.md) for final results.
+
+## Pre-game tutorial checks
+
+`npm run check` passed94 unit/13 retained route tests, lint/types, validators and build. Production browser suite:18 passed;2 older storage-failure flows needed to complete the new tutorial first. Updated those flows and ran `E2E_PORT=4183 E2E_PREVIEW=1 npm run test:e2e -- tests/e2e/trail.spec.ts --grep 'blocked storage'`:2 passed. All20 browser cases have passing evidence; details in [tutorial handoff](handoffs/tutorial.md).

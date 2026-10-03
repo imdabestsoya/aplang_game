@@ -12,6 +12,8 @@ List observable behavior and deliverables; distinguish partial work.
 
 ## Changed files
 
+For judge audits record automatic hearings, evidence/outcome coverage, visible meters, save compatibility, quotation/copy status and screenshots where relevant. Distinguish current judge evidence from historical card/travel results and pre-existing functionality from new fixes.
+
 List paths and reasons, including pre-existing changes left intact.
 
 ## Git state

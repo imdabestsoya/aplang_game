@@ -1,36 +1,30 @@
-# Session 04 — Evidence Puzzles and Balance
+# Session 04: Outcomes and balance
+
+Status: **Historical baseline; already established**. Updated for the current Town Judge goal.
 
 ## Objective and PRD references
 
-Complete the reasoning loop and prove fair, deterministic reachability. Read PRD §§6–8, 12, and 16 (Mechanics), using §7’s exact puzzle reasoning.
+Use `docs/PRD.md`, `docs/STATUS.md` and `docs/PLAYBOOK.md`. The active game has eight binary judge hearings, automatic visitors, a snowy courthouse, visible Reputation/Hysteria meters, evidence-based victory, Shame and scenario quotations. Preserve natural copy without em dashes. No travel, supplies, carts or itinerary systems belong in active gameplay.
+
+The previous plan is preserved in `docs/session-history/session-04.md`; it is not executable scope. Historical completion does not certify the current release.
 
 ## Prerequisites
 
-Session 03’s 16-card graph and metadata validation pass; Session 02’s engine remains stable. Read current card effects and run `npm run test:routes` plus content tests as a baseline.
+This is a historical baseline, not a queued rebuild. If explicitly requested, audit the current judge implementation and fix only demonstrated gaps. Preserve the working game, user edits and existing saves. Do not restart or renumber the project.
 
 ## Work checklist
 
-- [x] Implement P1 ordering/provenance and “possession alone does not establish intent”; P2 observation/allegation/inference classification; P3 accusation/defense circularity.
-- [x] Add three graduated hints per puzzle and feedback with penalty-free retry. Keep puzzles accessible without drag-only interactions; show all necessary clues before decisions.
-- [x] Connect puzzle flags to explicitly labeled sourced responses and the informed final refusal. Preserve two available story actions even with missing evidence.
-- [x] Search/enumerate the real decision graph, including puzzle outcomes and flags; detect dead ends and unreachable cards. Save reproducible card/choice/puzzle inputs as fixtures, with per-step state traces.
-- [x] Tune effects until all four endings have witnesses, at least two distinct clean resistance routes survive every intermediate threshold, and a nonterminal single-choice mistake is demonstrably recoverable.
-- [x] Assert witnesses start from normal initial state with no debug mutation, false accusation, or signed false confession on resistance paths. Hints must remain valid.
-- [x] Explain closed resistance paths in the journal and support chapter replay. Document exact submissions and card choices in the walkthrough, including a recovery example.
+- [ ] Preserve the public-record victory, condemnation, chaos and false-confession outcomes. Use judge tests rather than old card-route evidence.
 
 ## Expected files touched
 
-`src/components/` puzzle/journal controls, `src/content/` puzzles and card effects, `src/engine/` validation if necessary, `tests/routes/`, witness fixtures under `tests/routes/fixtures/`, `tests/unit/`, `tests/e2e/`, `docs/WALKTHROUGH.md`, balance decisions, and shared session records.
+src/engine/judge/, tests/unit/judge.test.ts. Update `docs/STATUS.md`, `docs/PLAYTEST.md` when relevant and `docs/handoffs/session-04.md`. These are candidate paths, not a requirement to edit working code.
 
 ## Verification
 
-Run `npm run test:routes`, `npm run check`, and puzzle/replay browser flows via `npm run test:e2e`. Replay saved witnesses using production transitions; manually follow the walkthrough without developer mode. Check wrong answers and hints never change meters or invalidate resistance.
+Run `python3 scripts/verify_scaffold.py`. For code changes, run targeted tests and `npm run check`; for UI/save changes, build and run `E2E_PORT=4183 E2E_PREVIEW=1 npm run test:e2e` with the configured Node/browser environment. Documentation-only work needs link/launcher verification, not an invented app-test result. Record exact commands and distinguish historical tests, current judge checks and human observations.
 
 ## Acceptance criteria
 
-- [x] All three puzzles work with retry, hints, and keyboard controls; no missing-evidence softlocks.
-- [x] Four saved ending witnesses pass against actual content.
-- [x] Two distinct valid resistance routes and one recoverable mistake are proven with traces.
-- [x] Graph traversal detects unreachable cards/dead ends; threshold precedence still passes.
-- [x] Exact walkthrough matches tested submissions and choices.
-- [x] Checks and witness locations appear in `docs/handoffs/session-04.md`.
+- [ ] Outcome rules remain consistent with the current PRD; historical tests are not presented as judge-game coverage.
+- [ ] The handoff records what was checked, what changed, actual results, unresolved review items and the next session. Do not claim pre-existing work was implemented again.

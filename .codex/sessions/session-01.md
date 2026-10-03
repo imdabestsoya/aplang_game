@@ -1,41 +1,30 @@
-# Session 01 — Foundation
+# Session 01: Repository foundation
+
+Status: **Historical baseline; already established**. Updated for the current Town Judge goal.
 
 ## Objective and PRD references
 
-Deliver a locally runnable one-card skeleton and usable development tooling. Read PRD §§1–4, 9, 11–15; use §§6 and 12 for the initial state/content boundary. Bootstrap documentation is already present; adapt it rather than replacing it.
+Use `docs/PRD.md`, `docs/STATUS.md` and `docs/PLAYBOOK.md`. The active game has eight binary judge hearings, automatic visitors, a snowy courthouse, visible Reputation/Hysteria meters, evidence-based victory, Shame and scenario quotations. Preserve natural copy without em dashes. No travel, supplies, carts or itinerary systems belong in active gameplay.
+
+The previous plan is preserved in `docs/session-history/session-01.md`; it is not executable scope. Historical completion does not certify the current release.
 
 ## Prerequisites
 
-- Read status, Session 00 handoff, and repository instructions.
-- Inspect existing files and Git state; preserve the original PRD and existing plans.
-- Obtain a compatible Node/npm runtime. Neither was on PATH during bootstrap. Record actual versions and pin the runtime (for example `.nvmrc` and `package.json` engines).
+This is a historical baseline, not a queued rebuild. If explicitly requested, audit the current judge implementation and fix only demonstrated gaps. Preserve the working game, user edits and existing saves. Do not restart or renumber the project.
 
 ## Work checklist
 
-- [x] Scaffold React, TypeScript, and Vite in this populated repository without overwriting documentation. Choose compatible current versions and commit one `package-lock.json` when committing is appropriate.
-- [x] Configure lint, typecheck, Vitest, route-test selection, and Playwright; implement every PRD §13 script, including `check` in the prescribed order. Do not pass empty suites as evidence of completed features.
-- [x] Add an initial typed card, exactly two descriptive choices, inspectable evidence, speaker, qualitative status, consequence, and journal entry. Keep state transitions separate from UI.
-- [x] Add palette tokens from §9, basic semantic layout, visible focus, and accessible controls. Numeric meters stay hidden in standard play.
-- [x] Add a meaningful initial-state/choice smoke test and a browser smoke flow; reserve full engine and route proofs for Sessions 02–04 and state that limitation.
-- [x] Update README setup/controls, command prerequisites and results, runtime decisions, source placeholders, and handoff.
+- [ ] Keep the existing TypeScript, React, Vite and test setup. Do not scaffold a new project.
 
 ## Expected files touched
 
-`package.json`, `package-lock.json`, `.nvmrc`, `index.html`, `vite.config.ts`, `tsconfig*.json`, lint configuration, `playwright.config.ts`, `src/main.tsx`, `src/App.tsx`, `src/engine/`, `src/content/`, `src/components/`, `src/styles/`, `tests/unit/`, `tests/routes/`, `tests/e2e/`, `.gitignore`, `README.md`, and shared session records. Supporting config filenames may follow the selected tool versions.
+package.json, scripts/, AGENTS.md. Update `docs/STATUS.md`, `docs/PLAYTEST.md` when relevant and `docs/handoffs/session-01.md`. These are candidate paths, not a requirement to edit working code.
 
 ## Verification
 
-Use `npm install` for initial lockfile creation, then verify `npm ci`. Run `npm run typecheck`, `npm run build`, and the newly configured checks. Open `npm run dev` and `npm run preview` and exercise the card by keyboard. Install required Playwright browsers separately and record the exact command in `docs/COMMANDS.md`.
+Run `python3 scripts/verify_scaffold.py`. For code changes, run targeted tests and `npm run check`; for UI/save changes, build and run `E2E_PORT=4183 E2E_PREVIEW=1 npm run test:e2e` with the configured Node/browser environment. Documentation-only work needs link/launcher verification, not an invented app-test result. Record exact commands and distinguish historical tests, current judge checks and human observations.
 
 ## Acceptance criteria
 
-- [x] A clean install succeeds with documented runtime and lockfile.
-- [x] Development and preview show one working card; each choice yields one consequence and a journal entry.
-- [x] Typecheck and production build pass; lint and meaningful scaffold tests pass.
-- [x] All required script interfaces exist; command results and incomplete later coverage are stated honestly.
-- [x] No secrets/backend/external AI runtime dependencies; source and asset placeholders are labeled.
-- [x] `docs/handoffs/session-01.md` records evidence and Session 02 prerequisites; status reflects actual gates.
-
-## Completion evidence — 2026-09-30
-
-Completed; see [Session 01 handoff](../../docs/handoffs/session-01.md). Final clean install and aggregate check passed: 20 unit tests, five foundation route tests, lint, types, and build. Four browser tests passed on the dev server and four on production preview, including keyboard and 360px touch flows. Desktop/mobile screenshots were inspected. Playwright 1.56.1 is pinned for macOS 12. Full-game mechanics and release gates remain later-session work.
+- [ ] Build tooling remains usable without replacing dependencies or resetting Git.
+- [ ] The handoff records what was checked, what changed, actual results, unresolved review items and the next session. Do not claim pre-existing work was implemented again.
